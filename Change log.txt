@@ -1,0 +1,11 @@
+17/06/2020	-Hypno			# yes we're using british dating format ;) !
+
+-Unruly trait has been increased to -1 trait points from -2.
+	Unruly trait has had empire sprawl penalty increased to 0.20 from 0.10
+
+-Rapid breeders trait has been increased to 3 trait points from 2.
+
+-Latent psyonic trait has had pop happieness bonus increased to 5 from 0
+
+-Psyonic trait has had pop happieness bonus increased to 15 from 5.
+	Psyonic trait has had bonus to all researchers increased to 0.15x from 0.05x
