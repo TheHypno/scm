@@ -1,0 +1,875 @@
+carry_count_free_housing = {
+	set_variable = { which = carry_free_housing value = 0 }			
+	if = {
+		limit = { free_housing < -100 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -99 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -98 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -97 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -96 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -95 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -94 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -93 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -92 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -91 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -90 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -89 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -88 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -87 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -86 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -85 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -84 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -83 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -82 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -81 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -80 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -79 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -78 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -77 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -76 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -75 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -74 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -73 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -72 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -71 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -70 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -69 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -68 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -67 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -66 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -65 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -64 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -63 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -62 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -61 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -60 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -59 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -58 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -57 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -56 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -55 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -54 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -53 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -52 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -51 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -50 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -49 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -48 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -47 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -46 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -45 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -44 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -43 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -42 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -41 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -40 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -39 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -38 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -37 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -36 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -35 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -34 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -33 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -32 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -31 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -30 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -29 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -28 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -27 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -26 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -25 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -24 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -23 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -22 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -21 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -20 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -19 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -18 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -17 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -16 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -15 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -14 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -13 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -12 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -11 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -10 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -9 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -8 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -7 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -6 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -5 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -4 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -3 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -2 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+	if = {
+		limit = { free_housing < -1 }
+		change_variable = { which = carry_free_housing value = -1 }
+	}
+
+	
+	if = {
+		limit = { free_housing > 1 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 2 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 3 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 4 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 5 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 6 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 7 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 8 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 9 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 10 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 11 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 12 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 13 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 14 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 15 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 16 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 17 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 18 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 19 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 20 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 21 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 22 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 23 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 24 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 25 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 26 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 27 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 28 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 29 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 30 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 31 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 32 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 33 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 34 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 35 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 36 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 37 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 38 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 39 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 40 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 41 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 42 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 43 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 44 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 45 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 46 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 47 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 48 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 49 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 50 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 51 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 52 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 53 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 54 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 55 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 56 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 57 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 58 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 59 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 60 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 61 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 62 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 63 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 64 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 65 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 66 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 67 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 68 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 69 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 70 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 71 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 72 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 73 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 74 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 75 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 76 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 77 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 78 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 79 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 80 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 81 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 82 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 83 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 84 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 85 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 86 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 87 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 88 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 89 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 90 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 91 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 92 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 93 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 94 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 95 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 96 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 97 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 98 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 99 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+	if = {
+		limit = { free_housing > 100 }
+		change_variable = { which = carry_free_housing value = 1 }
+	}
+}
+
+######## Counted Pops Modified by Housing Usage. No longer needed
+# count_housed_pops = { 
+# 	set_variable = { which = housed_pops value = 0 }
+# 	set_variable = { which = robot_pops value = 0 }
+# 	set_variable = { which = bio_pops value = 0 }
+# 	every_owned_pop = {
+# 		planet = { change_variable = { which = housed_pops value = 1 } }
+# 		if = { limit = {  has_trait = trait_communal }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = {  has_trait = trait_solitary }
+# 			planet = { change_variable = { which = housed_pops value = 0.1 } }
+# 		}
+# 		if = { limit = {  has_trait = trait_fertile }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}	
+# 		if = { limit = {  has_trait = trait_social_pheromones }
+# 			planet = { change_variable = { which = housed_pops value = -0.05 } }
+# 		}
+# 		if = { limit = {  has_trait = trait_robot_double_jointed }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = {  has_trait = trait_robot_bulky }
+# 			planet = { change_variable = { which = housed_pops value = 0.1 } }
+# 		}
+# 		if = { limit = {  has_purge_type = { type = purge_displacement } }
+# 			planet = { change_variable = { which = housed_pops value = -0.5 } }
+# 		}
+# 		if = { limit = { owner = { has_tradition = tr_diplomacy_adopt } }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = { owner = { has_valid_civic = civic_byzantine_bureaucracy } }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = { 
+# 			owner = { 
+# 				has_relic = r_the_defragmentor 
+# 				is_machine_empire = yes 
+# 				} 
+# 			}
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = { planet = { is_planet_class = pc_machine } }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = { planet = { has_modifier = explosive_fungifoam_housing } }
+# 			planet = { change_variable = { which = housed_pops value = -0.1 } }
+# 		}
+# 		if = { limit = {  is_robot_pop = yes }
+# 			planet = { change_variable = { which = robot_pops value = 1 } }
+# 		}
+# 		if = { limit = {  is_robot_pop = no }
+# 			planet = { change_variable = { which = bio_pops value = 1 } }
+# 		}	
+# 	}
+# }
+
+carry_count_pop_types = { 
+	set_variable = { which = robot_pops value = 0 }
+	set_variable = { which = bio_pops value = 0 }
+	every_owned_pop = {
+		if = { limit = {  is_robot_pop = yes }
+			planet = { change_variable = { which = robot_pops value = 1 } }
+		}
+		if = { limit = {  is_robot_pop = no }
+			planet = { change_variable = { which = bio_pops value = 1 } }
+		}	
+	}
+}

@@ -9,3 +9,13 @@
 
 -Psyonic trait has had pop happieness bonus increased to 15 from 5.
 	Psyonic trait has had bonus to all researchers increased to 0.15x from 0.05x
+
+18/06/2020	-Hypno
+
+-Utopian living standards can now be used by ETHER socialists or pluralists
+
+-Criminal heratage civic buffed slightly
+	Added -20% branch office cost
+	Added -25% empire sprawl from branch offices
+
+-Tooltips updated

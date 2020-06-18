@@ -1,0 +1,7 @@
+NPop = {
+	BASE_POP_GROWTH						= 2		# Base growth rate of pops
+	NEW_COLONY_GROWTH					= 0		# New colonies have a penalty to their growth
+	OVERCROWDING_NO_GROWTH_THRESHOLD	= 1.1	# At this amount of overcrowding, growth stops entirely
+	OVERCROWDING_DECLINE_THRESHOLD		= 1.2	# At this amount of overcrowding, pops start declining
+	REQUIRED_POP_ASSEMBLY				= 150	# Required assembly to add a pop
+}

@@ -1001,7 +1001,7 @@ ethic_fanatic_pluralist = {
     regular_variant = ethic_pluralist
 	
 	tags = {
-	
+		EGALITARIAN_ETHIC_ALLOWS_UTOPIA
 	}		
 	
 	country_modifier = {
@@ -1038,7 +1038,7 @@ ethic_pluralist = {
 	fanatic_variant = ethic_fanatic_pluralist
 	
 	tags = {
-	
+		EGALITARIAN_ETHIC_ALLOWS_UTOPIA
 	}		
 	
 	country_modifier = {

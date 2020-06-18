@@ -170,6 +170,7 @@ living_standard_utopian = {
 			from = {
 			    has_ethic = ethic_fanatic_socialism
 				OR = {
+					has_ethic = ethic_fanatic_socialism
 				    has_ethic = ethic_pluralist
 					has_ethic = ethic_fanatic_pluralist
 				}									

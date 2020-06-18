@@ -43,7 +43,7 @@ per_relation = {
 		resources = {
 			category = non_aggression_pacts
 			upkeep = {
-				influence = 0.25
+				influence = 0.05
 			}
 		}
 	}

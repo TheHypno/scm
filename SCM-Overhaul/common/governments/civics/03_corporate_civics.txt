@@ -122,7 +122,10 @@ civic_criminal_heritage = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
-	}
+			planet_branch_offices_cost_mult = -0.25
+			empire_size_branch_office_mult = -0.20
+			pop_factions_influence_produces_mult = 0.50
+				}
 
 	description = "civic_tooltip_criminal_heritage_effects"
 }

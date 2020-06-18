@@ -1,0 +1,339 @@
+# ############################### Powershell code to generate deposits. Version 2, with pop housing usage and robots counted seperately ###############################
+
+# # Writes and names set of deposits for each capacity to file
+
+# ############################### Organic Capacity Modifiers ###############################
+
+# echo $null | Set-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"
+# $s = 1..80 #This array generates each Capacity modifier, one for every increment of 5 pops.
+# for($i = 0; $i -lt $s.Length; $i++){
+# 	$s[$i] = $s[$i] * 5
+# }
+# $r = .05 #This is the arbitrary growth coefficient. It matches the 5% pop growth per biological pop defined in pop_categories
+
+# foreach ($element in $s) {
+# 	$k = ($element) #Carry Capacity
+# 	$M = [math]::Truncate(1.2*$element) #Max amount of pops over capacity modifier will check for
+# 	$n = 1..$M #Array of number of pops to check
+
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "
+
+# d_capacity_$element = {
+# 	is_for_colonizeable = yes
+# 	category = deposit_cat_food
+# 	should_swap_deposit_on_terraforming = no
+# 	drop_weight = {
+# 		weight = 0		
+# 	}  
+# "
+# foreach ($element in $n) {
+# 	$x = "{0:N3}" -f ($r*$element*$element/$k-$r*$element+$element/$k) #(1-($k-$element)/$k-$r*($k-$element)/$k*$element) #growth reduction from capacity
+# 	$y = $element - $k
+  
+# 	if ($element -gt $k) { $decline = "
+# 		planet_emigration_push_add = $y" } else { $decline = "$null" } #adds decline if over capacity
+  
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { check_variable = { which = bio_pops value = $element } }
+# 		pop_growth_speed_reduction = $x $decline
+# 	}"
+# }
+# $max = $n[($n.Length - 1)] #Max amount of pops modifier will check for
+# Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { check_variable = { which = bio_pops value > $max } }  
+# 		pop_growth_speed_reduction = $x $decline
+# 	}
+# }"
+# }
+
+# ############################### Robot Capacity Modifiers ###############################
+
+# foreach ($element in $s) {
+# 	$k = ($element) #Carry Capacity
+
+
+# 	$MR = [math]::Truncate($k*0.04) #Max amount of roboticist jobs for capacity	
+# 	if ( $k -lt 25) { $bR = 0 }
+# 	else { 
+# 		$bR = 1..$MR #Breakpoints for additional roboticist jobs (1/25)
+# 		for($i = 0; $i -lt ($bR.Length); $i++){
+# 			$bR[$i] = $bR[$i] * 25
+# 		}
+# 	}
+# 	$nR = $br[0..([math]::truncate($MR/2)-1)] #Breakpoints for adding robotic assembly jobs (1/25 up to half), Excludes center
+# 	$sR = $br[[math]::ceiling($MR/2)..($MR-1)] #Breakpoints for replacing robotic specialist jobs (1/25 half to cap), Excludes center
+
+# 	$MM = [math]::Truncate($k*0.05) #Max amount of machine replicator jobs for capacity
+# 	if ( $k -lt 20) { $bM = 0 }
+# 	else {
+# 		$bM = 1..$MM #Breakpoints for additional machine replicator jobs
+# 		for($i = 0; $i -lt $bM.Length; $i++){
+# 			$bM[$i] = $bM[$i] * 20
+# 		}
+# 	}
+# 	$nM = $bM[0..([math]::truncate($MM/2)-1)] #Breakpoints for adding replicator assembly jobs (1/25 up to half), Excludes center
+# 	$sM = $bM[[math]::ceiling($MM/2)..($MM-1)] #Breakpoints for replacing replicator specialist jobs (1/25 half to cap), Excludes center
+
+# 	$k5 = [math]::Truncate(.5*$k) #Additional Breakpoints for removing capital assembly jobs
+# 	$k6 = [math]::Truncate(.6*$k)
+# 	$k7 = [math]::Truncate(.7*$k)
+# 	$k8 = [math]::Truncate(.8*$k)
+# 	$k9 = [math]::Truncate(.9*$k)
+# 	# $r5 = $element - $k5 #robot pops over 50% capacity  
+
+# Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "
+
+# d_robot_capacity_$element = {
+# 	is_for_colonizeable = yes
+# 	category = deposit_cat_food
+# 	should_swap_deposit_on_terraforming = no
+# 	drop_weight = {
+# 		weight = 0		
+# 	}  
+# "
+# foreach ($element in $nR) { #Breakpoints for adding robotic assembly jobs 
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = {
+# 			has_building = building_robot_assembly_plant			
+# 			check_variable = { which = robot_pops value >= $element } 
+# 			owner = { 
+# 				is_machine_empire = no
+# 				is_hive_empire = no
+# 				NOT = { has_policy_flag = robots_outlawed } 
+# 			} 
+# 		}  
+# 		job_roboticist_add = 1
+# 	}"
+# }
+# foreach ($element in $nM) { #Breakpoints for adding machine assembly jobs 
+#   Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { 
+# 			exists = owner
+# 			owner = { is_machine_empire = yes } 
+# 			check_variable = { which = robot_pops value >= $element } 
+# 		}  
+# 		job_replicator_add = 1
+# 	}"
+# }
+# foreach ($element in $sR) { #Breakpoints for subtracting robotic assembly jobs 
+#   Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { 
+# 			exists = owner
+# 			owner = { 
+# 				is_machine_empire = no 
+# 				is_hive_empire = no
+# 				NOT = { has_policy_flag = robots_outlawed }
+# 			} 			
+# 			check_variable = { which = robot_pops value >= $element } 
+# 		}  
+# 		job_roboticist_add = -1
+# 		job_robotic_specialist_add = 1
+#   	}"
+# }
+# foreach ($element in $sM) { #Breakpoints for subtracting machine assembly jobs 
+#   Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { 
+# 			exists = owner
+# 			owner = { is_machine_empire = yes } 
+# 			check_variable = { which = robot_pops value >= $element } 
+# 		}  
+# 		job_replicator_add = -1
+# 		job_replicator_maintenance_add = 1
+#     }"
+# }
+# #Remove jobs from buildings at capacity
+# Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\carry_deposits_output.txt"  "	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k }
+# 			owner = { 
+# 				is_machine_empire = no 
+# 				is_hive_empire = no
+# 				NOT = { has_policy_flag = robots_outlawed }
+# 			} 
+# 			has_building = building_robot_assembly_plant 
+# 		}
+# 		job_roboticist_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k5 }
+# 			exists = owner
+# 			owner = { is_mechanical_empire = yes }
+# 			OR = {
+# 				has_building = building_capital 
+# 				has_building = building_resort_capital 
+# 				has_building = building_hab_capital
+# 				has_building = building_major_capital 
+# 				has_building = building_resort_major_capital 
+# 				has_building = building_hab_major_capital 
+# 				has_building = building_system_capital 
+# 			} 
+# 		}
+# 		job_roboticist_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k7 }
+# 			exists = owner
+# 			owner = { is_mechanical_empire = yes }
+# 			OR = {
+# 				has_building = building_major_capital 
+# 				has_building = building_resort_major_capital 
+# 				has_building = building_hab_major_capital 
+# 				has_building = building_system_capital 
+# 			}
+# 		}
+# 		job_roboticist_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k9 }
+# 			exists = owner
+# 			owner = { is_mechanical_empire = yes }
+# 			has_building = building_system_capital 
+# 		}
+# 		job_roboticist_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k }
+# 			exists = owner
+# 			owner = { is_machine_empire = yes }
+# 		}
+# 		job_replicator_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k6 }
+# 			exists = owner
+# 			owner = { is_machine_empire = yes }
+# 			NOT = { owner = { has_civic = civic_machine_assimilator } }
+# 		}
+# 		job_replicator_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k8 }
+# 			exists = owner
+# 			owner = { is_machine_empire = yes }
+# 			has_building = building_machine_assembly_plant
+# 		}
+# 		job_replicator_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k7 }
+# 			exists = owner
+# 			owner = { is_machine_empire = yes }
+# 			num_pops > 10
+# 			OR = {
+# 				has_building = building_machine_capital
+# 				has_building = building_machine_major_capital 
+# 				has_building = building_machine_system_capital 
+# 			}
+# 		}
+# 		job_replicator_add = -1
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = { 
+# 			check_variable = { which = robot_pops value >= $k9 }
+# 			exists = owner
+# 			owner = { is_machine_empire = yes }
+# 			num_pops >= 40
+# 			OR = {
+# 				has_building = building_machine_major_capital 
+# 				has_building = building_machine_system_capital 
+# 			}
+# 		}
+# 		job_replicator_add = -1
+# 	}
+# }"
+# }
+
+
+
+
+# ###########################################################################################################################################################
+
+# ############################# Powershell Snippets to write repetitive variable checks. d = max districts h = free housing/5 ###############################
+
+
+# $d = 0..5
+# echo $null | clip.exe
+# foreach ($element in $d) {
+# 	Set-Clipboard -append "if = {
+# 		limit = { free_district_slots < $element }
+# 		change_variable = {
+# 			which = carry_capacity
+# 			value = 80
+#     }
+#     change_variable = {
+# 			which = robot_capacity
+# 			value = 80
+# 		}
+# 	}"
+# }
+
+# $h = 0..10
+# echo $null | clip.exe
+# foreach ($element in $h) {
+# 	$h5 = $element * 5 + 2
+# 	Set-Clipboard -append "if = {
+# 		limit = { free_housing < $h5 }
+# 		change_variable = {
+# 			which = carry_capacity
+# 			value = 5
+# 		}
+# 	}"
+# }
+
+# $n = -100..0
+# echo $null | clip.exe
+# foreach ($element in $n) {
+# 	Set-Clipboard -append "	if = {
+# 		limit = { free_housing < $element }
+# 		change_variable = { which = free_housing value = -1 }
+# 		change_variable = { which = carry_capacity value = -1 }
+# 		change_variable = { which = robot_capacity value = -1 }
+# 	}"
+# }
+
+# $n = 1..1000
+# echo $null | Set-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt"
+# foreach ($element in $n) {
+# 	$x = $element*-0.05
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt" "	triggered_planet_modifier = {
+# 		potential = { check_variable = { which = bio_pops value = $element } }
+# 		pop_growth_speed_reduction = $x 
+# 	}"
+# }
+
+# $s = 2..80
+# for($i = 0; $i -lt $s.Length; $i++){
+#     $s[$i] = $s[$i] * 5
+# }
+# echo $null | Set-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt"
+# foreach ($element in $s) {
+# 	$sp = ($element - 5)
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt" "	if = {
+# 		limit = {
+# 			check_variable = { which = robot_capacity value > $sp }
+# 			check_variable = { which = robot_capacity value <= $element }
+# 		}
+# 		add_deposit = d_robot_capacity_$element
+# 	}"
+# }
+
+# $s = 2..80
+# for($i = 0; $i -lt $s.Length; $i++){
+#     $s[$i] = $s[$i] * 5
+# }
+# echo $null | Set-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt"
+# foreach ($element in $s) {
+# 	Add-Content -Path ".\Documents\Paradox Interactive\Stellaris\mod\carrying_capacity\common\deposits\clipboard_output.txt" "d_robot_capacity_$element: "Robot Capacity: $element Pops"
+#   d_robot_capacity_$element_desc: "d_capacity_10_desc""
+# }
+
+
+
+

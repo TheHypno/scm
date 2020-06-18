@@ -3432,7 +3432,7 @@ living_standard_shared_burden:1 "Social Equality"
 
 SHARED_BURDEN_POP_EFFECTS:0 "$RULERS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$\n$SPECIALISTS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$\n$WORKERS$: $SHARED_BURDEN_LUXURIES$, $6_HAPPINESS$"
 
-empire_socialism_utopia_non_market:0 "$TRIGGER_FAIL$Our Empire is reqiured to have §YFanatic Cooperative§! and §YPluralism§! ethic combination."
+empire_socialism_utopia_non_market:0 "$TRIGGER_FAIL$Our Empire is reqiured to have §YFanatic Cooperative§! or §YPluralism§! ethic combination."
 
 ap_socialism_utopia:0 "Socialistic Utopia"
 ap_socialism_utopia_desc:0 "Unlocks §YUtopian§! living standards."
@@ -3630,7 +3630,7 @@ PROHIBITS_SLAVERY:0 "§EProhibits to use §YEnslavement§! policy to enslave you
 ALLOWS_ENSLAVEMENT:0 "§EAllows to enslave up to 30% Pops using §YEnslavement§! policy§!"
 ALLOWS_MORE_ENSLAVEMENT:0 "§EAllows to enslave up to 50% Pops using §YEnslavement§! policy§!"
 
-EGALITARIAN_ETHIC_ALLOWS_UTOPIA:0 "§ECombination with §Ynon-Elitism§! allows §YSocial Equality§! Living Standards§!, combination with §YPluralism§! allows §YUtopian§! Living Standards§!"
+EGALITARIAN_ETHIC_ALLOWS_UTOPIA:0 "§EAllows §YSocial Equality§! Living Standards§!, allows §YUtopian§! Living Standards§!"
 ELITIST_ETHIC_ALLOWS_STRATIFIED:0 "§ECombination with §Ynon-Democratic§! authority and §Ynon-Pluralism§! ethic allows §YStratified Economy§! Living Standards§!"
 
 PROHIBITS_WELFARE:0 "§EProhibits §YSocial Welfare§! Living Standards§!"

@@ -1,0 +1,64 @@
+namespace = mega
+# we (first Guilli, now starchitec) overwrite this message event so mod compatibility is kept with other mods that might tweak the main Arcology Project descision. 
+# If you need to do the same, please keep the event triggers and mod flag checks and then add your own, and add a ! to the filename.
+
+# Ecumenopolis complete (restore modded deposits)
+planet_event = {
+	id = mega.200
+	title = mega.200.name
+	desc = mega.200.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_city
+    }
+    immediate = {
+        if = {
+            limit = {
+                has_global_flag = carrying_capacity_active
+            }
+            hidden_effect = {
+                planet_event = {
+                    id = carry.1
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = TechAscendant_active
+            }
+            hidden_effect = {
+                planet_event = {
+                    id = Breakthrough.88
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_global_flag = MasterNature_active
+            }
+            hidden_effect = {
+                planet_event = {
+                    id = MasterNature.1000
+                }
+            }
+		}
+		if = {
+            limit = {
+                has_global_flag = guillis_planet_modifiers_active
+            }
+            hidden_effect = {
+                planet_event = {
+                    id = gpm_terraform.78871                        # trigger the global terraform event to clear planet modifiers and arange deposits.
+                }
+            }
+        }
+    }
+	option = {
+        name = mega.200.a
+	}
+}

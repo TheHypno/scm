@@ -1,0 +1,114 @@
+robotic_specialist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	clothes_texture_index = 3
+		
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	
+	planet_modifier = {
+		planet_jobs_robotic_produces_mult = 0.05
+	}
+
+	resources = {
+		category = planet_pop_assemblers
+		produces = {
+			engineering_research = 2
+		}
+		upkeep = {
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = 500
+	}
+}
+
+replicator_maintenance = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+	
+	planet_modifier = {
+		planet_amenities_no_happiness_add = 8
+		planet_jobs_robotic_produces_mult = 0.025
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_uncanny
+				has_trait = trait_repugnant
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = -2
+		}
+	}
+
+	resources = {
+		category = planet_pop_assemblers
+		produces = {
+			engineering_research = 2
+		}
+		upkeep = {
+			alloys = 1
+		}
+	}
+	
+	weight = {
+		weight = @spawner_drone_job_weight
+		modifier = {
+			factor = 40
+			exists = owner
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = trait_charismatic
+				has_trait = trait_robot_emotion_emulators
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				has_trait = trait_repugnant
+				has_trait = trait_robot_uncanny
+			}
+		}
+	}
+}
