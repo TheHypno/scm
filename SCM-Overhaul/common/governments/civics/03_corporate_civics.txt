@@ -173,3 +173,108 @@ civic_public_relations_specialists = {
 		diplo_weight_mult = 0.1
 	}
 }
+
+
+#Welfare State
+civic_welfare_state = {
+	potential = {
+		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
+		authority = { NOT = {  value = auth_corporate } }
+	}
+
+	possible = {
+
+		ethics = {
+
+			NOR = {
+			     text = civic_tooltip_not_capitalism
+			     value = ethic_capitalism
+				 value = ethic_fanatic_capitalism
+			}
+			
+			OR = {
+			    text = civic_tooltip_pluralist
+				has_ethic = ethic_pluralist
+				has_ethic = ethic_fanatic_pluralist
+			}			
+
+		}
+
+		civics = {
+			NOR = {
+			     value = civic_slaver_guilds
+				 value = civic_consumerism
+				 value = civic_shared_burden
+				 value = civic_merchant_guilds
+			}
+		}
+
+
+	}
+	random_weight = { base = 5 }
+	modifier = {
+
+                pop_growth_speed = 0.05
+                country_leader_pool_size = 1
+				pop_demotion_time_mult = -0.5
+				planet_pops_unemployed_consumer_goods_upkeep_add = 1
+				planet_districts_cities_upkeep_mult = 0.1
+				pop_ethic_socialism_attraction_mult = 0.1
+				pop_ethic_elitist_attraction_mult = -0.1
+
+
+	}
+}
+
+
+
+
+
+#Corporate Socialism		#By Hypno and Broad
+civic_shared_profits = {
+	potential = {
+		authority = {
+			NOR = {
+				 value = auth_hive_mind
+				 value = auth_machine_intelligence
+			}
+		}
+	}
+	possible = {
+		ethics = {
+			
+            OR = {
+				 value = ethic_fanatic_socialism
+			}				 
+			 
+             OR = {
+			    text = civic_tooltip_pluralist
+				has_ethic = ethic_pluralist
+				has_ethic = ethic_fanatic_pluralist
+			 }			 
+		}
+
+		authority = {
+			OR = {
+				 value = auth_corporate
+			}
+		}
+		civics = {
+			NOR = {
+				 value = civic_welfare_state
+			}
+		}
+	}
+	modifier = {
+	            pop_growth_speed = 0.1
+                pop_demotion_time_mult = -1
+				planet_pops_unemployed_consumer_goods_upkeep_add = 2
+				planet_districts_cities_upkeep_mult = 0.2
+				job_socialist_trader_per_pop = 0.05
+	}
+	random_weight = {
+		base = 5
+	}
+
+	#description = civic_tooltip_shared_burden_effects
+}

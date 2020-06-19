@@ -822,8 +822,8 @@
  personality_paranoid_isolationists:0 "Paranoid Isolationist"
  personality_paranoid_isolationists_desc:0 "Paranoid Isolationists's goal is to completely isolate themselves from the outside world. They mind their own business and prefer everybody else to do just the same."
 
- ethic_industrial:0 "Anthropocentrism"
- ethic_fanatic_industrial:0 "Fanatic Anthropocentrism"
+ ethic_industrial:0 "Industrialism"
+ ethic_fanatic_industrial:0 "Fanatic Industrialism"
  ethic_fanatic_industrial_desc:1 "§LThrough our inventions, we were capable of raising Civilization from dust and bending the forces of nature to our will. At our command, the other planets will relinquish their riches and magnificent factories scoop them up. This power demands to be used, and through its use, we shall remake the galaxy in our own image.§!\n Edict §YRecycling Campaign§! is not available."
 
  ethic_green_desc:1 "§LThe true values of a planet lie in its natural resources: its atmosphere, its flora and fauna, and its landscape. Our success so far lies in our ability to preserve and maintain these assets, whilst at the same time benefitting economically and societally from them. These biological systems are the sustaining wealth of any civilisation, and we would do well to remember that. §!\n"
@@ -962,10 +962,10 @@
 
 
 
- civic_tooltip_green:0 "Is some degree of §YEcocentrism§!"
- civic_tooltip_not_green:0 "Is not §YEcocentrism§!"
- civic_tooltip_industrial:0 "Is some degree of §YAnthropocentrism§!"
- civic_tooltip_not_industrial:0 "Is not §YAnthropocentrism§!"
+ civic_tooltip_green:0 "Is some degree of §YEcologism§!"
+ civic_tooltip_not_green:0 "Is not §YEcologism§!"
+ civic_tooltip_industrial:0 "Is some degree of §YIndustrialism§!"
+ civic_tooltip_not_industrial:0 "Is not §YIndustrialism§!"
 
  civic_tooltip_elitist:0 "Is some degree of §YElitism§!"
  civic_tooltip_not_elitist:0 "Is not §YElitism§!"
@@ -988,11 +988,11 @@
  pft_socialists:0 "Laborists Faction"
  pft_socialists_desc:1 "Laborist Factions represent the interests of working class people and generally vows for the cooperative ownership of the means of production and fair re-distribution of wealth.\n\n§LCooperative ethos§!"
  pft_manufacturers:0 "Industrialists Faction"
- pft_manufacturers_desc:1 " \n\n§LAnthropocentrism ethos§!"
+ pft_manufacturers_desc:1 " \n\n§LIndustrialism ethos§!"
  pft_labourites:0 "Pluralists Faction"
  pft_labourites_desc:1 " \n\n§LPluralism ethos§!"
  pft_environmentalists:0 "Environmentalists Faction"
- pft_environmentalists_desc:1 " \n\n§LEcocentrism ethos§!"
+ pft_environmentalists_desc:1 " \n\n§LEcologism ethos§!"
  pft_conservatives:0 "Elitists Faction"
  pft_conservatives_desc:0 " \n\n§LElitism ethos§!"
  pft_progressive:1 "Democratic Faction"
@@ -2474,7 +2474,7 @@ civic_elite_troops_desc:0 "Government allocates significant resources for traini
 
 
  civic_keepers_harmony:0 "Keepers of Harmony"
- #Being strong adherents of Ecocentrism and Deep Ecology, people of this society developed a spiritual cult of Nature.
+ #Being strong adherents of Ecologism and Deep Ecology, people of this society developed a spiritual cult of Nature.
  civic_keepers_harmony_desc:0 "People of this society developed a spiritual сult of Nature. In order to live in genuine harmony with the Biosphere, the Cult implies significant detachment from worldy pleasures. \n\nBenefits from a various range of planetary §YFeatures§! and §YBlockers§!, which provides them with some §YHousing§! and special priest jobs - §YDruids§! (combination with §YTheocracy§! or §YSpiritualist§! themed government civics makes them stronger). \nBuilding §YParadise Dome§! provides additional £housing£ §YHousing§! and increases  £unity£ §YUnity§! output \nSome rare planetary blockers and features, like §YWandering Forest§! or §YTitanic Life§! will increase local §YHappiness§!. \nCan enact special planetary decision, allowing to eradicate such planetary anomalies as §YDangerous Wildlife§!, §YBleak§!, §YHazardous Weather§!, §YWild Storms§!, §YDamaged Ecology§!, §YIrradiated Planet§!, §YWasteland Radiation§!  \n§YMining Districts§! decrease £amenities£ §YAmenities§! by §R1§! \nCan't use §YReduced Environmental Regulation§! policy"
 
  civic_environmentalist:0 "Natural Heritage"
@@ -3610,14 +3610,14 @@ ethic_pluralist_desc:0 "Pluralistic societies are those, in which people are con
 ethic_fanatic_pluralist:0 "Fanatic Pluralism"
 ethic_fanatic_pluralist_desc:0 "We are all of us worthy of the same dignity and the same basic respect, for within each of us lies the potential for greatness, for a stroke of luck or genius, for the very salvation of our species. Yes, we are not all created equal, but what does that matter when we are equally endowed with the capacity to create?"
 
-ethic_industrial:0 "Anthropocentrism"
-ethic_fanatic_industrial:0 "Fanatic Anthropocentrism"
-ethic_industrial_desc:1 "§LThose, who preserve anthropocentric system of values, consider themselves masters of biosphere, who have moral rights to exploit nature and it's resources for the sake of their own prosperity, even if it implies discrimination of other biological species. Otherwise it can be called "Biospherical Elitism"§!"
+ethic_industrial:0 "Industrialism"
+ethic_fanatic_industrial:0 "Fanatic Industrialism"
+ethic_industrial_desc:1 "§LThose, who preserve the Industrialist system of values, consider themselves masters of biosphere, who have moral rights to exploit nature and it's resources for the sake of their own prosperity, even if it implies discrimination of other biological species. Otherwise it can be called "Biospherical Elitism"§!"
 ethic_fanatic_industrial_desc:1 "§LThrough our inventions, we were capable of raising Civilization from dust and bending the forces of nature to our will. At our command, the other planets will relinquish their riches and magnificent factories scoop them up. This power demands to be used, and through its use, we shall remake the galaxy in our own image.§!\n\nEdict §YRecycling Campaign§! is not available."
 
-ethic_green:0 "Ecocentrism"
-ethic_fanatic_green:0 "Fanatic Ecocentrism"
-ethic_green_desc:1 "§LAdherents of Ecocentrism preserve a system of values, according to which there is no existential divisions between them and the biosphere they inhabit, sufficient enough to claim that their species posses greater value then nature around. It can thus be seen as "Biospherical Egalitarianism". Ecocentric approach to an economy is based on the idea of sustainable development, which implies more efficient usage of natural resources, limited consumerism and controlled overpopulation§!"
+ethic_green:0 "Ecologism"
+ethic_fanatic_green:0 "Fanatic Ecologism"
+ethic_green_desc:1 "§LAdherents of Ecologism preserve a system of values, according to which there is no existential divisions between them and the biosphere they inhabit, sufficient enough to claim that their species posses greater value then nature around. It can thus be seen as "Biospherical Egalitarianism". Ecologic approach to an economy is based on the idea of sustainable development, which implies more efficient usage of natural resources, limited consumerism and controlled overpopulation§!"
 ethic_fanatic_green_desc:1 "§LOur musicians cannot compose a melody so profound as the songs of wildlife and the whispers of the trees. Our artists cannot capture the ineffable majesty of mountain tops, secluded lakes, or vast caverns. Whether by design or by chance, we have been born into a universe of transcendent natural beauty; no cost is too high to secure its continued preservation.§!\n\n"
 
 
@@ -3689,3 +3689,17 @@ tech_terraform_uninhabit_molten_desc:0 "Given enough time and resources, even th
 
 tech_terraform_uninhabit_frozen:0 "Frozen World Terraformation"
 tech_terraform_uninhabit_frozen_desc:0 "Given enough time and resources, even the most inhospitable worlds can be transformed into something habitable.\n\n"
+
+civic_criminal_connections:0 "Criminal Connections"
+civic_criminal_connections_desc:0 "Those crimelords high up within this empire have connections and manage a network throughout the galaxy, making the establishment and maintenance of new ventures more lucrative than ever."
+
+civic_shared_profits:0 "Shared Profits"
+civic_shared_profits_desc:0 "This corporate government has realised that the only way to truely profit is if all members of society truly share the goals of the state. This has lead to the creation of a socialist society within which all are equal and work as one."
+
+job_socialist_trader:0 "Distributor"
+ job_socialist_trader_plural:0 "Distributors"
+ job_socialist_trader_desc:0 "An allocator and distributor of goods throughout the peoples of the state"
+ job_socialist_trader_effect_desc:0 "£job_socialist_trader£ $job_socialist_trader_plural$ produce £mod_trade_value_add£ §Y$TRADE_VALUE$§!"
+ mod_job_socialist_trader_add:0 "$job_socialist_trader$ Jobs"
+ mod_job_socialist_trader_per_pop:0 "§G+1§! $job_socialist_trader$ Job per $VALUE$ Pops"
+ mod_job_socialist_trader_short:0 "\n§G+1§! £mod_job_socialist_trader_add£ per $VALUE$ £pop£"

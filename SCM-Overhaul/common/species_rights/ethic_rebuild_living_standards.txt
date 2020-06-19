@@ -167,12 +167,9 @@ living_standard_utopian = {
 		
 		custom_tooltip = {
 			fail_text = empire_socialism_utopia_non_market
-			from = {
-			    has_ethic = ethic_fanatic_socialism
+			from = {	
 				OR = {
-					has_ethic = ethic_fanatic_socialism
-				    has_ethic = ethic_pluralist
-					has_ethic = ethic_fanatic_pluralist
+					has_civic = civic_shared_profits			
 				}									
 			}
 		}
@@ -270,7 +267,7 @@ living_standard_shared_burden = {
 		custom_tooltip = {
 			fail_text = empire_not_pluralist_collectivist
 			from = {
-			    has_ethic = ethic_fanatic_socialism
+				has_civic = civic_shared_profits
 				NOR = {
 				    has_ethic = ethic_elitist
 					has_ethic = ethic_fanatic_elitist
