@@ -44,3 +44,7 @@
 -Tooltips updated
 
 -carrying capacity mod included within overhaul
+
+-Divine Council civic nerfed stability +7.5 from +10
+
+-Byzantine Beurocracy civic nerfed stability from bureaucrats to +0.75 from +1

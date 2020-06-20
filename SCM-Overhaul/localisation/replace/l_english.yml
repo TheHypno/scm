@@ -8435,7 +8435,7 @@
  civic_tooltip_police_state_effects:1 "£job_enforcer  §Y$job_enforcer_plural$§! also produce §Y1§! £unity£ Unity"
  civic_tooltip_technocracy_effects:2 "£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! also produce §Y0.75§! £unity£ Unity"
  civic_tooltip_merchant_guilds_effects:1 "§YCapital Buildings§! provide £job_merchant£ §Y$job_merchant$§! Jobs\n£job_merchant£ §Y$job_merchant_plural$§! also produce §Y2§! £unity£ Unity"
- civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y1§! £unity£ Unity and §Y1§! £stability£ $PLANET_STABILITY_TITLE$"
+ civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£ §Y$job_bureaucrat_plural$§! also produce §Y0.75§! £unity£ Unity and §Y1§! £stability£ $PLANET_STABILITY_TITLE$"
  civic_tooltip_machine_maintenance_protocols_effects:0 "£job_maintenance_drone£ §Y$job_maintenance_drone_plural$§! also produce §Y1§! £unity£ Unity"
  civic_tooltip_philosopher_king_effects:0 "Your §YRulers§! and §YGovernors§! are less likely to gain negative traits."
 

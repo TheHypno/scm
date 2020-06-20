@@ -1251,7 +1251,7 @@ bureaucrat = {
 			owner = { has_valid_civic = civic_byzantine_bureaucracy }
 		}
 		modifier = {
-			planet_stability_add = 1
+			planet_stability_add = 0.75
 		}
 	}
 
