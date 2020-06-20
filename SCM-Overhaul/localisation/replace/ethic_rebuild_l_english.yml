@@ -3696,6 +3696,14 @@ civic_criminal_connections_desc:0 "Those crimelords high up within this empire h
 civic_shared_profits:0 "Shared Profits"
 civic_shared_profits_desc:0 "This corporate government has realised that the only way to truely profit is if all members of society truly share the goals of the state. This has lead to the creation of a socialist society within which all are equal and work as one."
 
+job_agitator:0 "Agitator"
+ job_agitator_plural:0 "Agitators"
+ job_agitator_desc:0 "A government employed unit which stamps out crime and rebellion with an iron fist, and insentivises the local populace to do their duty to the state, whether they like it or not"
+ job_agitator_effect_desc:0 "£job_agitator£ $job_agitator_plural$ produce £mod_planet_crime_add£ §Y$CRIME$§!"
+ mod_job_agitator_add:0 "$job_agitator$ Jobs"
+ mod_job_agitator_per_pop:0 "§G+1§! $job_agitator$ Job per $VALUE$ Pops"
+ mod_job_agitator_short:0 "\n§G+1§! £mod_job_agitator_add£ per $VALUE$ £pop£"
+
 job_socialist_trader:0 "Distributor"
  job_socialist_trader_plural:0 "Distributors"
  job_socialist_trader_desc:0 "An allocator and distributor of goods throughout the peoples of the state"

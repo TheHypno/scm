@@ -146,7 +146,7 @@ researcher = {
 				exists = owner
 				owner = { or = { has_valid_civic = civic_technocracy  has_valid_civic = civic_cyber_dictatorship  has_valid_civic = civic_science_directorate  has_valid_civic = civic_cyber_demos_cratos } }
 			}
-			unity = 1
+			unity = 0.75
 		}
 		upkeep = {
 			consumer_goods = 2

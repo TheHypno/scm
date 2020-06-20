@@ -19,3 +19,28 @@
 	Added -25% empire sprawl from branch offices
 
 -Tooltips updated
+
+20/06/2020	-Hypno
+
+-Created agitator job (powerful enforcer, increases worker resource production by 10% and reduces crime by 40 at cost of stability)
+	1 agitator per 50 pops in industrial democracy civic
+
+-Ecocentric ethic renamed to ecologist
+
+-Anthropocentric ethic renamed to Industrialist
+
+-Technocracy civic now gives 0.75 unity per researcher
+
+-Distributer job added, generates 5 trade value
+
+-Shared Profits civic added for megacorp allowing socialist equality living standard and creating 1 distributer job per 20 pops
+
+-Utopian living standard now available to any variants of socialist or pluralist.
+
+-Federation members can guarantee independence, and people can guarantee the independence of federations.
+
+-GFX icons updated
+
+-Tooltips updated
+
+-carrying capacity mod included within overhaul
