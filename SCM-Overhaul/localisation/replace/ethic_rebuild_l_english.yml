@@ -2378,7 +2378,7 @@ civic_tribal_aristocracy_desc:0 "This society is a subject to a strict form of s
 civic_noble_aristocracy:0 "Philosopher Kings"
 civic_noble_aristocracy_desc:0 "This society is guided by an idealistic form of aristocracy, morale and intellectual elite, ruling on meritocratic principles."
 
-civic_military_demos_cratos: "Martial Brotherhood"
+civic_military_demos_cratos: "Patriotic Service"
 
 
 
@@ -2562,7 +2562,7 @@ civic_in_perfect:0 "Tribalism"
 civic_in_perfect_desc:0 "This xenophobic society is imbued with a strong sense of tribal collectivism."
 
 
-civic_nationalistic_zeal:1 "Conqueror"
+civic_militaristic_zeal:1 "Conqueror"
 
 
 
@@ -3546,11 +3546,11 @@ civic_industrial_automatation_desc:0 "An economic paradigm, according to which t
 tech_thermal_borehole:0 "Deep Core Mining"
 tech_thermal_borehole_desc:0 "Unlocks construction of §YThermal Borehole§!, which provides §YDeep Core Engineers§! jobs."
 
-civic_martial_brotherhood:0 "Martial Brotherhood"
-civic_martial_brotherhood_desc:0 "Armed Forces are considered to be an integral part of this society, symbol of it's unity and collectivism. To serve is an honor, rather than an a debt, or obligation.  \n\n£job_soldier£ §Y$job_soldier_plural$§! also produce §Y2§! £unity£ Unity \n\n§YMilitarist§! faction provides additional influence"
+civic_patriotic_service:0 "Patriotic Service"
+civic_patriotic_service_desc:0 "Armed Forces are considered to be an integral part of this society, symbol of it's unity and collectivism. To serve is an honor, rather than an a debt, or obligation.  \n\n£job_soldier£ §Y$job_soldier_plural$§! also produce §Y2§! £unity£ Unity \n\n§YMilitarist§! faction provides additional influence"
 
-MARTIAL_BROTHERHOOD:0 "Martial Brotherhood"
-MARTIAL_BROTHERHOOD_DESC:0 "Active §YMartial Brotherhood§! government civic pleases the [Root.GetName]."
+PATRIOTIC_SERVICE:0 "Patriotic Service"
+PATRIOTIC_SERVICE_DESC:0 "Active §YPatriotic Service§! government civic pleases the [Root.GetName]."
 
 civic_distributism:0 "Distributism"
 civic_distributism_desc:0 "An ideology that makes the case that productive assests should be widely owned and distributed, rather than concentrated in the hands of few individuals or corporations. Thus, it generally favors small-scale entrepreneurs and family businesses, as well as serious anti-monopolist regulations. \n\nCan't set up §YFree Market§! policy, build §YGalactic Stock Exchange§! or have §YMogul§! jobs in general"
