@@ -71,5 +71,6 @@
 
 23/06/2020 - Hippo
 -Private Education policy nerfed to +5% specialist output from +10%
+-Public Education policy nerfed to -10 crime from -25
 
 
