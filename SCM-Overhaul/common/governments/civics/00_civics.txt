@@ -553,19 +553,15 @@ civic_distributism = {
 
 		ethics = {
 			OR = {
-				 value = ethic_capitalism
+				value = ethic_socialism
+				value = ethic_fanatic_socialism
 			}
 			
 			NOR = {
+				value = ethic_elitist
 				value = ethic_fanatic_elitist
+				
 			}			
-
-			OR = {
-			    text = civic_tooltip_spiritualist
-			     value = ethic_spiritualist
-				 value = ethic_fanatic_spiritualist
-			}
-
 		}
 
 		civics = {
@@ -577,15 +573,10 @@ civic_distributism = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-				planet_metallurgists_produces_mult = 0.1
-				planet_artisans_produces_mult = 0.1
 				planet_farmers_produces_mult = 0.1
-				job_farmer_per_pop = 0.03
-				job_foundry_per_pop = 0.03
-				job_artisan_per_pop = 0.03
-                
-
-
+				planet_miners_produces_mult= 0.1
+				pop_cat_worker_political_power = 0.5
+				pop_cat_worker_happiness = 0.05
 	}
 }
 
@@ -692,7 +683,6 @@ civic_symbiotic_race = {
 				 value = civic_agrarian_idyll
 				 value = civic_shared_burden
 				 value = civic_slaver_guilds
-				 value = civic_reeducated_labor
 				 value = civic_slave_race			}
 		}
 
@@ -751,7 +741,6 @@ civic_slave_race = {
 				 value = civic_agrarian_idyll
 				 value = civic_shared_burden
 				 value = civic_slaver_guilds
-				 value = civic_reeducated_labor
 				 value = civic_socialistic
 			}
 		}
@@ -783,46 +772,47 @@ civic_slave_race = {
 
 
 #Slaving Despots - Slave Overseer produce unity, Gladiator jobs - ???
-civic_reeducated_labor = {
-	potential = {
-		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
-	}
-	possible = {
-		ethics = {
-
-			NOR = {
-				 value = ethic_fanatic_egalitarian
-			}
-            OR = {
-				 value = ethic_fanatic_elitist
-			}			
-			OR = {
-			     text = civic_tooltip_capitalism
-			     value = ethic_capitalism
-				 value = ethic_fanatic_capitalism
-			}
-
-		}
-		civics = {
-			NOR = {     value = civic_slaver_guilds   value = civic_indentured_assets }
-		}
-		
-		authority = {
-		      NOR = { value = auth_democratic  value = auth_direct_democratic }
-		}
-	}
-	random_weight = { base = 5 }
-	modifier = {
-		planet_jobs_slave_produces_mult = 0.15
-		slave_market_cost_mult = -0.25
-		country_pop_enslaved_mult = 0.5
-		pop_cat_slave_political_power = -0.5
-		pop_cat_slave_happiness = -0.05
-
-
-
-	}
-}
+#disabled, reduntant and OP
+#civic_reeducated_labor = {
+#	potential = {
+#		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
+#	}
+#	possible = {
+#		ethics = {
+#
+#			NOR = {
+#				 value = ethic_fanatic_egalitarian
+#			}
+#            OR = {
+#				 value = ethic_fanatic_elitist
+#			}			
+#			OR = {
+#			     text = civic_tooltip_capitalism
+#			     value = ethic_capitalism
+#				 value = ethic_fanatic_capitalism
+#			}
+#
+#		}
+#		civics = {
+#			NOR = {     value = civic_slaver_guilds   value = civic_indentured_assets }
+#		}
+#		
+#		authority = {
+#		      NOR = { value = auth_democratic  value = auth_direct_democratic }
+#		}
+#	}
+#	random_weight = { base = 5 }
+#	modifier = {
+#		planet_jobs_slave_produces_mult = 0.15
+#		slave_market_cost_mult = -0.25
+#		country_pop_enslaved_mult = 0.5
+#		pop_cat_slave_political_power = -0.5
+#		pop_cat_slave_happiness = -0.05
+#
+#
+#
+#	}
+#}
 
 
 
@@ -932,7 +922,7 @@ civic_enlightment = {
 				country_energy_produces_mult = 0.1				
 				planet_amenities_mult = 0.2
 				army_damage_mult = -0.2
-				
+				country_naval_cap_mult = -0.25
 
 
 
@@ -1266,13 +1256,14 @@ civic_slaver_guilds = {
 
 		}
 		civics = {
-			NOR = {   value = civic_reeducated_labor       }
+			NOR = {   value = civic_technocracy		value = civic_cyber_dictatorship	value = civic_cyber_demos_cratos	value = civic_science_directorate}
 		}
 	}
 	random_weight = { base = 5 }
 	modifier = {
 		planet_jobs_slave_produces_mult = 0.1
-		country_pop_enslaved_mult = 0.4
+		country_pop_enslaved_mult = 0.25
+		planet_stability_add = -5
 
 	}
 }
@@ -1353,6 +1344,7 @@ civic_meritocracy = {
 		leader_skill_levels = 1
 		planet_jobs_specialist_produces_mult = 0.1	
 		pop_cat_specialist_political_power = 1
+		pop_cat_worker_happiness = -0.1
 	}
 }
 
@@ -1826,7 +1818,6 @@ civic_chosen_people = {
 	modifier = {
 
 				country_unity_produces_mult = 0.1
-				pop_growth_speed = 0.1
 				leader_age = 10
 				country_insult_efficiency = 0.2				
 				envoy_harm_relations_mult = 0.2
@@ -2028,6 +2019,7 @@ civic_cyber_demos_cratos = {
 		category_computing_research_speed_mult = 0.2
 		category_statecraft_research_speed_mult = 0.2
 		planet_crime_mult = 0.2
+		planet_pops_consumer_goods_upkeep_mult = 0.15	
 
 	}
 }
@@ -2270,6 +2262,7 @@ civic_cyber_dictatorship = {
 		empire_size_penalty_mult = -0.2
 		planet_crime_mult = -0.2
 		pop_factions_produces_mult = -0.2
+		planet_pops_consumer_goods_upkeep_mult = 0.15	
 
 
 	}
