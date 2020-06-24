@@ -12,7 +12,7 @@
 
 18/06/2020	-Hypno
 
--Utopian living standards can now be used by ETHER socialists or pluralists
+-Utopian living standards can now be used by EITHER socialists or pluralists
 
 -Criminal heratage civic buffed slightly
 	Added -20% branch office cost
@@ -47,4 +47,24 @@
 
 -Divine Council civic nerfed stability +7.5 from +10
 
--Byzantine Beurocracy civic nerfed stability from bureaucrats to +0.75 from +1
+-Byzantine Bureaucracy civic nerfed stability from bureaucrats to +0.75 from +1
+
+22/06/2020 - Hippo
+
+-Byzantine Bureaucracy civic rebuffed to +1 stability from +0.75
+-Meritocracy nerfed with added -10% worker happiness
+-Chosen People nerfed removed pop growth bonus
+-Cyber Democracy nerfed with added 15% pop consumer good upkeep
+	- fixed description
+-Cyber Dictatorship nerfed with added 15% pop consumer good upkeep
+	- fixed description
+-Distributism reworked 
+	- farmers and miners +10% prod, worker happiness +5%, worker political power +50%, must have some degree of cooperative, may not be elitist
+-Peaceful Commonwealth nerfed with added -25% naval capacity
+-Private Education policy nerfed to +10% specialist output from +15%
+-Public Education policy buffed to -25 crime from -10 crime. (flat crime)
+-Civilian transport policy nerfed to +5% tradevalue from +10%
+-Fixed Agragian Idyll description, it now shows bonuses
+-Slaver Guilds nerfed pop enslaved modifier changed to 25% from 40%, added -5 stability, added incompatibility with technocracy and technocracy derivatives
+-Indentured Assets nerfed pop enslaved modifier changed to 25% from 40%, added -5 stability
+-Removed slaving despots, redundant and OP
