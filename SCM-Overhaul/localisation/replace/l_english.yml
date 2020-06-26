@@ -8453,7 +8453,7 @@ l_english:
  civic_tooltip_xenophobe:0 "Is some degree of §YXenophobe§!"
  civic_tooltip_xenophile:0 "Is some degree of §YXenophile§!"
  civic_tooltip_militarist:0 "Is some degree of §YMilitarist§!"
- civic_tooltip_pacifist:0 "Is some degree of §YPacifist§!"
+ civic_tooltip_pacifist:0 "Is not any degree of §YPacifist§!"
  civic_tooltip_hive_mind:0 "Is a §YHive Mind§!"
  civic_tooltip_not_spiritualist:0 "Is not §YSpiritualist§!"
  civic_tooltip_not_materialist:0 "Is not §YMaterialist§!"

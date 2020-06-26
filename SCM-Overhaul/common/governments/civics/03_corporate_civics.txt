@@ -279,3 +279,26 @@ civic_shared_profits = {
 
 	#description = civic_tooltip_shared_burden_effects
 }
+
+civic_bank_corp = {			#By Hypno
+	description = civic_tooltip_bank_corp_effects
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
+	possible = {
+		ethics = {
+			value = ethic_fanatic_materialist
+		}
+		civics = {
+		}
+		authority = {
+			OR = {
+				 value = auth_corporate
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+	job_bank_manager_per_pop = 0.05
+	}
+}

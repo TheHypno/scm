@@ -1221,7 +1221,7 @@ healthcare = {
 		}
 
 		modifier = {
-		       pop_growth_speed = 0.1
+		       pop_growth_speed = 0.05
                pop_ethic_socialism_attraction_mult = 0.05
 			   pop_ethic_pluralist_attraction_mult = 0.1
 			   country_energy_produces_mult = -0.04
@@ -1460,8 +1460,8 @@ industrial = {
 		}
 
 		modifier = {
-                  planet_jobs_alloys_produces_mult = 0.1
-				  planet_jobs_consumer_goods_produces_mult = 0.1
+                  planet_jobs_energy_produces_mult = 0.1
+				  planet_jobs_mineral_produces_mult = 0.20
 				  planet_stability_add = -5
 		}
 
@@ -1530,11 +1530,11 @@ transportation_logistics = {
 
 		modifier = {
 
-        trade_value_mult = 0.05
+        trade_value_mult = 0.1
 		pop_growth_from_immigration = 0.33
 		planet_colony_development_speed_mult = 0.33
-		ships_upkeep_mult = 0.05
-		local_trade_protection_add = -3
+		ships_upkeep_mult = 0.10
+		local_trade_protection_add = -4
 		pop_ethic_pacifist_attraction_mult = 0.25
 
 		}

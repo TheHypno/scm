@@ -63,6 +63,7 @@ per_relation = {
 					has_federation = yes
 					federation = { has_federation_law = free_migration_yes }
 					federation = { any_member = { is_same_value = FROM } }
+					has_ethic = ethic_fanatic_xenophobe
 				}
 			}
 		}

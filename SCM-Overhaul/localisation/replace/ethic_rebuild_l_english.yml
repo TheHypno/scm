@@ -3696,6 +3696,26 @@ civic_criminal_connections_desc:0 "Those crimelords high up within this empire h
 civic_shared_profits:0 "Shared Profits"
 civic_shared_profits_desc:0 "This corporate government has realised that the only way to truely profit is if all members of society truly share the goals of the state. This has lead to the creation of a socialist society within which all are equal and work as one."
 
+job_bank_manager:0 "Bank Manager"
+job_bank_manager_plural:0 "Bank Managers"
+job_bank_manager_desc:0 "A coordinator and manager of a large sector of the banking focussed economy: these bank managers are high level government employees and are reveered by the rest of society."
+mod_job_bank_manager_add:0 "$job_bank_manager$ Jobs"
+mod_job_bank_manager_per_pop:0 "§G+1§! $job_bank_manager$ Job per $VALUE$ Pops"
+mod_job_bank_manager_short:0 "\n§G+1§! £mod_bank_manager_add£ per $VALUE$ £pop£"
+
+building_bank_branch:0 "Bank-Corp Branch"
+building_bank_branch_desc:0 "An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions)."
+
+civic_tooltip_bank_corp_effects:2 "Can build §YBank Corp Branch Office Buildings§! on branch offices. £building£ §YCapital Buildings§! also replace some £job_administrator£ §Y$job_administrator$§! Jobs with §Y$job_bank_manager_plural$§!."
+civic_bank_corp:0 "Bank Corp"
+civic_bank_corp_desc:0 "This megacorporation has structured itself around the practice of banking, both for its own society and on an intergalactic scale. They handle accounts containing the energy credits and precious assets of a multitude of civilizations. An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions). Of course, the executive board does skim just enough of a profit to make their descendants wealthy for generations, but what would one expect? The expert management of money is their business."
+
+civic_ancestor_worship:0 "Ancestor Worship"
+civic_ancestor_worship_desc:0 "The galaxy is replete with cultures whose faiths believe in some manner of life beyond death. In the case of this specific culture, not only do they embrace the idea that their ancestors' spirits continue to exist, they believe them to have a direct hand in the events of the living world. Accepting that their deceased forebears must have great insight into the happenings of the galaxy and fate, having ascended beyond the bounds of mortal matter, they look to the spirits through omens and prayer to guide their descendants down the most beneficial path."
+
+civic_weapons_cult:0 "Weapons Cult"
+civic_weapons_cult_desc:0 "Though many societies have worshipped weapons of great and terrible power, from the atom and beyond, few of them survive their obsession to develop FTL travel. They have, by some manner of miracle, managed to preserve its culture without giving up its pursuit of destructive technologies. They fashion the next most destructive iteration of their artifice with almost religious fervor, always remaining at the cutting edge of martial creations. Though this may keep them at the cutting edge of warfare, other aspects of their society have atrophied for lack of interest. One day, they may be destroyed not by the weapons they revere, but by their neglect of all else."
+
 job_agitator:0 "Agitator"
  job_agitator_plural:0 "Agitators"
  job_agitator_desc:0 "A government employed unit which stamps out crime and rebellion with an iron fist, and insentivises the local populace to do their duty to the state, whether they like it or not"
