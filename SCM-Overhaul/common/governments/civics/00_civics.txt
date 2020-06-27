@@ -530,11 +530,11 @@ civic_star_settlers = {
 	random_weight = { base = 5 }
 	modifier = {
 
+				country_starbase_influence_cost_mult = -0.15
 				planet_colony_development_speed_mult = 0.33
 				colony_start_num_pops_add = 1
                 category_new_worlds_research_speed_mult	= 0.1
-                category_voidcraft_research_speed_mult = 0.1	
-				ship_fire_rate_mult = -0.05
+                category_voidcraft_research_speed_mult = 0.1				
 
 
 
@@ -553,19 +553,15 @@ civic_distributism = {
 
 		ethics = {
 			OR = {
-				 value = ethic_capitalism
+				value = ethic_socialism
+				value = ethic_fanatic_socialism
 			}
 			
 			NOR = {
+				value = ethic_elitist
 				value = ethic_fanatic_elitist
+				
 			}			
-
-			OR = {
-			    text = civic_tooltip_spiritualist
-			     value = ethic_spiritualist
-				 value = ethic_fanatic_spiritualist
-			}
-
 		}
 
 		civics = {
@@ -577,18 +573,16 @@ civic_distributism = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-				planet_artisans_produces_mult = 0.05
-				planet_farmers_produces_mult = 0.15
-				job_farmer_per_pop = 0.03
-                
-
-
+				planet_farmers_produces_mult = 0.1
+				planet_miners_produces_mult= 0.1
+				pop_cat_worker_political_power = 0.5
+				pop_cat_worker_happiness = 0.05
 	}
 }
 
 
 
-civic_martial_brotherhood = {
+civic_patriotic_service = {
 
 	potential = {
 		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
@@ -689,7 +683,6 @@ civic_symbiotic_race = {
 				 value = civic_agrarian_idyll
 				 value = civic_shared_burden
 				 value = civic_slaver_guilds
-				 value = civic_reeducated_labor
 				 value = civic_slave_race			}
 		}
 
@@ -748,7 +741,6 @@ civic_slave_race = {
 				 value = civic_agrarian_idyll
 				 value = civic_shared_burden
 				 value = civic_slaver_guilds
-				 value = civic_reeducated_labor
 				 value = civic_socialistic
 			}
 		}
@@ -928,9 +920,9 @@ civic_enlightment = {
 	modifier = {
 	            country_unity_produces_mult = 0.1	
 				country_energy_produces_mult = 0.1				
-				planet_amenities_mult = 0.10
-				ship_fire_rate_mult = -0.10
-				
+				planet_amenities_mult = 0.2
+				army_damage_mult = -0.2
+				country_naval_cap_mult = -0.25
 
 
 
@@ -1264,13 +1256,14 @@ civic_slaver_guilds = {
 
 		}
 		civics = {
-			NOR = {   value = civic_reeducated_labor       }
+			NOR = {   value = civic_technocracy		value = civic_cyber_dictatorship	value = civic_cyber_demos_cratos	value = civic_science_directorate}
 		}
 	}
 	random_weight = { base = 5 }
 	modifier = {
 		planet_jobs_slave_produces_mult = 0.1
-		country_pop_enslaved_mult = 0.4
+		country_pop_enslaved_mult = 0.25
+		planet_stability_add = -5
 
 	}
 }
@@ -1348,8 +1341,10 @@ civic_meritocracy = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_jobs_specialist_produces_mult = 0.05	
+		leader_skill_levels = 1
+		planet_jobs_specialist_produces_mult = 0.1	
 		pop_cat_specialist_political_power = 1
+		pop_cat_worker_happiness = -0.1
 	}
 }
 
@@ -1826,6 +1821,7 @@ civic_chosen_people = {
 				leader_age = 10
 				country_insult_efficiency = 0.2				
 				envoy_harm_relations_mult = 0.2
+				COUNTRY_TRUST_CAP_ADD = -50
 
 				
 
@@ -2056,8 +2052,8 @@ civic_citizen_service = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_naval_cap_mult = 0.15
-		country_war_exhaustion_mult = -0.10
+		country_naval_cap_mult = 0.25
+		country_war_exhaustion_mult = -0.15
 		armies_upkeep_mult = 0.1
 
 
@@ -2399,9 +2395,8 @@ civic_imperial_cult = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		edicts_cost_mult = -0.20
-		planet_stability_add = 5
-		pop_government_ethic_attraction = 0.20
+		country_edict_cap_add = 1
+		edicts_cost_mult = -0.25
 
 
 	}
@@ -2459,10 +2454,11 @@ civic_nationalistic_zeal = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		country_war_exhaustion_mult = -0.20
+		country_war_exhaustion_mult = -0.25
 		country_claim_influence_cost_mult = -0.25
-		subject_tribute_mult = 0.05
-		ship_fire_rate_mult = 0.10
+		country_subject_acceptance_add = 50
+		country_occupation_armies_add = 4
+		country_border_friction_mult = 0.33
 
 	}
 }
@@ -3007,35 +3003,10 @@ civic_functional_architecture = {
 	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_structures_cost_mult = -0.15
+		planet_structures_cost_mult = -0.10
 		planet_structures_upkeep_mult = -0.10
 	}
 }
-
-civic_ancestor_worship = {		#By Hypno and HGD3ATH
-
-	potential = {
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-			OR = {
-				value = ethic_fanatic_spiritualist
-				value = ethic_spiritualist
-			}
-		}
-		civics = {
-			}
-		}
-	modifier = {
-		country_society_tech_research_speed = 0.20
-		country_unity_produces_mult = 0.05
-
-	random_weight = { base = 0 }
-}
-}
-
 
 civic_weapons_cult = {		#By Hypno and HGD3ATH
 
@@ -3061,38 +3032,26 @@ civic_weapons_cult = {		#By Hypno and HGD3ATH
 	random_weight = { base = 0 }
 }
 
-#Cyber Democracy
-civic_cyber_demos_cratos = {
+civic_ancestor_worship = {		#By Hypno and HGD3ATH
+
 	potential = {
-		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
-		authority = { NOT = {  value = auth_corporate } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
 		ethics = {
-
-
 			OR = {
-				 value = ethic_fanatic_materialist
+				value = ethic_fanatic_spiritualist
+				value = ethic_spiritualist
 			}
-
 		}
-
-		authority = { OR = {  value = auth_democratic   value = auth_direct_democratic } }
-
-		civics = {      NOR = {  value = civic_citizen_service   value = civic_peaceful_republic    value = civic_aristocratic_elite   value = civic_merchant_guilds   value = civic_state_monopoly    value = civic_exalted_priesthood    value = civic_technocracy   value = civic_bureaucracy    value = civic_stratocracy  } }
-
-
-	}
-	random_weight = { base = 5 }
+		civics = {
+			}
+		}
 	modifier = {
+		country_society_tech_research_speed = 0.20
+		country_unity_produces_mult = 0.05
 
-		country_admin_cap_mult = 0.15
-		category_computing_research_speed_mult = 0.2
-		category_statecraft_research_speed_mult = 0.2
-		planet_crime_mult = 0.2
-		job_bureaucrat_per_pop = 0.033
-		job_researcher_per_pop = 0.033
-		
-
-	}
+	random_weight = { base = 0 }
+}
 }
