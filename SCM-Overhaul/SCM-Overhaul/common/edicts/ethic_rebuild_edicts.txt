@@ -1,0 +1,248 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+@Edict1Cost = 100
+@Edict2Cost = 200
+@Edict3Cost = 300
+
+@EdictDuration = 3600
+@ambitionDuration = 3600
+
+@campaignCost = 1000
+@campaignDuration = 3600
+
+@EdictPerpetual = -1
+
+scientific_revolution = {
+	length = @ambitionDuration
+	icon = "GFX_edict_type_time"
+	
+	is_ambition = yes 		# Costs Unity scaled to tradition cost
+	resources = {
+		category = edicts
+	}
+
+	modifier = {
+		all_technology_research_speed = 0.20
+		num_tech_alternatives_add = 1
+	}
+	
+	potential = {
+		has_technology = tech_ascension_theory
+		NOT = { has_valid_civic = civic_imperial_cult }
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
+recycling_campaign = {
+	length = @campaignDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = @campaignCost
+		}
+	}
+
+	modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.10
+	}
+
+	potential = {
+		NOR = { has_ethic = ethic_gestalt_consciousness  has_ethic = ethic_fanatic_industrial }
+		has_technology = tech_planetary_unification
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}
+}
+
+
+education_campaign = {
+	length = @campaignDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = @campaignCost
+		}
+	}
+
+	modifier = {
+		species_leader_exp_gain = 0.25
+	}
+
+	potential = {
+		NOR = { has_ethic = ethic_gestalt_consciousness  has_ethic = ethic_fanatic_capitalism }
+		has_technology = tech_planetary_unification
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			has_edict = healthcare_campaign
+		}
+	}
+}
+
+nutritional_plenitude = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = nutritional_plenitude }			
+			}
+			influence = 200
+		}
+		cost = { #Deactivation Cost
+			trigger = {
+				has_edict = nutritional_plenitude
+			}
+			influence = 100
+		}
+	}
+
+	modifier = {
+		pop_growth_speed = 0.10
+		biological_pop_happiness = 0.05
+		lithoid_pop_happiness = 0.05
+		empire_size_pops_mult = 0.10
+		planet_pops_organics_food_upkeep_mult = 0.25
+		planet_pops_organics_minerals_upkeep_mult = 0.25
+	}
+
+	potential = {
+		NOR = { has_ethic = ethic_gestalt_consciousness  has_ethic = ethic_fanatic_capitalism }
+	}
+
+	prerequisites = {
+		"tech_gene_crops"
+	}
+
+	show_tech_unlock_if = {
+		is_gestalt = no
+	}
+
+	ai_weight = {
+		weight = @EdictHighPrio
+	}
+}
+
+
+
+
+
+
+
+#Immortal Ruler
+immortal_ruler = {
+	length = 0
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			influence = 500
+		}
+	}
+	
+	potential = {
+		has_valid_civic = civic_imperial_cult
+		NOT = { has_country_flag = flag_immortal_ruler }
+	}	
+
+	effect = {
+		country_event = { id = immortal_ruler.1 }
+		}	
+	
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
+
+
+
+
+#Patriotic Call
+patriotic_call = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_time"
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+		}
+	}
+	
+	potential = {
+		has_valid_civic = civic_citizen_service
+	}	
+
+	modifier = {
+	    
+		country_naval_cap_mult = 0.2
+		army_morale = 0.2
+		pop_government_ethic_attraction = 0.2
+		
+	}
+	
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
+#Divine Crusade
+div_crusade = {
+	length = @ambitionDuration
+	icon = "GFX_edict_type_time"
+	
+	is_ambition = yes
+	
+	resources = {
+		category = edicts
+	}	
+	
+	potential = {
+		has_valid_civic = civic_defenders_faith
+	}	
+	
+	allow = {
+		has_technology = tech_ascension_theory
+	}		
+
+	modifier = {	   
+	    job_templar_per_pop = 0.05
+        max_rivalries = 1	
+        rivalries_influence_produces_mult = 0.25
+		country_war_exhaustion_mult = -1
+		ship_fire_rate_mult = 0.15	
+	}
+	
+	
+	ai_weight = {
+		weight = 1
+	}
+}
