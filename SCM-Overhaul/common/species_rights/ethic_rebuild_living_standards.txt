@@ -172,7 +172,7 @@ living_standard_utopian = {
 					has_ethic = ethic_socialism
 					has_ethic  = ethic_fanatic_socialism
 					has_ethic = ethic_pluralist
-					has_ethic = ethic_fanatc_pluralist
+					has_ethic = ethic_fanatic_pluralist
 				}									
 			}
 		}
