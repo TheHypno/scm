@@ -1461,7 +1461,7 @@ industrial = {
 
 		modifier = {
                   planet_jobs_energy_produces_mult = 0.1
-				  planet_jobs_mineral_produces_mult = 0.20
+				  planet_jobs_minerals_produces_mult = 0.20
 				  planet_stability_add = -5
 		}
 
