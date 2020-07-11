@@ -80,4 +80,6 @@
 
 -Removed carrying capacity mod
 
+11/07/2020 - Hippo
 
+-Removed -50% growth penalty from robot empires
