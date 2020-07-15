@@ -83,3 +83,7 @@
 11/07/2020 - Hippo
 
 -Removed -50% growth penalty from robot empires
+
+15/07/2020 - Hippo
+
+-Readded -50% to robots IT ONLY AFFECT ORGANICS I HATE PEOPLE WHO DEMAND QUICK CHANGES
