@@ -1775,7 +1775,7 @@ bank_manager = {					#By Hypno
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		complex_specialist_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -1801,24 +1801,13 @@ bank_manager = {					#By Hypno
 	}
 
 	weight = {
-		weight = @worker_job_weight
+		weight = @specialist_job_weight
 		modifier = {
 			factor = 2
 			OR = {
 				has_trait = trait_robot_superconductive
 				has_trait = trait_ingenious
 				has_trait = trait_nuumismatic_administration
-			}
-		}
-		modifier = {
-			factor = 8
-			is_enslaved = yes
-			can_take_servant_job = no
-			NOR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_nuumismatic_administration
-				has_trait = trait_robot_superconductive
-				has_trait = trait_ingenious
 			}
 		}
 		modifier = {
@@ -1826,76 +1815,6 @@ bank_manager = {					#By Hypno
 			OR = {
 				has_trait = trait_robot_harvesters
 				has_trait = trait_agrarian
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_industrious
-				has_trait = trait_robot_power_drills
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
-		}
-		modifier = {
-			factor = 200
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
-		}
-		modifier = {
-			factor = 0.25
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_syncretic_proles
-		}
-		modifier = {
-			factor = 4
-			species = {
-				has_species_flag = racket_species_flag
-			}
-		}
-		modifier = {
-			factor = 1.2
-			has_trait = trait_very_strong
-		}
-		modifier = {
-			factor = 1.1
-			has_trait = trait_strong
-		}
-		modifier = {
-			factor = 0.9
-			has_trait = trait_weak
-		}
-		modifier = {
-			factor = 1.3
-			has_trait = trait_psionic
-		}
-		modifier = {
-			factor = 1.2
-			has_trait = trait_latent_psionic
-		}
-		modifier = {
-			factor = 1.5
-			has_trait = trait_presapient_earthbound
-		}
-		modifier = {
-			factor = 1.1
-			OR = {
-				has_trait = trait_robust
-				has_trait = trait_robot_efficient_processors
 			}
 		}
 		modifier = {
