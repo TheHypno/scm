@@ -32,13 +32,6 @@ district_generator = {
 		upkeep = {
 			energy = 1
 		}
-
-		upkeep = {
-		  	trigger = {
-				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
 	}
 
 	planet_modifier = {
@@ -88,18 +81,6 @@ district_generator = {
 		}
 		modifier = {
 			job_technician_add = 2
-		}
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-            owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } } 
-		}
-		modifier = {
-			job_technician_add = 1
-			planet_housing_add = 1
 		}
 	}
 
@@ -283,12 +264,6 @@ district_mining = {
 
 		upkeep = {
 		  	trigger = {
-				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
-		upkeep = {
-		  	trigger = {
 				owner = { or = { has_valid_civic = civic_mining_guilds	}	}
 			}
 			energy = 0.2
@@ -323,19 +298,6 @@ district_mining = {
 			job_miner_add = 1
 		}
 	}	
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			job_miner_add = 1
-			planet_housing_add = 1
-		}
-	}
-
 
 
 	triggered_planet_modifier = {
@@ -551,12 +513,6 @@ district_farming = {
 		upkeep = {
 			energy = 1
 		}
-		upkeep = {
-		  	trigger = {
-				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
 	}
 
 	planet_modifier = {
@@ -621,18 +577,6 @@ district_farming = {
 		}
 		modifier = {
 			job_farmer_add = 2
-		}
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			job_farmer_add = 1
-			planet_housing_add = 1
 		}
 	}
 
@@ -794,12 +738,6 @@ district_generator_uncapped = {
 		upkeep = {
 			energy = 1
 		}
-		upkeep = {
-		  	trigger = {
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
 	}
 
 	planet_modifier = {
@@ -853,18 +791,6 @@ district_generator_uncapped = {
 		}
 	}
 
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			job_technician_add = 1
-			planet_housing_add = 1
-		}
-	}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -980,13 +906,6 @@ district_mining_uncapped = {
 
 		upkeep = {
 		  	trigger = {
-				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
-
-		upkeep = {
-		  	trigger = {
 				owner = { or = { has_valid_civic = civic_mining_guilds	}	}
 			}
 			energy = 0.2
@@ -1068,18 +987,6 @@ district_mining_uncapped = {
 		}
 		modifier = {
 			job_miner_add = 2
-		}
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			job_miner_add = 1
-			planet_housing_add = 1
 		}
 	}
 
@@ -1194,13 +1101,6 @@ district_farming_uncapped = {
 		upkeep = {
 			energy = 1
 		}
-
-		upkeep = {
-		  	trigger = {
-				owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-			}
-			energy = 0.15
-		}
 	}
 
 	planet_modifier = {
@@ -1265,17 +1165,6 @@ district_farming_uncapped = {
 		}
 		modifier = {
 			job_farmer_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			job_farmer_add = 1
-			planet_housing_add = 1
 		}
 	}
 

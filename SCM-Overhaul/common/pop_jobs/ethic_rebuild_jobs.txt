@@ -431,7 +431,7 @@ labour_hero = {
 			energy = 2
 			minerals = 2
 			food = 2
-			unity = 2
+			unity = 5
 		}
 		
         produces = {

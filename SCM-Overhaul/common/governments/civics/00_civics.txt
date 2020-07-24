@@ -1563,7 +1563,6 @@ civic_welfare_state = {
                 country_leader_pool_size = 1
 				pop_demotion_time_mult = -0.5
 				planet_pops_unemployed_consumer_goods_upkeep_add = 1
-				planet_districts_cities_upkeep_mult = 0.1
 				pop_ethic_socialism_attraction_mult = 0.1
 				pop_ethic_elitist_attraction_mult = -0.1
 
@@ -1618,7 +1617,6 @@ civic_shared_burden = {
                 country_leader_pool_size = 1
                 pop_demotion_time_mult = -1
 				planet_pops_unemployed_consumer_goods_upkeep_add = 2
-				planet_districts_cities_upkeep_mult = 0.2
 	}
 	random_weight = {
 		base = 5

@@ -2537,7 +2537,7 @@ civic_centralized_state:0 "Centralized Authority"
 civic_centralized_state_desc:0 " "
 
 civic_welfare_state:0 "Welfare State"
-civic_welfare_state_desc:0 "In this society the State traditionally plays a key role in the protection and promotion of the economic and social well-being of it's citizens. \n\n§YCity Districts§! provide §G+1§! £housing£ §YHousing§!, §YAdministrators§! provide §G+2§! £amenities£ §YAmenities§! \n§YLabour Unions§!: §YMining§!, §YFarming§! and §YGenerator§! Districts provide §G+1§! Job and §G+1§! Housing each, and have §R+15%§! increased upkeep  \nCan't use §YPrivate Healthcare§! or §YPrivate Education§! policies \nObligated to live under §YSocial Welfare§! living standards \n\nAdvanced version of this civic is §YSocialistic Ideals§!."
+civic_welfare_state_desc:0 "In this society the State traditionally plays a key role in the protection and promotion of the economic and social well-being of it's citizens. \n§YAdministrators§! provide §G+5§! £amenities£ §YAmenities§! \nCan't use §YPrivate Healthcare§! or §YPrivate Education§! policies \nObligated to live under §YSocial Welfare§! living standards \n\nAdvanced version of this civic is §YShared Burdens§!."
 
 
 
