@@ -330,10 +330,10 @@ administrator = {
 	triggered_planet_modifier = {
 		potential = {
 		    exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
+			owner = { or = { has_valid_civic = civic_welfare_state } }
 		}
 		modifier = {
-			planet_amenities_add = 2
+			planet_amenities_add = 5
 		}
 	}
 

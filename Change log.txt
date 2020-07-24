@@ -87,3 +87,9 @@
 15/07/2020 - Hippo
 
 -Readded -50% to robots IT ONLY AFFECT ORGANICS I HATE PEOPLE WHO DEMAND QUICK CHANGES
+
+24/07/2020 - Hippo
+
+-Nerfed Welfare state, removed housing and jobs bonuses, buffed administrator amenities output bonus from 2 to 5, removed cities upkeep
+-Nerfed Cooperative, halved housing usage bonus and removed science bonus
+-Buffed Labour Hero, from 2 to 5 unity output

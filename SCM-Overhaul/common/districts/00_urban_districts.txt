@@ -75,18 +75,6 @@ district_city = {
 		}
 	}
 
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { or = { has_valid_civic = civic_welfare_state  has_valid_civic = civic_shared_burden } }
-		}
-		modifier = {
-			planet_housing_add = 1
-		}
-	}
-
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
