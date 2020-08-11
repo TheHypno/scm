@@ -18,7 +18,7 @@ dyson_sphere_init_01 = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	spawn_chance = 2
 	
 	planet = {
 		class = star
@@ -363,7 +363,7 @@ science_nexus_init_01 = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	spawn_chance = 2
 	
 	planet = {
 		class = star
@@ -470,7 +470,7 @@ sentry_array_init_01 = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	spawn_chance = 2
 	
 	planet = {
 		class = star
@@ -843,7 +843,7 @@ ring_world_init_01 = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	spawn_chance = 2
 	
 	planet = {
 		class = star

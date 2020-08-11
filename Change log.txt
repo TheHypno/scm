@@ -100,4 +100,4 @@
 -Civic_symbiotic_race, pops on game start reduced to 8 from 12
 -Bank corp nerfed, branch offices give 12 energy, was 15, bank manager jobs added reduced to 1 from 2, 1 clerk job added
 -Bank corp branch office buildings restricted to bank corp civic
--guaranteed all rare system and ruined megastructures spawns
+-guaranteed most rare system spawns
