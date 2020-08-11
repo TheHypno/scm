@@ -93,3 +93,11 @@
 -Nerfed Welfare state, removed housing and jobs bonuses, buffed administrator amenities output bonus from 2 to 5, removed cities upkeep
 -Nerfed Cooperative, halved housing usage bonus and removed science bonus
 -Buffed Labour Hero, from 2 to 5 unity output
+
+11/08/2020 - Hypno
+
+-Reverted Inward perfectionist buffs to vanilla
+-Civic_symbiotic_race, pops on game start reduced to 8 from 12
+-Bank corp nerfed, branch offices give 12 energy, was 15, bank manager jobs added reduced to 1 from 2, 1 clerk job added
+-Bank corp branch office buildings restricted to bank corp civic
+-guaranteed all rare system and ruined megastructures spawns

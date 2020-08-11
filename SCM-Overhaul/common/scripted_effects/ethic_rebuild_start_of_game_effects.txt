@@ -25,7 +25,7 @@ generate_start_pops = {
 		}
 
 		if = {
-			limit = { owner = { OR = { has_origin = origin_syncretic_evolution   has_valid_civic = civic_symbiotic_race  has_valid_civic = civic_slave_race  }  } }
+			limit = { owner = { OR = { has_origin = origin_syncretic_evolution   has_valid_civic = civic_slave_race  }  } }
 
 			last_created_species = {
 				set_species_flag = syncretic_species@root.owner
@@ -36,6 +36,25 @@ generate_start_pops = {
 			}
 			while = {
 				count = 12
+				create_pop = {
+					species = last_created_species
+					ethos = random
+				}
+			}
+		}
+		
+		if = {
+			limit = { owner = { OR = {has_valid_civic = civic_symbiotic_race}  } }
+
+			last_created_species = {
+				set_species_flag = syncretic_species@root.owner
+				set_citizenship_type = {
+					country = root.owner
+					type = citizenship_slavery
+				}
+			}
+			while = {
+				count = 8
 				create_pop = {
 					species = last_created_species
 					ethos = random

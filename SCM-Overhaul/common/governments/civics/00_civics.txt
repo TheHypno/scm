@@ -1774,12 +1774,10 @@ civic_inwards_perfection = {
 
 	            shipclass_starbase_damage_mult = 0.15
 				starbase_defensive_war_ship_build_speed_mult = 0.5
-				defensive_war_influence_gain_add = 0.5
-				planet_orbital_bombardment_damage = -0.25
-                starbase_defense_platform_capacity_add = 3
-				army_defense_damage_mult = 0.25
-				army_defense_morale_mult = 0.25
-                diplomacy_upkeep_mult = 0.25
+				country_unity_produces_mult = 0.20
+				pop_growth_speed = 0.10
+				country_edict_cap_add = 1
+				pop_citizen_happiness = 0.05
 				envoys_add = -1
 
 	}

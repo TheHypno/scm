@@ -3876,10 +3876,12 @@ building_bank_branch = {
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = { is_criminal_syndicate = no }
+		has_valid_civic = civic_bank_corp
 	}
 
 	planet_modifier = {
-		job_bank_manager_add = 2
+		job_bank_manager_add = 1
+		job_clerk_add = 1
 	}
 
 	resources = {
@@ -3888,7 +3890,7 @@ building_bank_branch = {
 			minerals = 500
 		}
 		produces = {
-			energy = 15
+			energy = 10
 		}
 		upkeep = {
 			consumer_goods = 1
