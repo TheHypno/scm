@@ -101,3 +101,7 @@
 -Bank corp nerfed, branch offices give 12 energy, was 15, bank manager jobs added reduced to 1 from 2, 1 clerk job added
 -Bank corp branch office buildings restricted to bank corp civic
 -guaranteed most rare system spawns
+
+13/08/2020 - Hypno
+
+Started work on gestalt update
