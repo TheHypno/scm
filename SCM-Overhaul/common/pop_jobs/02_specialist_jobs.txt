@@ -441,6 +441,15 @@ foundry = {
 			minerals = 6
 		}
 		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = forge_subsidies
+				}
+			}
+			energy = 1
+		}
+		upkeep = {
 		   	trigger = {
 				exists = owner
 				owner = { is_green = yes }
@@ -449,8 +458,6 @@ foundry = {
 		}		
 
 	}
-
-
 
 	weight = {
 		weight = @specialist_job_weight
@@ -652,6 +659,10 @@ enforcer = {
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
 		}
+		modifier = {
+			factor = 2
+			has_trait = trait_lithoid
+		}
 	}
 }
 
@@ -670,6 +681,10 @@ telepath = {
 
 	possible = {
 		specialist_job_check_trigger = yes
+		OR = {
+			has_trait = trait_latent_psionic
+			has_trait = trait_psionic
+		}
 	}
 
 	resources = {
@@ -810,6 +825,15 @@ artisan = {
 		}
 		upkeep = {
 			minerals = 6
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = industrial_subsidies
+				}
+			}
+			energy = 1
 		}
 		upkeep = {
 		   	trigger = {
@@ -1552,7 +1576,7 @@ roboticist = {
 	resources = {
 		category = planet_pop_assemblers
 		upkeep = {
-			minerals = 6
+			alloys = 2
 		}
 	}
 

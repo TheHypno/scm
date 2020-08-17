@@ -101,3 +101,11 @@
 -Bank corp nerfed, branch offices give 12 energy, was 15, bank manager jobs added reduced to 1 from 2, 1 clerk job added
 -Bank corp branch office buildings restricted to bank corp civic
 -guaranteed most rare system spawns
+
+17/08/2020 - RoAdd/adriangaro
+
+-Implemented changes to pop_jobs which reflect vanilla 2.7 changes. This means roboticists are consuming alloys instead of minerals, all subsidies edicts now apply the correct upkeep increase as in vanilla (previously the edict were basically free besides the influence).
+-Applied trifty trait and nuumismatic administration traits to all jobs added by SCM(bankers, mercenaries, socialist traders).
+-Applied subsidies upkeep increase for jobs added by SCM(deep miners, labour heroes, geo engineers, xeno biologists).
+-Changed subject_tax economic category to not inherit diplomacy upkeep multipliers. This caused the subject taxes to be increased masively for fanatic xenophobes and reduced dramatically for xenophile empires and nations with diplomacy opener.
+-Added to economic categories for bankers and socialist traders since they would receive productivity increases from miners, specifically in the case of subsidies.
