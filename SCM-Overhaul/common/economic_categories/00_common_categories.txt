@@ -1163,7 +1163,6 @@ claims = {
 }
 
 subject_tax = {
-	parent = diplomacy
 }
 
 envoy_costs = {

@@ -64,6 +64,15 @@ deep_miner = {
 			}
 			energy = 1
 		}
+		upkeep = { # Added since it is affected by mining subsidies as it increases overall output of all miners
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = mining_subsidies
+				}
+			}
+			energy = 0.5
+		}
 	}
 
 	weight = {
@@ -438,8 +447,17 @@ labour_hero = {
              trigger = { owner = { is_lithoid = yes  }}
              food = -2
              minerals = 2
-        }		
+		}		
 
+		upkeep = { # Added since it is affected by mining subsidies as it increases overall output of all miners
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = mining_subsidies
+				}
+			}
+			energy = 0.5
+		}
 	}
 
 	weight = {
@@ -606,6 +624,17 @@ mercenary = {
 		trade_value_add = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			trade_value_add = 0.25
+		}
+	}
 
 	resources = {
 		category = planet_soldiers
@@ -657,15 +686,11 @@ mercenary = {
 	}
 }
 
-
-
-
-
 transcend = {
-category = specialist
-condition_string = SPECIALIST_JOB_TRIGGER
-building_icon = building_psi_corps
-clothes_texture_index = 5
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_psi_corps
+	clothes_texture_index = 5
 
 
 	possible_pre_triggers = {
@@ -675,30 +700,26 @@ clothes_texture_index = 5
 	}
 
 
-possible = {
-complex_specialist_job_check_trigger = yes
-}
+	possible = {
+		complex_specialist_job_check_trigger = yes
+	}
 
-resources = {
-category = planet_telepaths
-produces = {
-unity = 4
-society_research = 3
-physics_research = 2
-engineering_research = 1
+	resources = {
+		category = planet_telepaths
+		produces = {
+			unity = 4
+			society_research = 3
+			physics_research = 2
+			engineering_research = 1
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
 
-}
-upkeep = {
-energy = 2
-}
-}
-
-planet_modifier = {
-planet_crime_add = -35
-}
-
-
-
+	planet_modifier = {
+		planet_crime_add = -35
+	}
 
 	weight = {
 		weight = @specialist_job_weight
@@ -874,7 +895,6 @@ druid = {
 }
 
 
-
 geoengineer = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -900,6 +920,16 @@ geoengineer = {
 		}
 		upkeep = {
 			consumer_goods = 1
+		}
+
+		upkeep = { # Added since it is affected by research subsidies as it increases overall output of all researchers
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1
 		}
 	}
 
@@ -985,6 +1015,16 @@ xenobiologist  = {
 
 		upkeep = {
 			consumer_goods = 1
+		}
+
+		upkeep = { # Added since it is affected by research subsidies as it increases overall output of all researchers
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = research_subsidies
+				}
+			}
+			energy = 1
 		}
 	}
 
@@ -1166,10 +1206,6 @@ supervisor = {
 		planet_jobs_society_research_produces_mult = 0.05
 	}
 
-
-
-
-
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_repugnant
@@ -1203,10 +1239,6 @@ supervisor = {
 		}
 	}
 }
-
-
-
-
 
 #Mogul
 mogul = {
@@ -1312,12 +1344,6 @@ mogul = {
 		 }			
 	}
 }
-
-
-
-
-
-
 
 techno_priest = {
 	category = specialist
@@ -1456,18 +1482,23 @@ socialist_trader = {					#By Hypno and Broad
 		trade_value_add = 5
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			trade_value_add = 1.25
+		}
+	}
+
 	resources = {
-		category = planet_miners
+		category = planet_socialist_traders
 		produces = {
 			unity = 2
 		}
-		
-        produces = {
-             trigger = { owner = { is_lithoid = yes  }}
-             food = -2
-             minerals = 2
-        }		
-
 	}
 
 	weight = {
@@ -1786,18 +1817,23 @@ bank_manager = {					#By Hypno
 		trade_value_add = 5
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			trade_value_add = 1.25
+		}
+	}
+
 	resources = {
-		category = planet_miners
+		category = planet_bank_managers
 		produces = {
 			unity = 2
 		}
-		
-        produces = {
-             trigger = { owner = { is_lithoid = yes  }}
-             food = -2
-             minerals = 2
-        }		
-
 	}
 
 	weight = {
