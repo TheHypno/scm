@@ -3169,6 +3169,7 @@ SHARED_BURDEN_DESC:0 "Valid §YShared Burden§! civic pleases the [Root.GetName]
 job_bank_manager:0 "Bank Manager"
 job_bank_manager_plural:0 "Bank Managers"
 job_bank_manager_desc:0 "A coordinator and manager of a large sector of the banking focussed economy: these bank managers are high level government employees and are reveered by the rest of society."
+job_bank_manager_effect_desc:0 "£job_bank_manager£ $job_bank_manager_plural$ produce £unity£ §YUnity§! and generate £mod_trade_value_add£ §Y$TRADE_VALUE$§!!."
 mod_job_bank_manager_add:0 "$job_bank_manager$ Jobs"
 mod_job_bank_manager_per_pop:0 "§G+1§! $job_bank_manager$ Job per $VALUE$ Pops"
 mod_job_bank_manager_short:0 "\n§G+1§! £mod_bank_manager_add£ per $VALUE$ £pop£"
@@ -3176,7 +3177,7 @@ mod_job_bank_manager_short:0 "\n§G+1§! £mod_bank_manager_add£ per $VALUE$ £
 building_bank_branch:0 "Bank-Corp Branch"
 building_bank_branch_desc:0 "An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions)."
 
-civic_tooltip_bank_corp_effects:2 "Can build §YBank Corp Branch Office Buildings§! on branch offices. £building£ §YCapital Buildings§! also replace some £job_administrator£ §Y$job_administrator$§! Jobs with §Y$job_bank_manager_plural$§!."
+civic_tooltip_bank_corp_effects:2 "Can build §YBank Corp Branch Office Buildings§! on branch offices. £building£ §YCapital Buildings§! also add some §Y$job_bank_manager_plural$§ jobs!."
 civic_bank_corp:0 "Bank Corp"
 civic_bank_corp_desc:0 "This megacorporation has structured itself around the practice of banking, both for its own society and on an intergalactic scale. They handle accounts containing the energy credits and precious assets of a multitude of civilizations. An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions). Of course, the executive board does skim just enough of a profit to make their descendants wealthy for generations, but what would one expect? The expert management of money is their business."
 
