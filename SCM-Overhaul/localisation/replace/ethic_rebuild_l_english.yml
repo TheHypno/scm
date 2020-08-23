@@ -3319,7 +3319,7 @@ trait_ruler_immortal_desc:0 "§LThis individual is blessed by Gods for Eternal R
 edict_immortal_ruler:0 "Declare Immortal Ruler"
 edict_immortal_ruler_desc:0 "Invoking this edict will claim our current Ruler as Immortal."
 
-civic_imperial_cult_desc:0 "This society has a dominant state religion where the ruler is worshiped as a living deity. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_high_priest §Y$job_high_priest_plural$§!, buildings §YSacred Nexus§! and §YCitadel of Faith§! provide additional §YHigh Priest§! jobs.\n£job_priest£ §Y$job_priest_plural$§! produce §Y1§! additional £unity£ Unity \n\nAllows special edict - §YDeclare Immortal Ruler§!, which can make the current Ruler immortal \n\nAmbition §YScientific Revolution§! is unavailable"
+civic_imperial_cult_desc:0 "This society has a dominant state religion where the ruler is worshiped as a living deity.  \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_high_priest §Y$job_high_priest_plural$§!, buildings §YSacred Nexus§! and §YCitadel of Faith§! provide additional §YHigh Priest§! jobs.\n£job_priest£ §Y$job_priest_plural$§! produce §Y1§! additional £unity£ Unity \n\nAllows special edict - §YDeclare Immortal Ruler§!, which can make the current Ruler immortal \n\nAmbition §YScientific Revolution§! is unavailable"
 
 mod_pop_ethic_capitalism_attraction_mult:0 "Competitive Ethics Attraction"
 mod_pop_ethic_socialism_attraction_mult:0 "Cooperative Ethics Attraction"
@@ -3735,3 +3735,7 @@ job_socialist_trader:0 "Distributor"
  mod_job_socialist_trader_add:0 "$job_socialist_trader$ Jobs"
  mod_job_socialist_trader_per_pop:0 "§G+1§! $job_socialist_trader$ Job per $VALUE$ Pops"
  mod_job_socialist_trader_short:0 "\n§G+1§! £mod_job_socialist_trader_add£ per $VALUE$ £pop£"
+
+
+ civic_agrarian_idyll_desc:0 "A simple and peaceful life can often be the most rewarding. This agrarian society has, to a large extent, managed to avoid large-scale urbanization. \n\n§YGenerator§!, §YMining§! and §YAgriculture Districts§! provide §G1§! more £housing£ §YHousing§!\n§YCity Districts§! provide §R1§! less £housing£ §YHousing§!\n£job_farmer£ §Y$job_farmer_plural$§! also produce §G2§! £amenities£ §YAmenities§!"
+ civic_tooltip_pacifist:0 "Is some degree of §YPacifist§!"
