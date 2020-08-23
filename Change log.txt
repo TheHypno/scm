@@ -116,3 +116,4 @@
 -Removed the old 00_capital_building as most of the actual modifications were implemented into ethic_rebuild_buildings.
 -Added description for bank_manager job which is now triggered on the capital buildings when using bank_corp civic.
 -Added enforcers (for authoritatians) and bank_manager jobs to upgraded habitat building and removed one of the two declarations of voidborn extra building modifier.
+-Fixed inconsistent descriptions caused by wrong override order.
