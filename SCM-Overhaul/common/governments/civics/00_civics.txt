@@ -1596,14 +1596,9 @@ civic_shared_burden = {
 				has_ethic = ethic_pluralist
 				has_ethic = ethic_fanatic_pluralist
 			 }			 
+	
 		}
 
-		authority = {
-			OR = {
-				 value = auth_direct_democratic
-				 value = auth_democratic
-			}
-		}
 		civics = {
 			NOR = {
 				 value = civic_welfare_state
