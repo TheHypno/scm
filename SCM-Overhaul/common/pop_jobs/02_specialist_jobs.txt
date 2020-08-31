@@ -144,7 +144,7 @@ researcher = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { or = { has_valid_civic = civic_technocracy  has_valid_civic = civic_cyber_dictatorship  has_valid_civic = civic_science_directorate  has_valid_civic = civic_cyber_demos_cratos } }
+				owner = { is_technocracy = yes }
 			}
 			unity = 0.75
 		}
@@ -275,7 +275,7 @@ priest = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { or = { has_valid_civic = civic_exalted_priesthood   has_valid_civic = civic_imperial_cult  has_valid_civic = civic_divine_council  has_valid_civic = civic_spiritual_democracy } }
+				owner = { is_theocracy = yes }
 			}
 			unity = 1
 		}
@@ -318,7 +318,7 @@ priest = {
 		modifier = {
 			factor = 2
 			exists = owner
-			owner = { or = { has_valid_civic = civic_exalted_priesthood  has_valid_civic = civic_imperial_cult  has_valid_civic = civic_divine_council  has_valid_civic = civic_spiritual_democracy } }
+			owner = { is_theocracy = yes }
 		}
 		modifier = {
 			factor = 2

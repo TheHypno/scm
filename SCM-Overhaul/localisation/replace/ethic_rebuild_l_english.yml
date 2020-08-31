@@ -3169,6 +3169,7 @@ SHARED_BURDEN_DESC:0 "Valid §YShared Burden§! civic pleases the [Root.GetName]
 job_bank_manager:0 "Bank Manager"
 job_bank_manager_plural:0 "Bank Managers"
 job_bank_manager_desc:0 "A coordinator and manager of a large sector of the banking focussed economy: these bank managers are high level government employees and are reveered by the rest of society."
+job_bank_manager_effect_desc:0 "£job_bank_manager£ $job_bank_manager_plural$ produce £unity£ §YUnity§! and generate £mod_trade_value_add£ §Y$TRADE_VALUE$§!!."
 mod_job_bank_manager_add:0 "$job_bank_manager$ Jobs"
 mod_job_bank_manager_per_pop:0 "§G+1§! $job_bank_manager$ Job per $VALUE$ Pops"
 mod_job_bank_manager_short:0 "\n§G+1§! £mod_bank_manager_add£ per $VALUE$ £pop£"
@@ -3176,7 +3177,7 @@ mod_job_bank_manager_short:0 "\n§G+1§! £mod_bank_manager_add£ per $VALUE$ £
 building_bank_branch:0 "Bank-Corp Branch"
 building_bank_branch_desc:0 "An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions)."
 
-civic_tooltip_bank_corp_effects:2 "Can build §YBank Corp Branch Office Buildings§! on branch offices. £building£ §YCapital Buildings§! also replace some £job_administrator£ §Y$job_administrator$§! Jobs with §Y$job_bank_manager_plural$§!."
+civic_tooltip_bank_corp_effects:2 "Can build §YBank Corp Branch Office Buildings§! on branch offices. £building£ §YCapital Buildings§! also add some §Y$job_bank_manager_plural$§! jobs."
 civic_bank_corp:0 "Bank Corp"
 civic_bank_corp_desc:0 "This megacorporation has structured itself around the practice of banking, both for its own society and on an intergalactic scale. They handle accounts containing the energy credits and precious assets of a multitude of civilizations. An army of tellers stretching from the bank's headquarters to the most distant of offices stands ready to open accounts and extend loans, always at the most generous of rates (or under the most advantageous conditions). Of course, the executive board does skim just enough of a profit to make their descendants wealthy for generations, but what would one expect? The expert management of money is their business."
 
@@ -3318,7 +3319,7 @@ trait_ruler_immortal_desc:0 "§LThis individual is blessed by Gods for Eternal R
 edict_immortal_ruler:0 "Declare Immortal Ruler"
 edict_immortal_ruler_desc:0 "Invoking this edict will claim our current Ruler as Immortal."
 
-civic_imperial_cult_desc:0 "This society has a dominant state religion where the ruler is worshiped as a living deity. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_high_priest §Y$job_high_priest_plural$§!, buildings §YSacred Nexus§! and §YCitadel of Faith§! provide additional §YHigh Priest§! jobs.\n£job_priest£ §Y$job_priest_plural$§! produce §Y1§! additional £unity£ Unity \n\nAllows special edict - §YDeclare Immortal Ruler§!, which can make the current Ruler immortal \n\nAmbition §YScientific Revolution§! is unavailable"
+civic_imperial_cult_desc:0 "This society has a dominant state religion where the ruler is worshiped as a living deity.  \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_high_priest §Y$job_high_priest_plural$§!, buildings §YSacred Nexus§! and §YCitadel of Faith§! provide additional §YHigh Priest§! jobs.\n£job_priest£ §Y$job_priest_plural$§! produce §Y1§! additional £unity£ Unity \n\nAllows special edict - §YDeclare Immortal Ruler§!, which can make the current Ruler immortal \n\nAmbition §YScientific Revolution§! is unavailable"
 
 mod_pop_ethic_capitalism_attraction_mult:0 "Competitive Ethics Attraction"
 mod_pop_ethic_socialism_attraction_mult:0 "Cooperative Ethics Attraction"
@@ -3734,3 +3735,7 @@ job_socialist_trader:0 "Distributor"
  mod_job_socialist_trader_add:0 "$job_socialist_trader$ Jobs"
  mod_job_socialist_trader_per_pop:0 "§G+1§! $job_socialist_trader$ Job per $VALUE$ Pops"
  mod_job_socialist_trader_short:0 "\n§G+1§! £mod_job_socialist_trader_add£ per $VALUE$ £pop£"
+
+
+ civic_agrarian_idyll_desc:0 "A simple and peaceful life can often be the most rewarding. This agrarian society has, to a large extent, managed to avoid large-scale urbanization. \n\n§YGenerator§!, §YMining§! and §YAgriculture Districts§! provide §G1§! more £housing£ §YHousing§!\n§YCity Districts§! provide §R1§! less £housing£ §YHousing§!\n£job_farmer£ §Y$job_farmer_plural$§! also produce §G2§! £amenities£ §YAmenities§!"
+ civic_tooltip_pacifist:0 "Is some degree of §YPacifist§!"

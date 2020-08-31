@@ -109,3 +109,11 @@
 -Applied subsidies upkeep increase for jobs added by SCM(deep miners, labour heroes, geo engineers, xeno biologists).
 -Changed subject_tax economic category to not inherit diplomacy upkeep multipliers. This caused the subject taxes to be increased masively for fanatic xenophobes and reduced dramatically for xenophile empires and nations with diplomacy opener.
 -Added to economic categories for bankers and socialist traders since they would receive productivity increases from miners, specifically in the case of subsidies.
+
+23/08/2020 RoAdd/adriangaro
+
+-Refactored capital buildings and some pop jobs to use new triggers for veryfing government specific civics, should help in the future to add more thematic government variants in the future.
+-Removed the old 00_capital_building as most of the actual modifications were implemented into ethic_rebuild_buildings.
+-Added description for bank_manager job which is now triggered on the capital buildings when using bank_corp civic.
+-Added enforcers (for authoritatians) and bank_manager jobs to upgraded habitat building and removed one of the two declarations of voidborn extra building modifier.
+-Fixed inconsistent descriptions caused by wrong override order.
