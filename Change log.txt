@@ -109,3 +109,6 @@
 -Applied subsidies upkeep increase for jobs added by SCM(deep miners, labour heroes, geo engineers, xeno biologists).
 -Changed subject_tax economic category to not inherit diplomacy upkeep multipliers. This caused the subject taxes to be increased masively for fanatic xenophobes and reduced dramatically for xenophile empires and nations with diplomacy opener.
 -Added to economic categories for bankers and socialist traders since they would receive productivity increases from miners, specifically in the case of subsidies.
+
+31/08/2020 - Anika
+-Removed democratic government type restriction for "Shared Burdens" civic.
