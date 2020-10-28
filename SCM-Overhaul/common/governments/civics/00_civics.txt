@@ -342,11 +342,10 @@ civic_terraforming = {
 
 	random_weight = { base = 5 }
 	modifier = {
-		deposit_blockers_cost_mult = -0.25
-		planet_clear_blocker_time_mult = -1
-		terraforming_cost_mult = -0.25
-		terraform_speed_mult = 0.25
-		category_new_worlds_research_speed_mult = 0.25
+		deposit_blockers_cost_mult = -0.2
+		planet_clear_blocker_time_mult = 0.25
+		terraforming_cost_mult = -0.20
+		terraform_speed_mult = -0.5
 
 	}
 }

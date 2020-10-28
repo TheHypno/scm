@@ -119,3 +119,12 @@
 -Added papacy civic
 -Slight nerf to Ancestor worship society research buff reduced from 20% to 15%
 
+28/10/2020 - Hypno
+
+-Environmental engineers nerf (more work needs to be done this is a quick fix at best)
+	+deposit blocker clear cost reduced from -25% to -20%
+	+planet blocker clear time reduced from +100% to -50%
+	+terraforming cost mult reduced from -25% to -20%
+	+terraforming speed mult reduced from -25% to +50%
+	+new worlds research speed mult removed
+	+flavour tooltip updated
