@@ -3718,6 +3718,8 @@ civic_ancestor_worship_desc:0 "The galaxy is replete with cultures whose faiths 
 civic_weapons_cult:0 "Weapons Cult"
 civic_weapons_cult_desc:0 "Though many societies have worshipped weapons of great and terrible power, from the atom and beyond, few of them survive their obsession to develop FTL travel. They have, by some manner of miracle, managed to preserve its culture without giving up its pursuit of destructive technologies. They fashion the next most destructive iteration of their artifice with almost religious fervor, always remaining at the cutting edge of martial creations. Though this may keep them at the cutting edge of warfare, other aspects of their society have atrophied for lack of interest. One day, they may be destroyed not by the weapons they revere, but by their neglect of all else."
 
+civic_papacy:0 "Papacy"
+civic_papacy_desc:0 "A society centered around a central religious figure, with nothing short of total power over their subjects. This ruler is elected by groups of cardinals, and has a strong mandate, concidered to be chosen by God himself."
 
 job_agitator:0 "Agitator"
  job_agitator_plural:0 "Agitators"
