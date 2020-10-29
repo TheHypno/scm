@@ -7,6 +7,7 @@ generate_start_pops = {
 			owner = {
 				OR = {
 					has_origin = origin_syncretic_evolution
+					has_origin = origin_necrophage
 					has_valid_civic = civic_machine_servitor
 					has_valid_civic = civic_machine_assimilator
 					has_valid_civic = civic_symbiotic_race
@@ -58,6 +59,38 @@ generate_start_pops = {
 				create_pop = {
 					species = last_created_species
 					ethos = random
+				}
+			}
+		}
+
+		if = {
+			limit = { owner = { OR = { has_origin = origin_necrophage }  } }
+
+			last_created_species = {
+				set_species_flag = syncretic_species@root.owner
+			}
+			if = {
+				limit = {
+					owner = {
+						has_origin = origin_necrophage
+						has_valid_civic = civic_fanatic_purifiers
+					}
+				}
+				while = {
+					count = 9
+					create_pop = {
+						species = last_created_species
+						ethos = random
+					}
+				}
+			}
+			else = {
+				while = {
+					count = 12
+					create_pop = {
+						species = last_created_species
+						ethos = random
+					}
 				}
 			}
 		}
@@ -154,6 +187,15 @@ generate_start_pops = {
 		}
 	}
 	if = {
+		limit = {
+			owner = {
+				has_origin = origin_necrophage
+				NOT = { has_civic = civic_fanatic_purifiers } #purges them instead
+			}
+		}
+		add_building = building_necrophage_elevation_chamber
+	}
+	if = {
 		limit = { owner = { is_hive_empire = yes } }
 		while = {
 			limit = { num_pops < 34 }
@@ -197,6 +239,16 @@ generate_start_pops = {
 		limit = { owner = { is_regular_empire = yes } }
 		while = {
 			limit = { num_pops < 28 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+	if = {
+		limit = { owner = { has_origin = origin_necrophage } }
+		while = { #to make them start without resource deficits
+			count = 2
 			create_pop = {
 				species = owner_main_species
 				ethos = random
