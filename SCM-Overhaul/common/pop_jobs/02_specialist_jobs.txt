@@ -422,6 +422,7 @@ priest = {
 		}
 	}
 }
+}
 
 death_priest = {
 	category = specialist
