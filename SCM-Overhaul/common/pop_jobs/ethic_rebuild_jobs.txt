@@ -1014,7 +1014,7 @@ xenobiologist  = {
 		}
 
 		upkeep = {
-			consumer_goods = 1
+			consumer_goods = 2
 		}
 
 		upkeep = { # Added since it is affected by research subsidies as it increases overall output of all researchers

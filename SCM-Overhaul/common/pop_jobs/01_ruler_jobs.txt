@@ -142,6 +142,10 @@ head_researcher = {
 			has_trait = trait_repugnant
 		}
 		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+		modifier = {
 			factor = 0.01
 			exists = planet
 			exists = planet.controller
@@ -181,7 +185,8 @@ high_priest = {
 		}
 		produces = {
 			trigger = {
-				owner = {  has_valid_civic = civic_spiritual_democracy  }
+				exists = owner
+				owner = { has_valid_civic = civic_exalted_priesthood }
 			}
 			society_research = 2
 		}
@@ -285,6 +290,10 @@ high_priest = {
 		modifier = {
 			factor = 1.25
 			has_trait = trait_robust
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
 		}
 		# crisis purge
 		modifier = {
@@ -406,6 +415,10 @@ administrator = {
 			factor = 1.125
 			has_trait = trait_robust
 		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
 		# crisis purge
 		modifier = {
 			factor = 0.01
@@ -476,6 +489,10 @@ noble = {
 			factor = 5
 			has_job = noble
 		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
 		# crisis purge
 		modifier = {
 			factor = 0.01
@@ -513,7 +530,7 @@ merchant = {
 	}
 
 	possible = {
-		complex_specialist_job_check_trigger = yes
+		ruler_job_check_trigger = yes
 	}
 
 	planet_modifier = {
@@ -525,7 +542,8 @@ merchant = {
 		category = planet_merchants
 		produces = {
 			trigger = {
-				owner = { has_civic = civic_corporate_dominion	}
+				exists = owner
+				owner = { has_civic = civic_merchant_guilds	}
 			}
 			unity = 1
 		}
@@ -578,7 +596,7 @@ merchant = {
 	}
 
 	weight = {
-		weight = @specialist_job_weight
+		weight = @ruler_job_weight
 		modifier = {
 			factor = 2.0
 			has_trait = trait_thrifty

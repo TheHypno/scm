@@ -419,7 +419,48 @@ civic_diplomatic_corps = {
 	}
 }
 
+civic_death_cult = {
+	playable = { host_has_dlc = "Necroids Species Pack" }
+	description = "civic_tooltip_death_cult_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } } #Corps get their own version
+	}
+	possible = {
+		origin = {
+			NOT = { value = origin_necrophage }
+		}
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_inwards_perfection
+				value = civic_ancient_preservers
+			}
+		}
+		ethics = {
+			OR = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+}
 
+civic_memorialist = {
+	playable = { host_has_dlc = "Necroids Species Pack" }
+	description = "civic_tooltip_memorialist_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } #Gestalts get their own versions
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_fanatic_purifiers
+			}
+		}
+	}
+}
 
 
 
@@ -3075,4 +3116,27 @@ civic_papacy = {
 		random_weight = { base = 0 }
 
 
+}
+civic_reanimated_armies = {
+	playable = { host_has_dlc = "Necroids Species Pack" }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+		}
+		civics = {
+			NOT = { value = civic_citizen_service }
+		}
+	}
+	random_weight = {
+		base = 3
+	}
+	description = "civic_tooltip_reanimated_armies_effects"
 }
