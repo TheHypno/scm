@@ -173,7 +173,7 @@ trait_rapid_breeders_lithoid = {
 }
 
 trait_slow_breeders = {
-	cost = -2
+	cost = -3
 	potential_crossbreeding_chance = 1.0
 	opposites = { "trait_rapid_breeders" "trait_fertile" "trait_rapid_breeders_lithoid" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -249,12 +249,12 @@ trait_quarrelsome = {
 }
 
 trait_docile = {
-	cost = 2
+	cost = 1
 	potential_crossbreeding_chance = 1.0
 	opposites = { "trait_unruly" }
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
-		species_empire_size_mult = -0.10
+		species_empire_size_mult = -0.20
 	}
 }
 
