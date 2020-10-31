@@ -3736,3 +3736,7 @@ job_socialist_trader:0 "Distributor"
  mod_job_socialist_trader_add:0 "$job_socialist_trader$ Jobs"
  mod_job_socialist_trader_per_pop:0 "§G+1§! $job_socialist_trader$ Job per $VALUE$ Pops"
  mod_job_socialist_trader_short:0 "\n§G+1§! £mod_job_socialist_trader_add£ per $VALUE$ £pop£"
+ 
+ job_naval_support_staff:0 "Naval Support Staff"
+ job_naval_support_staff_plural:0 "Naval Support Staff"
+ job_naval_support_staff_desc:0 "To support our empire's ever growing fleet, a large body of support personel are required."

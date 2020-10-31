@@ -1507,7 +1507,7 @@ bureaucrat = {
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
-			factor = 0.2
+			factor = 0.3
 			has_citizenship_rights = no
 			NOT = { has_trait = trait_mechanical }
 		}
@@ -2481,4 +2481,44 @@ necro_apprentice = {
 			}
 		}
 	}
+}
+naval_support_staff = {
+	category = worker
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_fleet_command_post
+	clothes_texture_index = 4
+
+	country_modifier = {
+		country_naval_cap_add = 8
+	}
+
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		worker_job_check_trigger = yes
+		owner = { is_gestalt = no }
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.1
+			is_enslaved = yes
+			NOT = { has_slavery_type = { type = slavery_military } }
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_military }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		}
 }

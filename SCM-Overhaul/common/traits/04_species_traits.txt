@@ -556,7 +556,7 @@ trait_latent_psionic = {
 		planet_jobs_physics_research_produces_mult = 0.05
 		planet_jobs_society_research_produces_mult = 0.05
 		planet_jobs_energy_produces_mult = 0.05
-		pop_happiness = 0.05
+		pop_happiness = 0.15
 	}
 }
 
@@ -579,7 +579,7 @@ trait_psionic = {
 		planet_jobs_physics_research_produces_mult = 0.15
 		planet_jobs_society_research_produces_mult = 0.15
 		planet_jobs_energy_produces_mult = 0.10
-		pop_happiness = 0.15
+		pop_happiness = 0.30
 	}
 }
 
