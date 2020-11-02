@@ -128,3 +128,7 @@
 	+terraforming speed mult reduced from -25% to +50%
 	+new worlds research speed mult removed
 	+flavour tooltip updated
+
+02/11/2020 - Hippo
+
+- Machine cults and divine council made mutually exclusive for balance reasons.
