@@ -3740,3 +3740,13 @@ job_socialist_trader:0 "Distributor"
  job_naval_support_staff:0 "Naval Support Staff"
  job_naval_support_staff_plural:0 "Naval Support Staff"
  job_naval_support_staff_desc:0 "To support our empire's ever growing fleet, a large body of support personel are required."
+ mod_job_naval_support_staff_add:0 "$job_naval_support_staff$ Jobs"
+ mod_job_naval_support_staff_per_pop:0 "§G+1§! $job_naval_support_staff$ Job per $VALUE$ Pops"
+ mod_job_naval_support_staff_short:0 "\n§G+1§! £mod_job_job_naval_support_staff_add£ per $VALUE$ £pop£"
+ 
+
+building_fleet_command_post:0 "Fleet Command Post"
+building_fleet_command_post_desc:0 "The naval support staff working here do all the ground work and administrative work necessary to keep the empire's fleets above the skies"
+
+building_office_of_the_admiralty:0 "Offices of the Admiralty"
+building_office_of_the_admiralty_desc:0 "Offices controlled directly by the staff of the admiralty allow for swift and efficent work to be carried out to support our brave navy"

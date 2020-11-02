@@ -1004,7 +1004,8 @@ civic_private_militaries = {
              SHIP_STARTING_EXPERIENCE_ADD = 200
 			 armies_upkeep_mult = 0.05
 			 ships_upkeep_mult = 0.05
-
+			army_attack_damage_mult = 0.3
+			army_attack_health_mult = 0.3
 	}
 }
 
@@ -1522,7 +1523,7 @@ civic_labour_unions = {
 
 
 
-#Drone Brotherhood
+#Drone BrotherBrotherhood
 #civic_socialistic = {
 #	potential = {
 #		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
@@ -1704,7 +1705,6 @@ civic_machine_cult = {
 	random_weight = { base = 0 }
 	modifier = {
 				COUNTRY_SYNTHETIC_TRUST_CAP_ADD = 100
-                planet_pop_assembly_mult = 0.2
 
 
 	}
@@ -2428,7 +2428,9 @@ civic_imperial_cult = {
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
-
+		pop_cat_ruler_happiness = 0.15
+		country_edict_cap_add = 1
+		country_admin_cap_mult = 0.05
 
 	}
 }
@@ -3088,10 +3090,9 @@ civic_ancestor_worship = {		#By Hypno and HGD3ATH
 }
 
 civic_papacy = {
-
+modification = no
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = {  value = auth_corporate } }
 	}
 	
 	possible = {
@@ -3102,15 +3103,17 @@ civic_papacy = {
 			}
 		}
 		civics = {
+		NOR = {  value = civic_philosopher_king    value = civic_military_dictatorship    value = civic_aristocratic_elite   value = civic_merchant_guilds    value = civic_state_monopoly    value = civic_exalted_priesthood    value = civic_technocracy   value = civic_bureaucracy    value = civic_stratocracy   value = civic_imperial_cult	} 
 			}
 	}
 		modifier = {
 
 				diplo_weight_mult = 0.5
-
-				leader_skill_levels = 2
-				pop_ethic_spiritualist_attraction_mult = 0.25
+				ruler_skill_levels = 2
 				planet_stability_add = -5
+				job_high_priest_per_pop = 0.02
+				species_leader_exp_gain = 0.15
+				
 
 	}
 		random_weight = { base = 0 }

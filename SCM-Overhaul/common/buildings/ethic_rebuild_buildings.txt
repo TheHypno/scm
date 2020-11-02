@@ -3873,10 +3873,11 @@ building_bank_branch = {
 
 	branch_office_building = yes
 
-	potential = {
-		has_branch_office = yes
+	possible = {
+		OR = { has_branch_office = yes
 		branch_office_owner = { is_criminal_syndicate = no }
-		has_valid_civic = civic_bank_corp
+		owner = {has_valid_civic = civic_bank_corp}
+		}
 	}
 
 	planet_modifier = {
@@ -3928,7 +3929,6 @@ building_fleet_command_post = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-
 	destroy_trigger = {
 		exists = owner
 		owner = { is_ai = yes }
@@ -3981,7 +3981,11 @@ building_fleet_command_post = {
 		}
 		text = job_naval_support_effect_desc
 	}
-
+	
+	prerequisites = {
+		"tech_naval_support_infrastructure"
+	}
+	
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -4059,7 +4063,11 @@ building_office_of_the_admiralty = {
 	prerequisites = {
 		"tech_global_defense_grid"
 	}
-
+	
+	prerequisites = {
+		"tech_naval_support_infrastructure"
+	}
+	
 	triggered_desc = {
 		trigger = {
 			exists = owner

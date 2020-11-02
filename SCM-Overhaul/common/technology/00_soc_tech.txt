@@ -3801,8 +3801,48 @@ tech_global_defense_grid = {
 		}
 	}
 }
+#naval support infrastructure
+tech_naval_support_infrastructure = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = { military_theory }
+	is_rare = no
+	weight = @tier3weight2
+	is_reverse_engineerable = no
+	
+	#unlocks naval support staff buildings
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
 
-
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
 # ##################
 # Psionics
 # ##################

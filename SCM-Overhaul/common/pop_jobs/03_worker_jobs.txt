@@ -984,7 +984,7 @@ soldier = {
 		produces = {
 			trigger = {
 				exists = owner
-				owner = { has_valid_civic = civic_martial_brotherhood }
+				owner = { has_valid_civic = civic_patriotic_service }
 			}
 			unity = 2
 		}

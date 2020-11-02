@@ -919,7 +919,7 @@ geoengineer = {
 			engineering_research = 4
 		}
 		upkeep = {
-			consumer_goods = 1
+			consumer_goods = 1.5
 		}
 
 		upkeep = { # Added since it is affected by research subsidies as it increases overall output of all researchers
@@ -1010,7 +1010,7 @@ xenobiologist  = {
 		category = planet_researchers
 		produces = {
 
-			society_research = 7
+			society_research = 6
 		}
 
 		upkeep = {
@@ -1382,7 +1382,7 @@ techno_priest = {
 
 	planet_modifier = {
 	    planet_amenities_add = 2
-		planet_pops_robotics_upkeep_mult = -0.07
+		planet_pops_robotics_upkeep_mult = -0.02
 	}
 
 
