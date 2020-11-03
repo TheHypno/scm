@@ -2483,11 +2483,12 @@ necro_apprentice = {
 	}
 }
 naval_support_staff = {
-	category = worker
+	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_fleet_command_post
 	clothes_texture_index = 4
-
+	icon = naval_support_staff
+	
 	country_modifier = {
 		country_naval_cap_add = 8
 	}
