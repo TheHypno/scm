@@ -235,9 +235,9 @@ civic_machine_overlord = {
 	
 	# description = civic_tooltip_machine_overlord_effects
 	modifier = {
-		country_base_influence_produces_add = 1
+		country_base_influence_produces_add = 0.25
 		ruler_skill_levels = 2
-		planet_crime_add = -15
+		planet_crime_add = -25
 	}
 }
 
