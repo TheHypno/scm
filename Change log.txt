@@ -132,3 +132,14 @@
 02/11/2020 - Hippo
 
 - Machine cults and divine council made mutually exclusive for balance reasons.
+
+17/03/2021 - Wooly Woolwine
+
+- All of Wooly's civic balance changes and new civics have been added.
+- Added Wooly's robot civics
+- Added Wooly's megacorp civics
+
+17/03/2021 - Hypno
+
+- Removed changes to traits
+- Added Wooly Advisor Pack

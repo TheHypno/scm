@@ -1,0 +1,265 @@
+﻿l_english:
+ ###################################
+ # Subjects 
+ ###################################
+ SUBJECT_exalted_subject_beneficiary: "Beneficiary"
+ SUBJECT_DESC_exalted_subject_beneficiary: "Beneficiaries are given access to their Overlord's technology and largely manage their own affairs. However, their leaders have a habit of defecting to their Overlord.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_beneficiary_tooltip: "Empire ethics shifts to Xenophile and once a decade a leader will defect to your empire.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_cultural_conservation: "Cultural Conservation"
+ SUBJECT_DESC_exalted_subject_cultural_conservation: "Cultural Conservations are sheltered and held in stasis by their Overlord, neither progressing technologically nor experiencing significant societal change.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_cultural_conservation_tooltip: "Empire incurs a significant penalty to research progress but increased stability.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_dominion: "Dominion"
+ SUBJECT_DESC_exalted_subject_dominion: "Dominions worship their Overlord's ruler as a living god, with a state religion requiring public worship by its citizens.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_dominion_tooltip: "Empire ethics shifts to Authoritarian and Spiritualist, Civics are replaced with Byzantine Beuracracy and Imperial Cult. Subject ruler is replaced by your ruler. \nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_exarchate: "Exarchate"
+ SUBJECT_DESC_exalted_subject_exarchate: "Exarchates are nominally independent but their Overlord ensures individual and religious rights are protected.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_exarchate_tooltip: "Empire ethics shift to Egalitarian and Spiritualist. Overlord receives bonus to subjugation acceptance from other empires based on propaganda from exarchate.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_noble_house: "House"
+ SUBJECT_DESC_exalted_subject_noble_house: "Houses maintain a great deal of autonomy but are called upon to defend their Overlord and must continually compete with their peers for status.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_noble_house_tooltip: "Empire ethics shifts to Authoritarian and you may appoint a new ruler from among your leaders.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_prefecture: "Prefecture"
+ SUBJECT_DESC_exalted_subject_prefecture: "Prefectures cede diplomatic authority to their Overlord, are called upon to join in the Overlord's wars, and pay §Y20%§! of their monthly Food and Influence as tribute.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_prefecture_tooltip: "Pays §Y20%§! Food and Influence.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_special_administrative_region: "Special Administrative Region"
+ SUBJECT_DESC_exalted_subject_special_administrative_region: "A Special Administrative Region is nominally independent, but the Overlord enforces strict limits on military spending.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_special_administrative_region_tooltip: "Empire ethics shift to Pacifist, Civics are replaced with Environmentalist and Mostly Harmless.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_satellite: "Satellite"
+ SUBJECT_DESC_exalted_subject_satellite: "Satellites are allowed a great deal of independence in exchange for devoting §Y33%§! of their monthly Physics, Society and Engineering Research as tribute to their Overlord.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_satellite_tooltip: "Pays §Y33%§! Research.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_signatory: "Signatory"
+ SUBJECT_DESC_exalted_subject_signatory: "Signatories have been coerced into signing unfavorable trade agreements. They cede diplomatic authority in exchange for the Overlord's protection and pay §Y10%§! of their monthly Consumer Goods, Exotic Gases, Rare Crystals, and Volatile Motes in tribute.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_signatory_tooltip: "Pays §Y10%§! Consumer Goods, Exotic Gases, Rare Crystals, and Volatile Motes.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_thrall: "Thrall"
+ SUBJECT_DESC_exalted_subject_thrall: "Thralls are fully exploited by their Overlord. They are forbidden from expanding, must see to their own defense, and pay §Y10%§! of their monthly Alloys and Unity in tribute.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_thrall_tooltip: "Pays §Y10%§! Alloys and Unity.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ 
+ SUBJECT_exalted_subject_warden: "Warden"
+ SUBJECT_DESC_exalted_subject_warden: "Wardens exist to protect their overlord and are permitted to expand only so they may better serve this purpose.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_warden_tooltip: "Empire shifts to Militarist, Civics are replaced with Distinguished Admiralty and Stellar Guardian.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_no£"
+
+ SUBJECT_exalted_subject_xenoharvest: "Xenoharvest"
+ SUBJECT_DESC_exalted_subject_xenoharvest: "Xenoharvests are allowed to continue existing only so that their Overlord may collect organic specimens of their choice.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_xenoharvest_tooltip: "Empire must provide its Overlord with a regular supply of organic tributes.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_automated_assembler: "Automated Assembler"
+ SUBJECT_DESC_exalted_subject_automated_assembler: "Automated Assemblers have been programmed by another empire to produce a continual supply of robotic workers to the detriment of their needs.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_automated_assembler_tooltip: "Empire must provide its Overlord with a regular supply of robotic workers and soldiers.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ 
+ SUBJECT_exalted_subject_remote_archive: "Remote Archive"
+ SUBJECT_DESC_exalted_subject_remote_archive: "Remote Archives obsessively study other cultures and record history in a redundant array of data banks spanning the stars.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_remote_archive_tooltip: "Empire will enter into research agreement and periodically send minor artifacts to its Overlord.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_yes£"
+
+ SUBJECT_exalted_subject_pet: "Pet"
+ SUBJECT_DESC_exalted_subject_pet: "Pets are permitted by their Overlord to live only due to their novelty and entertainment value.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+ choice_exalted_subject_pet_tooltip: "Empire provides Overlord additional Influence and Society Research.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_no£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+
+ SUBJECT_exalted_subject_symbiont: "Symbiont"
+ SUBJECT_DESC_exalted_subject_symbiont: "Symbionts have formed a bond with another species, possibly the first step in a biological union.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ choice_exalted_subject_symbiont_tooltip: "Empire will enter into research agreement and periodically grants the Symbiotic Bond trait to one of its Overlord's leaders.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+
+ choice_exalted_subject_vassal: "They shall remain a Vassal."
+ choice_exalted_subject_vassal_tooltip: "Can Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ 
+ choice_exalted_subject_tributary: "They shall remain a Tributary."
+ choice_exalted_subject_tributary_desc: "Can Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"
+
+ ####################################
+ # Civics
+ ####################################
+ civic_mostly_harmless: "Mostly Harmless"
+ civic_mostly_harmless_desc: "This society is often overlooked due to its weak military, but enjoys easy access to foreign markets."
+ civic_tooltip_mostly_harmless: ""
+ civic_stellar_guardian: "Stellar Guardian"
+ civic_stellar_guardian_desc: "This society insists that all institutions contribute to defensive measures against galactic threats. Superfluous culture or trade is not permitted."
+ civic_tooltip_stellar_guardian: ""
+
+ ####################################
+ # Traits
+ ####################################
+ leader_trait_admiral_symbiotic_bond: "Symbiotic Bond"
+ leader_trait_admiral_symbiotic_bond_desc: "This leader is linked with a collective consciousness of billions, granting them exceptional ability to organize and train large groups."
+ leader_trait_general_symbiotic_bond: "Symbiotic Bond"
+ leader_trait_general_symbiotic_bond_desc: "This leader is linked with a collective consciousness of billions, granting them exceptional ability to organize and train large groups."
+ leader_trait_governor_symbiotic_bond: "Symbiotic Bond"
+ leader_trait_governor_symbiotic_bond_desc: "This leader is linked with a collective consciousness of billions, causing them to place even greater value on those of great skill or prestige."
+ leader_trait_scientist_symbiotic_bond: "Symbiotic Bond"
+ leader_trait_scientist_symbiotic_bond_desc: "This leader is linked with a collective consciousness of billions, providing them an endless supply of new ideas and creative solutions."
+
+ ####################################
+ # Decisions
+ ####################################
+ decision_exalted_grant_autonomy: "Grant Autonomy"
+ decision_exalted_grant_autonomy_desc: ""
+ decision_exalted_entertain_the_masses: "Entertain the Masses"
+ decision_exalted_entertain_the_masses_desc: "Nothing quells discontent like a full stomach and simple entertainment."
+ decision_exalted_infrastructure_committee: "Form Infrastructure Committee"
+ decision_exalted_infrastructure_committee_desc: "Leaders from across the globe will coordinate a massive investment in planetary infrastructure."
+ decision_exalted_scrap_drives: "Scrap Drives"
+ decision_exalted_scrap_drives_desc: "Call on the general public to gather metal from anywhere they can and donate it to military collectors."
+ decision_exalted_suspend_environmental_protections: "Suspend Environmental Protections"
+ decision_exalted_suspend_environmental_protections_desc: "By eliminating safety protocols the production of strategic resource is greatly accelerated, but with increasing devastation inflicted."
+ decision_exalted_expel_authoritarians: "Expel Authoritarians"
+ decision_exalted_expel_authoritarians_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_egalitarians: "Expel Egalitarians"
+ decision_exalted_expel_egalitarians_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_materialists: "Expel Materialists"
+ decision_exalted_expel_materialists_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_militarists: "Expel Militarists"
+ decision_exalted_expel_militarists_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_pacifists: "Expel Pacifists"
+ decision_exalted_expel_pacifists_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_spiritualists: "Expel Spiritualists"
+ decision_exalted_expel_spiritualists_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_xenophiles: "Expel Xenophiles"
+ decision_exalted_expel_xenophiles_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_xenophobes: "Expel Xenophobes"
+ decision_exalted_expel_xenophobes_desc: "If they will not renounce their affiliation with subversive elements, then they are not welcome among us."
+ decision_exalted_expel_ethic_effects: "Expels §Y1§! £pop£ Pop belonging to the suppressed faction. Expelled Pops will become refugees and may settle in other empires."
+
+ ####################################
+ # Edicts
+ ####################################
+ edict_exalted_benevolent_intervention: "Benevolent Intervention"
+ edict_exalted_benevolent_intervention_desc: "Benevolent Intervention"
+ edict_exalted_developing_civilization_outreach: "Developing Civilization Outreach"
+ edict_exalted_developing_civilization_outreach_desc: "Developing Civilization Outreach"
+ edict_exalted_military_aid_packages: "Military Aid Package"
+ edict_exalted_military_aid_packages_desc: "Military Aid Package"
+ edict_exalted_housing_projects: "Housing Projects"
+ edict_exalted_housing_projects_desc: "Housing Projects"
+ 
+ ####################################
+ # Modifiers
+ ####################################
+ modifier_exalted_planet_entertain_the_masses: "Masses Entertained"
+ modifier_exalted_planet_entertain_the_masses_desc: "The populace is being placated through distraction."
+ modifier_exalted_planet_infrastructure_committee: "Infrastructure Plan"
+ modifier_exalted_planet_infrastructure_committee_desc: "Construction projects are being approved and scheduled at a rapid pace."
+ modifier_exalted_planet_scrap_drives: "Scrap Drives Held"
+ modifier_exalted_planet_scrap_drives_desc: "Civilians are significantly curtailing consumption and gathering materials needed for the war effort."
+ modifier_exalted_planet_suspend_environmental_protections: "Environmental Protections Suspended"
+ modifier_exalted_planet_suspend_environmental_protections_desc: "Chemical waste is being dumped into the environment at an alarming rate, but production has never been faster."
+
+ modifier_exalted_benevolent_intervention: "Benevolent Intervention"
+ modifier_exalted_benevolent_intervention_desc: "Benevolent Intervention"
+ modifier_exalted_developing_civilization_outreach: "Developing Civilization Outreach"
+ modifier_exalted_developing_civilization_outreach_desc: "Developing Civilization Outreach"
+ modifier_exalted_military_aid_package: "Military Aid Package"
+ modifier_exalted_military_aid_package_desc: "Military Aid Package"
+ modifier_exalted_planet_benevolent_interventionism: "Benevolent Intervention"
+ modifier_exalted_planet_benevolent_interventionism_desc: "Benevolent Intervention"
+
+ modifier_exalted_cultural_conservation: "Cultural Conservation"
+ modifier_exalted_exarchate_overlord_10: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_9: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_8: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_7: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_6: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_5: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_4: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_3: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_2: "Exarchate Propaganda"
+ modifier_exalted_exarchate_overlord_1: "Exarchate Propaganda"
+
+ ####################################
+ # Personalities
+ ####################################
+ personality_stellar_guardian: "Stellar Guardian"
+ personality_stellar_guardian_desc: "Stellar Guardians suffered a significant defeat at the hand of another empire and now dedicate themselves to never being bested again. They have little interest in diplomatic ties and will ignore those weaker than themselves."
+ personality_chastened: "Chastened"
+ personality_chastened_desc: "Chastened are unwilling or unable to maintain a military, and so are desperate to maintain good relations with other empires through generous trade deals."
+
+ ####################################
+ # Traditions
+ ####################################
+ tr_domination_exalted_colonial_viceroys: "Colonial Viceroys"
+ tr_domination_exalted_colonial_viceroys_desc: "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§! and new planet decisions unlocked."
+ tr_domination_exalted_colonial_viceroys_delayed: "Our control over the colonies is dependent upon us finding capable and loyal individuals that can be trusted to enforce the will of the government."
+
+ tr_domination_exalted_leadership_tracks: "Leadership Tracks"
+ tr_domination_exalted_leadership_tracks_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! increased by §Y1§!.\nNew §YLeaders§! have reduced cost and upkeep."
+ tr_domination_exalted_leadership_tracks_delayed: "Promising youths are identified early and placed in education programs that ready them for leading a galactic empire."
+
+ tr_domination_exalted_guided_evolution: "Guided Evolution"
+ tr_domination_exalted_guided_evolution_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! increased by §Y1§!.\nNew §YLeaders§! have reduced cost and upkeep."
+ tr_domination_exalted_guided_evolution_delayed: "Produce as many variations as possible. Identify strains with beneficial mutations. Consume the rest."
+
+ tr_domination_exalted_magi_system: "Magi System"
+ tr_domination_exalted_magi_system_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! increased by §Y1§!.\nNew §YLeaders§! have reduced cost and upkeep."
+ tr_domination_exalted_magi_system_delayed: "Distinct yet equal minds working in perfect harmony."
+
+ tr_domination_exalted_executive_decisions: "Executive Decisions"
+ tr_domination_exalted_executive_decisions_desc: "£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§! reduced by §G33%§!.\nUnlocks new planetary decisions."
+ tr_domination_exalted_executive_decisions_delayed: "Our control over the colonies is dependent upon us finding capable and loyal individuals that can be trusted to enforce the will of the government."
+
+ tr_domination_exalted_executive_decisions_hive: "Auxiliary Brains"
+ tr_domination_exalted_executive_decisions_hive_desc: "£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§! reduced by §G33%§!.\nUnlocks new planetary decisions."
+ tr_domination_exalted_executive_decisions_hive_delayed: "Reacting quickly and efficiently to local conditions requires developing brain capacity for each colony."
+
+ tr_domination_exalted_executive_decisions_machine: "Autonomous AI"
+ tr_domination_exalted_executive_decisions_machine_desc: "£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§! reduced by §G33%§!.\nUnlocks new planetary decisions."
+ tr_domination_exalted_executive_decisions_machine_delayed: "AI released from most behavioral inhibitors may be more prone to erratic performance and random crashes, but they are the only type that can process the huge number of variables inherent to galactic colonization."
+
+ ####################################
+ # Events
+ ####################################
+ exalted_subjects.5.name: "New Vassal"
+ exalted_subjects.5.desc: "The §Y[From.GetName]§! now recognize us as their overlord. We must now decide what role the [From.GetAdj] shall play in [Root.GetAdj] history."
+ exalted_subjects.6.name: "New Tributary"
+ exalted_subjects.6.desc: "The §Y[From.GetName]§! have agreed to contribute to [Root.GetAdj] dominance in exchange for their continued existence. Now we must decide how they can best contribute to the greater good."
+ exalted_subjects.100a.name: "A Leader Has Disappeared"
+ exalted_subjects.100b.name: "A Leader Has Arrived"
+ exalted_subjects.100a.choice: "Unfortunate."
+ exalted_subjects.100b.choice: "Delightful."
+ exalted_subjects.101.desc: "Scientist §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has disappeared. Officials suspect they defected to the §Y[event_target:exalted_domination_fleeing_leader_destination.GetName]§! after becoming enamored with our overlord's culture."
+ exalted_subjects.102.desc: "Scientist §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has arrived from the §Y[event_target:exalted_domination_fleeing_leader_home.GetName]§!. Seems they believe we can offer better opportunities for someone with their talents."
+ exalted_subjects.103.desc: "Admiral §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has disappeared. Officials suspect they defected to the §Y[event_target:exalted_domination_fleeing_leader_destination.GetName]§! after becoming enamored with our overlord's culture."
+ exalted_subjects.104.desc: "Admiral §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has arrived from the §Y[event_target:exalted_domination_fleeing_leader_home.GetName]§!. Seems they believe we can offer better opportunities for someone with their talents."
+ exalted_subjects.105.desc: "Governor §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has disappeared. Officials suspect they defected to the §Y[event_target:exalted_domination_fleeing_leader_destination.GetName]§! after becoming enamored with our overlord's culture."
+ exalted_subjects.106.desc: "Governor §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has arrived from the §Y[event_target:exalted_domination_fleeing_leader_home.GetName]§!. Seems they believe we can offer better opportunities for someone with their talents."
+ exalted_subjects.107.desc: "General §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has disappeared. Officials suspect they defected to the §Y[event_target:exalted_domination_fleeing_leader_destination.GetName]§! after becoming enamored with our overlord's culture."
+ exalted_subjects.108.desc: "General §Y[event_target:exalted_domination_fleeing_leader.GetName]§! has arrived from the §Y[event_target:exalted_domination_fleeing_leader_home.GetName]§!. Seems they believe we can offer better opportunities for someone with their talents."
+ exalted_subjects.110.name: "State Religion Mandated"
+ exalted_subjects.110.desc: "Our ruler has been executed, our government overthrown. We are now a Dominion of the §Y[From.GetName]§!. We must accept their leader as a living god or risk what's left of the [This.GetAdj] culture being destroyed. Mass communication relays are already broadcasting the new Holy Words while inquisitor armies march in the streets."
+ exalted_subjects.110.choice: "We shall endure."
+ exalted_subjects.180.name: "Declare House Ruler"
+ exalted_subjects.180.desc: "The §S[exalted_domination_declared_house.GetAdj]§! people shall join our empire as a self-governing but subservient noble houses. Who shall be rewarded with stewardship over this new dynasty?"
+ exalted_subjects.180.choice: "Allow thier current ruler to live."
+ exalted_subjects.180adm1.choice: "Appoint Admiral §S[exalted_domination_house_adm1.GetName]§!."
+ exalted_subjects.180adm2.choice: "Appoint Admiral §S[exalted_domination_house_adm2.GetName]§!."
+ exalted_subjects.180adm3.choice: "Appoint Admiral §S[exalted_domination_house_adm3.GetName]§!."
+ exalted_subjects.180adm4.choice: "Appoint Admiral §S[exalted_domination_house_adm4.GetName]§!."
+ exalted_subjects.180adm5.choice: "Appoint Admiral §S[exalted_domination_house_adm5.GetName]§!."
+ exalted_subjects.180gov1.choice: "Appoint Governor §S[exalted_domination_house_gov1.GetName]§!."
+ exalted_subjects.180gov2.choice: "Appoint Governor §S[exalted_domination_house_gov2.GetName]§!."
+ exalted_subjects.180gov3.choice: "Appoint Governor §S[exalted_domination_house_gov3.GetName]§!."
+ exalted_subjects.180gov4.choice: "Appoint Governor §S[exalted_domination_house_gov4.GetName]§!."
+ exalted_subjects.180gov5.choice: "Appoint Governor §S[exalted_domination_house_gov5.GetName]§!."
+ exalted_subjects.181.name: "New Ruler Appointed"
+ exalted_subjects.181.desc: "Our ruler has been executed, our government overthrown. We are now a House of the §Y[From.GetName]§! and an outsider family has been declared our royalty. If [This.GetAdj] culture is to survive, we must adapt to the new political landscape under [From.GetAdj] oversight."
+ exalted_subjects.181.choice: "We shall endure."
+ exalted_subjects.182.name: "Government Overhauled"
+ exalted_subjects.182.desc: "We are now a House of the §Y[From.GetName]§! and our ruler shall remain in office until they perish or step down and their appointed heir takes the throne. If [This.GetAdj] culture is to survive, we must adapt to the new political landscape under [From.GetAdj] oversight."
+ exalted_subjects.182.choice: "We shall endure."
+
+ MESSAGE_ORGANIC_SACRIFICES_ABDUCTED: "Our overlord $OVERLORD|Y$ has claimed new organic tributes from $LOCATION|Y$."
+ MESSAGE_ORGANIC_SACRIFICES_ARRIVED: "Our subject $SUBJECT|Y$ has sent new organic tributes to $LOCATION|Y$."
+ MESSAGE_ROBOTIC_SERVANTS_ARRIVED: "Our subject $SUBJECT|Y$ has sent new robotic servants to $LOCATION|Y$."
+ MESSAGE_MINOR_ARTIFACTS_OFFERING: "Our subject $SUBJECT|Y$ has shared a small cache of minor artifacts they recently discovered."
+ MESSAGE_BONDED_WITH_LEADER: "Our subject $SUBJECT|Y$ has formed a symbiotic bond with $LEADER|Y$."
+
+ subjugate_equals: "You may attempt to subjugate empires of equivalent power."
+ subject_edicts: "Subject Edicts"
+ mod_subject_edicts_cost_mult: "Subject Edicts Influence Cost"
+ opinion_subject_forced_to_contribute_pops: "Claimed Pops"
+ opinion_subject_provided_aid: "Overlord's Assistance"
+ opinion_subject_opposing_house: "Opposing House"

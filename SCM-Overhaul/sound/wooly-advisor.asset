@@ -1,0 +1,504 @@
+## WOOLY ADVISOR
+
+soundgroup = 
+{
+	name = advisor_wooly
+	sort_order = 100
+	
+	soundoverride =
+	{
+		name = "advisor_notification_system_survey_complete_01"
+		file = "vo/wooly-advisor/advisor_notification_system_survey_complete_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_science_ship_destroyed_01"
+		file = "vo/wooly-advisor/advisor_notification_science_ship_destroyed_01.wav"
+	}
+
+	soundoverride =
+	{
+		name = "advisor_notification_science_ship_under_attack_01"
+		file = "vo/wooly-advisor/advisor_notification_science_ship_under_attack_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_construction_complete_01"
+		file = "vo/wooly-advisor/advisor_notification_construction_complete_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_construction_ship_destroyed_01"
+		file = "vo/wooly-advisor/advisor_notification_construction_ship_destroyed_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_construction_ship_under_attack_01"
+		file = "vo/wooly-advisor/advisor_notification_construction_ship_under_attack_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_colony_established_01"
+		file = "vo/wooly-advisor/advisor_notification_colony_established_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_colony_ship_under_attack_01"
+		file = "vo/wooly-advisor/advisor_notification_colony_ship_under_attack_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_colony_ship_destroyed_01"
+		file = "vo/wooly-advisor/advisor_notification_colony_ship_destroyed_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_spaceport_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_spaceport_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_enemy_invasion_defeated_01"
+		file = "vo/wooly-advisor/advisor_notification_enemy_invasion_defeated_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_invasion_enemy_won_01"
+		file = "vo/wooly-advisor/advisor_notification_invasion_enemy_won_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_invasion_failed_01"
+		file = "vo/wooly-advisor/advisor_notification_invasion_failed_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_invasion_success_01"
+		file = "vo/wooly-advisor/advisor_notification_invasion_success_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_military_station_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_military_station_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_mining_station_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_mining_station_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_research_station_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_research_station_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_observation_post_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_observation_post_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_outpost_station_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_frontier_outpost_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_wormhole_station_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_wormhole_station_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_hostile_fleet_detected_01"
+		file = "vo/wooly-advisor/advisor_notification_hostile_fleet_detected_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_hostile_fleet_engaged_01"
+		file = "vo/wooly-advisor/advisor_notification_hostile_fleet_engaged_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_fleet_destroyed_01"
+		file = "vo/wooly-advisor/advisor_notification_fleet_destroyed_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_station_under_attack_01"
+		file = "vo/wooly-advisor/advisor_notification_station_under_attack_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_special_project_complete_01"
+		file = "vo/wooly-advisor/advisor_notification_special_project_complete_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_situation_log_01"
+		file = "vo/wooly-advisor/advisor_notification_situation_log_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_enemy_troops_landing_01"
+		file = "vo/wooly-advisor/advisor_notification_enemy_troops_landing_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_incoming_transmission_01"
+		file = "vo/wooly-advisor/advisor_notification_incoming_transmission_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_research_complete_01"
+		file = "vo/wooly-advisor/advisor_notification_research_complete_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_discovery_detected_01"
+		file = "vo/wooly-advisor/advisor_notification_discovery_detected_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_ships_upgraded_01"
+		file = "vo/wooly-advisor/advisor_notification_ships_upgraded_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_evade_hostile_fleet_01"
+		file = "vo/wooly-advisor/advisor_notification_evade_hostile_fleet_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_alien_spaceport_engaged_01"
+		file = "vo/wooly-advisor/advisor_notification_alien_spaceport_engaged_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_building_ruined_01"
+		file = "vo/wooly-advisor/advisor_notification_building_ruined_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_colonization_progress_01"
+		file = "vo/wooly-advisor/advisor_notification_colonization_progress_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_debris_analysed_01"
+		file = "vo/wooly-advisor/advisor_notification_debri_analysed_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_enemy_declared_war_01"
+		file = "vo/wooly-advisor/advisor_notification_enemy_declared_war_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_federation_formed_01"
+		file = "vo/wooly-advisor/advisor_notification_federation_formed_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_frontier_outpost_lost_01"
+		file = "vo/wooly-advisor/advisor_notification_frontier_outpost_lost_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_hostile_station_engaged_01"
+		file = "vo/wooly-advisor/advisor_notification_hostile_station_engaged_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_player_declare_war_01"
+		file = "vo/wooly-advisor/advisor_notification_player_declare_war_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_primitive_enlighted_01"
+		file = "vo/wooly-advisor/advisor_notification_primitive_enlighted_01.wav"
+	}
+	
+	
+	soundoverride =
+	{
+		name = "advisor_notification_species_modified_01"
+		file = "vo/wooly-advisor/advisor_notification_species_modified_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_tile_blocker_clear_01"
+		file = "vo/wooly-advisor/advisor_notification_tile_blocker_clear_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_unidentified_object_01"
+		file = "vo/wooly-advisor/advisor_notification_unidentified_object_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_sample_vo_01"
+		file = "vo/wooly-advisor/advisor_generic_phrase_01.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_sample_vo_02"
+		file = "vo/wooly-advisor/advisor_generic_phrase_02.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_sample_vo_03"
+		file = "vo/wooly-advisor/advisor_generic_phrase_03.wav"
+	}
+	
+	soundoverride =
+	{
+		name = "advisor_notification_alien_empire_communication_01"
+		file = "vo/wooly-advisor/advisor_notification_alien_empire_communication_01.wav"
+	}
+
+	soundoverride =
+	{
+		name = "advisor_notification_alien_federation_formed_01"
+		file = "vo/wooly-advisor/advisor_notification_alien_federation_formed_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_alien_vessel_encountered_01"
+		file = "vo/wooly-advisor/advisor_notification_alien_vessel_encountered_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_generic_war_declare_01"
+		file = "vo/wooly-advisor/advisor_notification_generic_war_declare_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_pre_sapient_uplifted_01"
+		file = "vo/wooly-advisor/advisor_notification_pre_sapient_uplifted_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_spaceborne_encounter_01"
+		file = "vo/wooly-advisor/advisor_notification_spaceborne_encounter_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_spaceport_under_attack_01"
+		file = "vo/wooly-advisor/advisor_notification_spaceport_under_attack_01.wav"
+	}
+	soundoverride =
+	{
+		name = "advisor_notification_invasion_progress_01"
+		file = "vo/wooly-advisor/advisor_notification_invasion_progress_01.wav"
+	}
+	#### EXTRA LINES
+	
+	soundeffectoverrides =
+
+	{
+		advisor_notification_alien_empire_communication_01 = wooly_advisor_notification_alien_empire_communication
+		advisor_notification_discovery_detected = wooly_advisor_notification_discovery_detected
+		advisor_notification_enemy_invasion_defeated = wooly_advisor_notification_enemy_invasion_defeated
+		advisor_notification_enemy_troops_landing = wooly_advisor_notification_enemy_troops_landing
+		advisor_notification_invasion_progress = wooly_advisor_notification_invasion_progress
+		advisor_notification_invasion_success = wooly_advisor_notification_invasion_success
+		advisor_notification_player_declare_war = wooly_advisor_notification_player_declare_war
+		advisor_notification_spaceborne_encounter = wooly_advisor_notification_spaceborne_encounter
+		advisor_notification_spaceport_under_attack = wooly_advisor_notification_spaceport_under_attack
+		advisor_notification_species_modified = wooly_advisor_notification_species_modified
+		advisor_notification_station_under_attack = wooly_advisor_notification_station_under_attack
+		}
+	
+	soundfileoverrides = 
+	{	
+		advisor_notification_alien_empire_communication_02 = "vo/wooly-advisor/advisor_notification_alien_empire_communication_02.wav"
+		advisor_notification_alien_empire_communication_03 = "vo/wooly-advisor/advisor_notification_alien_empire_communication_03.wav"
+		advisor_notification_alien_empire_communication_04 = "vo/wooly-advisor/advisor_notification_alien_empire_communication_04.wav"
+		advisor_notification_discovery_detected_02 = "vo/wooly-advisor/advisor_notification_discovery_detected_02.wav"
+		advisor_notification_discovery_detected_03 = "vo/wooly-advisor/advisor_notification_discovery_detected_03.wav"
+		advisor_notification_invasion_success_02 = "vo/wooly-advisor/advisor_notification_invasion_success_02.wav"
+		advisor_notification_player_declare_war_02 = "vo/wooly-advisor/advisor_notification_player_declare_war_02.wav"
+		advisor_notification_player_declare_war_03 = "vo/wooly-advisor/advisor_notification_player_declare_war_03.wav"
+		advisor_notification_player_declare_war_04 = "vo/wooly-advisor/advisor_notification_player_declare_war_04.wav"
+	}
+}	
+	
+	
+	#### Extra wooly VO Lines
+	
+
+soundeffect = {
+	name = wooly_advisor_notification_alien_empire_communication
+	sounds = {
+		sound = advisor_notification_alien_empire_communication_01
+		sound = advisor_notification_alien_empire_communication_02
+		sound = advisor_notification_alien_empire_communication_03
+		sound = advisor_notification_alien_empire_communication_04
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_discovery_detected
+	sounds = {
+		sound = advisor_notification_discovery_detected_01
+		sound = advisor_notification_discovery_detected_02
+		sound = advisor_notification_discovery_detected_03
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_enemy_invasion_defeated
+	sounds = {
+		sound = advisor_notification_enemy_invasion_defeated_01
+		# sound = advisor_notification_enemy_invasion_defeated_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_enemy_troops_landing
+	sounds = {
+		sound = advisor_notification_enemy_troops_landing_01
+		# sound = advisor_notification_enemy_troops_landing_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_invasion_progress
+	sounds = {
+		sound = advisor_notification_invasion_progress_01
+		# sound = advisor_notification_invasion_progress_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_invasion_success
+	sounds = {
+		sound = advisor_notification_invasion_success_01
+		sound = advisor_notification_invasion_success_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_player_declare_war
+	sounds = {
+		sound = advisor_notification_player_declare_war_01
+		sound = advisor_notification_player_declare_war_02
+		sound = advisor_notification_player_declare_war_03
+		sound = advisor_notification_player_declare_war_04
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_spaceborne_encounter
+	sounds = {
+		sound = advisor_notification_spaceborne_encounter_01
+		# sound = advisor_notification_spaceborne_encounter_02
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_spaceport_under_attack
+	sounds = {
+		sound = advisor_notification_spaceport_under_attack_01
+		# sound = advisor_notification_spaceport_under_attack_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect = {
+	name = wooly_advisor_notification_species_modified
+	sounds = {
+		sound = advisor_notification_species_modified_01
+		# sound = advisor_notification_species_modified_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = wooly_advisor_notification_station_under_attack
+	sounds = {
+		sound = advisor_notification_station_under_attack_01
+		# sound = advisor_notification_station_under_attack_02
+	} 
+	volume = 1
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+		### Category
+category = {
+ name = "Voice"
+ soundeffects = {
+		wooly_advisor_notification_alien_empire_communication
+		wooly_advisor_notification_discovery_detected
+		wooly_advisor_notification_enemy_invasion_defeated
+		wooly_advisor_notification_enemy_troops_landing
+		wooly_advisor_notification_invasion_progress
+		wooly_advisor_notification_invasion_success
+		wooly_advisor_notification_player_declare_war
+		wooly_advisor_notification_spaceborne_encounter
+		wooly_advisor_notification_spaceport_under_attack
+		wooly_advisor_notification_species_modified
+		wooly_advisor_notification_station_under_attack
+	}
+}

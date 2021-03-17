@@ -1,0 +1,26 @@
+l_english:
+ ####################################
+ # Misc
+ ####################################
+ SEPARATOR:0 "---"
+
+###Leader titles
+RT_CONDUCTOR:0 "Conductor"
+ RT_ESO:0 "Executive Science Officer"
+ RT_CDO:0 "Chief Druid Officer"
+
+###MegaCorp Government Names
+gov_dystopian_capitalism:0 "Dystopian Capitalism"
+ gov_dystopian_capitalism_desc:0 "The company has seized all assets that were once in control of their former government. However, the ideology of "work or die" is definitely applied here, as employees must provide their use to their bosses, no matter the cost it seems. Breaks are rare, and getting vacation time is just as rare as finding a needle in a haystack!"
+ gov_economic_aristocracy:0 "Economic Aristocracy"
+ gov_economic_aristocracy_desc:0 "A type of company hierarchy where upon retirement or death of the running CEO, the next in line (usually a blood-related or adopted family member) will take his or her place and have control over all assets that the company has acquired. Unlike in most societies where the people have power in what is controlled, this company only gives power to the select few, namely its own family members, and does not let any non-family members interfere with its decisions."
+ gov_traveling_minstrels:0 "Traveling Minstrels"
+ gov_traveling_minstrels_desc:0 "Based upon a society that has lived on music and theatre, these motivated folks are more than willing to travel across foreign lands to spread their love for entertainment. Their knack for cultural development makes them eager to work hard for the society that their ancestors helped developed."
+ gov_frontier_investors:0 "Frontier Investors"
+ gov_frontier_investors_desc:0 "A company that's more focused on outsourcing their assets rather than the caretaking of their own lands, its obvious where most of the funding from this company goes to! With an emphasis on establishing frontiers and rapid development, you can expect these people to get to where they need to faster and more motivated than anyone else!"
+ gov_intellectual_traders:0 "Intellectual Traders"
+ gov_intellectual_traders_desc:0 "A society based on gaining knowledge through the interactions of others rather than the experiements of their own and now established into their own company, these traders learn how to develop themselves through the interactions of others. Knowledge is best used and shared, and sharing is done through trade!"
+ gov_established_defenders:0 "Established Defenders"
+ gov_established_defenders_desc:0 "What good is a company if it can't develop the tools needed to defend themselves? Their paranoia of unknown threats, galaxy-wide or not, has caused this company to invest in defensive options out of sheer safety for their own assets."
+ gov_migratory_druids:0 "Migratory Druids"
+ gov_migratory_druids_desc:0 "Investing in natural development and the sustainment of life, the company puts major funding in operations involved in helping nature grow whereever it is needed. Employees in this company are taught that the environment is the #1 priority, above all else. They won't stop, even at their own planets."

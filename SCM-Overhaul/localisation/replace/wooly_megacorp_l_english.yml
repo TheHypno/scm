@@ -1,0 +1,67 @@
+﻿l_english:
+ ####################################
+ # Misc
+ ####################################
+ SEPARATOR:0 "---"
+
+DIPLO_ACTION_ADD_TRUST:0 "This will increase their Trust of us by $TRUST$ each month up a maximum of $MAX_TRUST|0G$."
+ DIPLO_ACTION_INFLUENCE_COST:0 "It will cost us $INF|R$ influence each month."
+ DIPLO_ACTION_ACTOR_RESOURCES:0 "We will get §Y$RESOURCES$§! each month as long as the deal is active."
+ DIPLO_ACTION_RECIPIENT_RESOURCES:0 "They will get §Y$RESOURCES$§! each month as long as the deal is active."
+ DIPLO_ACTION_ACTOR_AND_RECIPIENT_RESOURCES:1 "They will get §Y$ACTOR_RESOURCES$§! and we will get §Y$RECIPIENT_RESOURCES$§! each month as long as the deal is active."
+
+ ACTION_FORM_COMMERCIAL_PACT_OFFER_DESC:0 "Form a Commercial Pact with §H[Actor.GetName]§!. This will increase the value of both empires' trade networks. §RYOU SHOULD ASK THE SENDER TO CLARIFY HOW MUCH EACH PARTY RECEIVES IN THIS DEAL.§!"
+
+ BRANCH_OFFICE_NOT_COMMERCIAL_PACT:1 "£trigger_no£ §RWe must have a Commercial Pact or be in Federation with the owner of this planet in order to establish a $BRANCH_OFFICE$ here§! \n\n§RMachine Empires with the §GAperature Science§! civic need a Research Agreement instead§!"
+ BRANCH_OFFICE_NOT_MEGACORP:1 "£trigger_no£ §ROnly empires with the §Y$auth_corporate$§! authority, Hive Minds with the §BMutualistic Hive Mind§! civic, or Machine Empires with the §GAperature Science§! civic can establish $BRANCH_OFFICES$§!"
+ 
+civic_troupe:0 "Influential Troupe"
+ civic_troupe_desc:0 "A group of entertainers that managed to be so popular that they somehow influenced the entirely of their world government! With the development of space travel, these people seek to spread their entertainment across the galaxy, no matter the cost! \n\nCan build the §GGalactic Circus§! Branch Office building! This is an upgrade to the §BAmusement Megaplex§! Branch Office building. They are built faster, are cheaper, and provide  £job_entertainer£ §Y$job_entertainer$§! Job and 1 £job_clerk£ §Y$job_clerk$ Job§! \n\nThe MegaCorp gets §E5§! £unity£ §EUnity§! from this building"
+ civic_research_inc:0 "Knowledge Through Trade"
+ civic_research_inc_desc:0 "A company that focuses on innovation and progress, but not in the way that you think! Rather than increase their research through their scientists, this company develops through the establishment of trade. Traders from this company have a knack for knowledge, and will gladly share their knowledge to traders alike! \n\n§YResearchers§! develop §R-2§! less Science, but generate §H3§! £trade_value£ §HTrade Value§!. For example, if the base §YResearcher§! value was §G4§! §EResearch§! in each category, this civic would make them produce §R2§! §EResearch§! in each category instead\n\nStarts with the §BInnovation & Progress§! Trade Policy unlocked"
+ civic_profitized_mining:0 "Profitized Mining"
+ civic_profitized_mining_desc:0 "Every miner knows how to make the best profit out of whatever they find! You know how the saying goes, "Every man's (or robot's, or alien's) trash is someone elses (or something elses) treasure?" Well, every miner in this MegaCorp found a way to squeeze every penny out of every rock! \n\nEvery £job_miner£ §YMiner§! Job now also gives §Y0.5§! £energy£ §YEnergy§!"
+ civic_ecological_corp:0 "Ecological Entrepreneurs"
+ civic_ecological_corp_desc:0 "A MegaCorp focused on not only the aspect of trade, but also a knack for environmental development! The majority of their funding goes towards the health of life and nature itself, and they're not stopping at just their system! \n\nHas access to the §GMagnificant Greenhouse§! Branch Office building, which provides 1 £job_healthcare£ §GMedical Worker§! Job and 1 £job_clerk£ §Y$job_clerk$ Job§! \n\nThe MegaCorp receives §E3§! £unity£ §EUnity§! and §L3§! £consumer_goods£ §LConsumer Goods§!"
+ civic_motivation:0 ""Voluntold" Motivation"
+ civic_motivation_desc:0 "These people are happy to work in this MegaCorp, because we tell them to be happy! It's really that simple, isn't it? With actions totally not against their will and no threats dished out by their superiors, these people are happy to work for their company!"
+ civic_inheritance:0 "Expansive Inheriters"
+ civic_inheritance_desc:0 "Inheritance is the first word in this MegaCorp's dictionary, and every CEO's son or daughter gains control of all assets upon the CEO's retirement, whatever it be from the company or life itself! The power of a CEO is absolute, and the people will work harder in the CEO's presence! \n\n£job_noble£ §YNoble§! Jobs also produce §H5§! £trade_value£ §HTrade Value§!"
+ civic_defense_budget:0 "Defense Budgeting"
+ civic_defense_budget_desc:0 "Our top priority is to protect ourselves, and what better way to do that then to invest in defensive facilities? Making use of our state-of-the-art sentries, we'll make sure that our budget is put to good use! \n\n§YGun Batteries§!, §YMissle Batteries§!, and §YHangar Bays§! have 1 less £energy£ §YEnergy§! upkeep and also provide §H2§! £trade_value£ §HTrade Value§!"
+ civic_efficient_stations:0 "Efficient Stations"
+ civic_efficient_stations_desc:0 "As the company motto says, "If there's opportunity, it must be developed, and it must be developed NOW!", which is taken to heart. With an emphasis on asset securing, these employees enjoy getting the job done first over everyone else. The early (fluffy) bird gets the worm!"
+ civic_insider_trading:0 "Insider Trading"
+ civic_insider_trading_desc:0 "What good is our knowledge of trading if we don't put it to good use? That's why we're always on the lookout for the best deals, regardless of where they're at. If we don't know how to make more "bang for our buck", then what good is our economy?"
+ civic_mercenary_fleets:0 "Mercenary Fleets"
+ civic_mercenary_fleets_desc:0 "Rival companies regularly hire organised mercenary fleets in order to attack and raid their competitors with many of the nations officers growing up in this environment or taking part when off duty. This has led to a robust naval tradition and a wealth of talented officers."
+ civic_opportunity:0 "Company of Opportunity"
+ civic_opportunity_desc:0 "A MegaCorp that enjoys a rotating schedule of leadership, they believe that the more minds that are put together, the better! Promotion opportunities are massive, and potential CEOs line up in front of the door and out of the office building for a chance to make changes throughout the company!"
+ civic_eternal_contract:0 "Eternal Contracts"
+ civic_eternal_contract_desc:0 "These employees knew what they signed up for. It was in their contract. They will work for 16 hours a day, 7 days a week. All for the good of the company! When they signed their name on the dotted line, whose fault is it, really? \n\n£job_clerk£ §Y$job_clerk$ Jobs§! produce an additional §H1.5§! £trade_value£ §HTrade Value§! but produce §R2 less§! £amenities£ §YAmenities§!"
+ civic_enlightened_traders:0 "Enlightened Traders"
+ civic_enlightened_traders_desc:0 "This society believes that conflict is a waste of lives and valuable resources and all intelligent species have a moral obligation to prevent it and to focus on improving the lives of their citizens.\n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_supervisor£ §Y$job_supervisor_plural$§!, which produce £unity£ §YUnity§!, increase £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, multiply planetary $mod_planet_jobs_society_research_produces_mult$ and increase §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!."
+ civic_private_police:0 "Private Police Forces"
+ civic_private_police_desc:0 "Large corporations establish their own private police forces in order to protect their property and trade routes from bandits and rivals."
+ civic_corporate_nepotism:0 "Corporate Nepotism"
+ civic_corporate_nepotism_desc:0 "Corporations within this nation regularly hire and promote their family members to positions of power to ensure loyalty within their corporation and to ensure they maintain the prestige of their family."
+ civic_ethical_investments:0 "Ethical Investments"
+ civic_ethical_investments_desc:0 "The people of this nation consider the morality of the actions of a company and the harm it is doing to other life to be critical to whether or not they will invest in it."
+ civic_sports:0 "Controlled Sporting Events"
+ civic_sports_desc:0 "All sports events in the nation are controlled by a series of megacorps who field their own athletes and teams with citizens cheering for the competitors from their favoured MegaCorp as opposed to a team from any given area. \n\n£job_entertainer£ §Y$job_entertainer$§! Jobs add an additional §E2§! £unity£ §EUnity§! and §G2§! £society£ §GSociety§! \n\nStarts with the §BHolo-Entertainment§! Technology unlocked \n\nStart with a §BHolo-Theatre§! instead of a §YCommercial Zone§! building"
+ civic_frontier:0 "Funded Frontiers"
+ civic_frontier_desc:0 "Company-funded relocation services were popular before the age of space travel. Thankfully for the employees, their company never backed down during the development of space flight. They will be relieved to know that their right to relocate will be fully backed by their superiors!"
+ 
+ 
+building_galactic_circus:0 "Galactic Circus"
+ building_galactic_circus_desc:0 "The fun never stops! This empire is enjoying a circus that is lasting as long as this building stands, and is even providing new opportunities for potential entertainers!"
+ building_magnificant_greenhouse:0 "Magnificant Greenhouse"
+ building_magnificant_greenhouse_desc:0 "A facility so grand that it attracts naturalists and health care workers alike! Not only does this facility promote a sense of natural growth, it's also convenient for health care workers, as they can enjoy fresh plants to create medicine from!"
+ 
+#Criminal Syndicates Only
+building_loan_shark_office:0 "Loan Shark Office"
+building_loan_shark_office_desc:0 "Totally legitimate managers are more than willing to help out their fellow friends! All you have to do is to sign your name on the dotted line (with your blood) once you read the completely not vague contract! Also if you don't pay us back, we will break into your home and carbonate your milk."
+ 
+###Not a MegaCorp civic, but I would rather leave this code in my own localization files
+civic_scientific_quotas:0 "Scientific Quotas"
+ civic_scientific_quotas_desc:0 "There are quotas that need to be met, and competition arises among the scientists! Every scientist in this society is rushing to do whatever they can to get their latest project done, or be quick to make their latest discovery. The government encourages this, and thus these scientists work overtime purely for competition among one another!"

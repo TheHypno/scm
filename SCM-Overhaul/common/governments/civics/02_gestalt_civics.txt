@@ -58,7 +58,7 @@ civic_hive_divided_attention = {
 	potential = { authority = { value = auth_hive_mind } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_admin_cap_add = 30
+		country_admin_cap_mult = 0.3
 	}
 }
 
@@ -147,6 +147,9 @@ civic_machine_servitor = {
 			NOR = {
 				value = civic_machine_terminator
 				value = civic_machine_assimilator
+				value = civic_machine_emotions
+				value = civic_machine_overlord
+				value = civic_machine_influencer
 			}
 		}
 	}
@@ -177,6 +180,10 @@ civic_machine_terminator = {
 			NOR = {
 				value = civic_machine_servitor
 				value = civic_machine_assimilator
+				value = civic_machine_corporatized
+				value = civic_machine_emotions
+				value = civic_machine_influencer
+				value = civic_machine_aperature_science
 			}
 		}
 	}
@@ -204,6 +211,8 @@ civic_machine_assimilator = {
 			NOR = {
 				value = civic_machine_servitor
 				value = civic_machine_terminator
+				value = civic_machine_influencer
+				value = civic_machine_aperature_science
 			}
 		}
 	}
@@ -261,17 +270,33 @@ civic_machine_unitary_cohesion = {
 
 civic_machine_rockbreakers = {
 	potential = { authority = { value = auth_machine_intelligence } }
+				possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_ecology
+				value = civic_machine_industry
+			}
+		}
+	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_miners_minerals_produces_add = 1.5
+			station_gatherers_produces_mult = 0.10
+			category_materials_research_speed_mult = 0.15
 	}
 }
 
 civic_machine_zero_waste_protocols = {
 	potential = { authority = { value = auth_machine_intelligence } }
+			possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_beauty
+			}
+		}
+	}
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pops_robotics_upkeep_mult = -0.2
+		planet_pops_robotics_upkeep_mult = -0.25
 	}
 }
 
@@ -293,6 +318,13 @@ civic_machine_ota_updates = {
 
 civic_machine_warbots = {
 	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_selfdefense
+			}
+		}
+	}
 	random_weight = { base = 5 }
 	modifier = {
 		army_damage_mult = 0.3
@@ -304,7 +336,7 @@ civic_machine_introspective = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_engineering_tech_research_speed = 0.33
+		country_engineering_tech_research_speed = 0.2
 	}
 }
 
@@ -329,7 +361,7 @@ civic_machine_replication = {
 	potential = { authority = { value = auth_machine_intelligence } }
 	random_weight = { base = 5 }
 	modifier = {
-		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_mult = 0.1
 	}
 }
 

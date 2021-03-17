@@ -27,10 +27,26 @@ civic_franchising = {
 	}
 }
 
+civic_trading_posts = {
+	potential = { authority = { value = auth_corporate } }
+	random_weight = { base = 5 }
+	modifier = {
+		country_starbase_capacity_add = 4
+	}
+}
 
 civic_media_conglomerate = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
+	
+	possible = {
+		civics = {
+			NOR = {
+				 value = civic_motivation
+			}
+		}
+	}
+	
 	modifier = {
 		country_war_exhaustion_mult = -0.1
 		pop_citizen_happiness = 0.05
@@ -59,7 +75,14 @@ civic_free_traders = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 
-
+	possible = {
+		
+		civics = {
+			NOR = {
+				value = civic_eternal_contract
+			}
+		}
+	}
 
 	modifier = {
 		trade_value_mult = 0.15
@@ -71,9 +94,9 @@ civic_free_traders = {
 civic_private_prospectors = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
-	modifier = {
-		country_admin_cap_add = 20
-	}
+	# modifier = {
+		# country_admin_cap_add = 20
+	# }
 
 	# unlocks sponsored_colonizer ship size
 	description = "civic_tooltip_private_prospectors_effects"
@@ -118,9 +141,19 @@ civic_ruthless_competition = {
 }
 
 civic_criminal_heritage = {
-	modification = no
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
+	
+	possible = {
+		civics = {
+			NOR = {
+				 value = civic_troupe
+				 value = civic_research_inc
+				 value = civic_ecological_corp
+			}
+		}
+	}
+	
 	modifier = {
 			planet_branch_offices_cost_mult = -0.25
 			empire_size_branch_office_mult = -0.20
@@ -146,6 +179,7 @@ civic_indentured_assets = {
 		civics = {
 		NOR = {
 				value = civic_reeducated_labor
+				value = civic_motivation
             }
 		}
 
@@ -234,13 +268,9 @@ civic_welfare_state = {
 #Corporate Socialism		#By Hypno and Broad
 civic_shared_profits = {
 	potential = {
-		authority = {
-			NOR = {
-				 value = auth_hive_mind
-				 value = auth_machine_intelligence
+		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
+		# authority = { NOT = {  value = auth_corporate } }
 			}
-		}
-	}
 	possible = {
 		ethics = {
 			
@@ -287,8 +317,12 @@ civic_bank_corp = {			#By Hypno
 	}
 	possible = {
 		ethics = {
-			value = ethic_fanatic_materialist
-		}
+			OR = {
+					text = civic_tooltip_capitalism
+					value = ethic_capitalism
+					value = ethic_fanatic_capitalism
+				}
+			}
 		civics = {
 		}
 		authority = {
