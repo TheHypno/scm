@@ -585,7 +585,6 @@ civic_star_settlers = {
 	random_weight = { base = 5 }
 	modifier = {
 
-				country_starbase_influence_cost_mult = -0.15
 				planet_colony_development_speed_mult = 0.33
 				colony_start_num_pops_add = 1
                 category_new_worlds_research_speed_mult	= 0.1
