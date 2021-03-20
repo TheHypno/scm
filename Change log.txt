@@ -143,3 +143,8 @@
 
 - Removed changes to traits
 - Added Wooly Advisor Pack
+
+20/03/2021 - Hypno
+
+- Edited start menu GUI so as to properly fit ethics and civics in.
+- Expanded other GUI windows too take better advantage of new GUI sizes.

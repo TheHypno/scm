@@ -1,6 +1,6 @@
 @movable_editors = no
-@sub_window_pos_y = -50
-@sub_window_height = 400
+@sub_window_pos_y = -100
+@sub_window_height = 500
 
 guiTypes = {
 	containerWindowType = {
@@ -518,7 +518,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "voice_types"
 			position = { x = 385 y = 15 }
-			size = { width = 504 height = 350 }
+			size = { width = 504 height = 420 }
 			verticalScrollBar = "right_vertical_slider"
 			margin = { top = 2 bottom = 2 }
 			
@@ -531,7 +531,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "gridbox"
 				position = { x = 2 y = 2 }
-				size = { width = 504 height = 350 }
+				size = { width = 504 height = 420 }
 				slotSize = { width = 250 height = 38 }
 				max_slots_horizontal = 2
 				format = "UPPER_LEFT"
@@ -864,7 +864,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available"
-			size = { width = 280 height = 289 }
+			size = { width = 280 height = 349 }
 			position = { x = 428 y = 21 }
 			
 			background = {
@@ -876,7 +876,7 @@ guiTypes = {
 			smoothListboxType = {
 				name = "entries"
 				position = { x = 10 y = 12 }
-				size = { x = 251 y = 267 }
+				size = { x = 251 y = 329 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
@@ -887,7 +887,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "current"
-			size = { width = 270 height = 289 }
+			size = { width = 270 height = 349 }
 			position = { x = 715 y = 21 }
 			
 			background = {
@@ -899,7 +899,7 @@ guiTypes = {
 			smoothListboxType = {
 				name = "entries"
 				position = { x = 10 y = 12 }
-				size = { x = 251 y = 267 }
+				size = { x = 251 y = 329 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
@@ -1962,8 +1962,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_city_gfx_culture_editor"
 		moveable = @movable_editors
-		position = { x = -400 y = -50 }
-		size = { width = 1030 height = 400 }
+		position = { x = -400 y = @sub_window_pos_y }
+		size = { width = 1030 height = @sub_window_height }
 		orientation = center
 		
 		background = {
@@ -2097,9 +2097,16 @@ guiTypes = {
 			text =	 "asdf"
 			format = centre
 			alwaysTransparent = yes
-		}		
+		}
+		
+		buttonType = {
+			name = "missing_dlc_overlay"
+			quadTextureSprite = "GFX_city_culture_locked_overlay"
+			position = { x = 6 y = 1 }
+			size = { x = 340 y = 140 }
+		}
 	}
-	
+
 	#######################
 	# origin
 	#######################
@@ -3188,7 +3195,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "available"
-			size = { width = 290 height = 200 }
+			size = { width = 290 height = 280 }
 			position = { x = 15 y = 110 }
 			
 			background = {
@@ -3200,7 +3207,7 @@ guiTypes = {
 			smoothListboxType = {
 				name = "entries"
 				position = { x = 10 y = 0 }
-				size = { x = 260 y = 200 }
+				size = { x = 260 y = 280 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
@@ -3525,8 +3532,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "ship_gfx_culture_editor"
 		moveable = @movable_editors
-		position = { x = -400 y = -50 }
-		size = { width = 1030 height = 400 }
+		position = { x = -400 y = @sub_window_pos_y }
+		size = { width = 1030 height = @sub_window_height }
 		orientation = center
 		
 		background = {
@@ -3560,7 +3567,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "grid_window"
 			position = { x = 7 y = 43 }
-			size = { width = 1020 height = 318 }
+			size = { width = 1020 height = 398 }
 			orientation = upper_left
 			moveable = no
 			margin = { top = 2 bottom = 2 }
@@ -3574,7 +3581,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "grid"
 				position = { x = 0 y = 0 }
-				size = { width = 1010 height = 305 }
+				size = { width = 1010 height = 385 }
 				slotSize = { width = 338 height = 138 }
 				max_slots_horizontal = 3
 				format = UPPER_LEFT
