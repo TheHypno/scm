@@ -271,6 +271,13 @@ civic_shared_profits = {
 		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
 		# authority = { NOT = {  value = auth_corporate } }
 			}
+	potential = {
+	authority = {
+			OR = {
+				 value = auth_corporate
+			}
+		}
+		}
 	possible = {
 		ethics = {
 			
@@ -285,11 +292,7 @@ civic_shared_profits = {
 			 }			 
 		}
 
-		authority = {
-			OR = {
-				 value = auth_corporate
-			}
-		}
+		
 		civics = {
 			NOR = {
 				 value = civic_welfare_state

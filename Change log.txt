@@ -112,12 +112,12 @@
 
 
 31/08/2020 - Anika
--Removed democratic government type restriction for "Shared Burdens" civic.
+- Removed democratic government type restriction for "Shared Burdens" civic.
 
 4/10/2020 - Hypno
 
 -Added papacy civic
--Slight nerf to Ancestor worship society research buff reduced from 20% to 15%
+- Slight nerf to Ancestor worship society research buff reduced from 20% to 15%
 
 28/10/2020 - Hypno
 
@@ -148,3 +148,15 @@
 
 - Edited start menu GUI so as to properly fit ethics and civics in.
 - Expanded other GUI windows too take better advantage of new GUI sizes.
+
+21/03/2021 - Hypno
+
+- Rebalanced keepers of harmony
+		+removed reduced pop CG upkeep from -15%
+		+reduced pop aminities usage to 10% from 15%
+- Rebalanced Immutable Hierarchy
+		+removed extra influence from +0.5
+		+removed extra country trade fee from 15%
+- Rebalanced Labout unions
+		+increased worker happieness to +10% from +5%
+- Moved auth_coroprate requirement from shared profits from possible to potential

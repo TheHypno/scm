@@ -219,9 +219,8 @@ civic_keepers_harmony = {
 	modifier = {
 				
                 planet_pops_organics_food_upkeep_mult = -0.1
-				planet_pops_minerals_upkeep_mult = -0.1
-                planet_pops_consumer_goods_upkeep_mult = -0.15				
-				pop_amenities_usage_mult = -0.15		
+				planet_pops_minerals_upkeep_mult = -0.1		
+				pop_amenities_usage_mult = -0.10		
 				planet_max_districts_add = -1
 
 
@@ -1196,7 +1195,7 @@ civic_police_state = {
 
 
 
-#Harmonious Hierarchy - icon???
+#Immutable Hierarchy - icon???
 civic_ultimate_collective = {
 	potential = {
 		ethics = { NOT = {  value = ethic_gestalt_consciousness } }
@@ -1230,8 +1229,6 @@ civic_ultimate_collective = {
 
                pop_government_ethic_attraction = 0.33	   
 			   planet_stability_add = 10
-			   country_base_influence_produces_add = 0.5				   
-			   country_trade_fee = 0.15
 
 	}
 }
@@ -1543,7 +1540,7 @@ civic_labour_unions = {
 		}
 	}
 	modifier = {
-		pop_cat_worker_happiness = 0.05
+		pop_cat_worker_happiness = 0.1
 		pop_cat_worker_political_power = 1
 		job_agitator_per_pop = 0.02
 	}
