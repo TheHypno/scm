@@ -134,6 +134,15 @@ researcher = {
 		complex_specialist_job_check_trigger = yes
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_civic = civic_research_inc }
+			}
+		modifier = {
+			trade_value_add = 3
+		}
+	}
+
 	resources = {
 		category = planet_researchers
 		produces = {
@@ -146,8 +155,18 @@ researcher = {
 				exists = owner
 				owner = { or = { has_valid_civic = civic_technocracy  has_valid_civic = civic_cyber_dictatorship  has_valid_civic = civic_science_directorate  has_valid_civic = civic_cyber_demos_cratos } }
 			}
-			unity = 0.75
+			unity = 0.50
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_valid_civic = civic_research_inc }
+				}
+			physics_research = -2
+			engineering_research = -2
+			society_research = -2
+		}
+		
 		upkeep = {
 			consumer_goods = 2
 		}
@@ -322,7 +341,8 @@ priest = {
 		modifier = {
 			factor = 2
 			exists = owner
-			owner = { or = { has_valid_civic = civic_exalted_priesthood  has_valid_civic = civic_imperial_cult  has_valid_civic = civic_divine_council  has_valid_civic = civic_spiritual_democracy } }
+			owner = { has_civic = civic_exalted_priesthood }
+		}
 		modifier = {
 			factor = 2
 			OR = {
@@ -422,7 +442,6 @@ priest = {
 		}
 	}
 }
-}
 
 death_priest = {
 	category = specialist
@@ -452,6 +471,9 @@ death_priest = {
 				owner = { has_valid_civic = civic_exalted_priesthood }
 			}
 			unity = 1
+		}
+		upkeep = {
+			consumer_goods = 3
 		}
 	}
 
@@ -1088,11 +1110,29 @@ entertainer = {
 		upkeep = {
 			consumer_goods = 1
 		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_civic = civic_sports }
+			}
+			unity = 2
+			society_research = 2
+		}
 	}
 
 	planet_modifier = {
 		planet_amenities_add = 10
 	}
+	
+	# triggered_planet_modifier = {
+		# potential = {
+			# owner = { has_civic = civic_sports }
+			# }
+		# modifier = {
+			# pop_happiness = 0.02
+		# }
+	# }
+	
 
 	triggered_planet_modifier = {
 		potential = {
@@ -1460,19 +1500,10 @@ bureaucrat = {
 				exists = owner
 				owner = { has_valid_civic = civic_byzantine_bureaucracy }
 			}
-			unity = 1
+			unity = 2
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_valid_civic = civic_byzantine_bureaucracy }
-		}
-		modifier = {
-			planet_stability_add = 1
-		}
-	}
 
 	country_modifier = {
 		country_admin_cap_add = 10
@@ -1490,9 +1521,25 @@ bureaucrat = {
 			}
 		}
 		modifier = {
-			country_admin_cap_add = 1
+			country_admin_cap_add = 2
 		}
 	}
+	
+	# triggered_country_modifier = {
+		# potential = {
+			# exists = planet
+			# planet = {
+				# exists = sector
+				# sector = {
+					# exists = leader
+					# leader = { has_trait = leader_trait_bureaucrat_alpha }
+				# }
+			# }
+		# }
+		# modifier = {
+			# country_admin_cap_add = 2
+		# }
+	# }
 
 	triggered_country_modifier = {
 		potential = {
@@ -2492,7 +2539,11 @@ naval_support_staff = {
 	country_modifier = {
 		country_naval_cap_add = 8
 	}
-
+	resources = {
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes

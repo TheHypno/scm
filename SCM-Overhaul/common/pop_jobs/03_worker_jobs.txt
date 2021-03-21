@@ -24,6 +24,13 @@ clerk = {
 	}
 	triggered_planet_modifier = {
 		potential = {
+			owner = { has_civic = civic_eternal_contract }
+		}
+		trade_value_add = 1.5
+		planet_amenities_add = -2
+	}
+	triggered_planet_modifier = {
+		potential = {
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -299,6 +306,14 @@ miner = {
 		category = planet_miners
 		produces = {
 			minerals = 4
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_civic = civic_profitized_mining
+				}
+			}
+			energy = 0.5
 		}
 		upkeep = {
 			trigger = {

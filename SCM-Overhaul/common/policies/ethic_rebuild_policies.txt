@@ -777,6 +777,7 @@ trade_policy = {
 			NOR = {
 				has_policy_flag = "economic_stance_planned"
 				has_ethic = "ethic_fanatic_socialism"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -807,6 +808,7 @@ trade_policy = {
 			NOR = {
 				has_policy_flag = "economic_stance_planned"
 				has_ethic = "ethic_fanatic_socialism"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -839,6 +841,7 @@ trade_policy = {
 			NOR = {
 				has_policy_flag = "economic_stance_market"
 				has_policy_flag = "economic_stance_planned"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -884,6 +887,7 @@ trade_policy = {
 			NOR = {
 				has_policy_flag = "economic_stance_market"
 				has_ethic = "ethic_fanatic_capitalism"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -915,6 +919,7 @@ trade_policy = {
 			NOR = {
 				has_policy_flag = "economic_stance_market"
 				has_ethic = "ethic_fanatic_capitalism"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -972,6 +977,7 @@ trade_policy = {
              }
 			NOR = {
 				has_policy_flag = "economic_stance_market"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -998,6 +1004,7 @@ trade_policy = {
              }
 			NOR = {
 				has_policy_flag = "economic_stance_market"
+				# has_valid_civic = civic_research_inc
 			}
 		}
 
@@ -1101,11 +1108,11 @@ bureaucracy = {
 
 		modifier = {
 
-		country_admin_cap_mult = 0.2
-        governor_skill_levels = 1
+		# country_admin_cap_mult = 0.2
+        # governor_skill_levels = 1
 		edicts_cost_mult = 0.25
 		pop_ethic_egalitarian_attraction_mult = 0.15
-
+		pop_factions_influence_produces_mult = 0.33
 
 
 		}
@@ -1408,7 +1415,8 @@ industrial = {
 		valid = {
 			NOR = {
 				has_valid_civic = civic_industrial_economy
-				has_ethic = "ethic_fanatic_industrial"					
+				has_ethic = "ethic_fanatic_industrial"		
+				has_valid_civic = civic_machine_industry
 			}
 		}
 

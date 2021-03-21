@@ -202,8 +202,8 @@ high_priest = {
 			owner = { has_valid_civic = civic_machine_cult }
 		}
 		modifier = {
-			planet_jobs_robotic_produces_mult = 0.05
-			planet_jobs_engineering_research_produces_mult = 0.05
+			planet_jobs_robotic_produces_mult = 0.01
+			planet_jobs_engineering_research_produces_mult = 0.02
 		}
 	}
 
@@ -349,6 +349,16 @@ administrator = {
 			planet_amenities_add = 5
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+		    exists = owner
+			owner = { or = { has_valid_civic = civic_shared_burden } }
+		}
+		modifier = {
+			planet_amenities_add = 7
+		}
+	}
 
 	triggered_planet_modifier = {
 		potential = {
@@ -455,6 +465,15 @@ noble = {
 		category = planet_nobles
 		produces = {
 			unity = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_civic = civic_inheritance
+		}
+		modifier = {
+			trade_value_add = 5
 		}
 	}
 

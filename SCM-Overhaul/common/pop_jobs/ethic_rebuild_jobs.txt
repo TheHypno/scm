@@ -31,9 +31,9 @@ deep_miner = {
 					is_gestalt = no
 				}
 			}
-			minerals = 3
-			energy = 2
-			engineering_research = 1
+			minerals = 5
+			energy = 4
+			# engineering_research = 1
 		}
 
 		produces = {
@@ -440,7 +440,7 @@ labour_hero = {
 			energy = 2
 			minerals = 2
 			food = 2
-			unity = 5
+			unity = 2
 		}
 		
         produces = {
@@ -915,8 +915,8 @@ geoengineer = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			physics_research = 4
-			engineering_research = 4
+			physics_research = 1
+			engineering_research = 1
 		}
 		upkeep = {
 			consumer_goods = 1.5
@@ -1010,11 +1010,11 @@ xenobiologist  = {
 		category = planet_researchers
 		produces = {
 
-			society_research = 6
+			society_research = 3
 		}
 
 		upkeep = {
-			consumer_goods = 2
+			consumer_goods = 1
 		}
 
 		upkeep = { # Added since it is affected by research subsidies as it increases overall output of all researchers
@@ -1366,7 +1366,7 @@ techno_priest = {
 		category = planet_pop_assemblers
 		produces = {
 			unity = 3
-			engineering_research = 4
+			engineering_research = 2
 		}
 		produces = {
 			trigger = {
@@ -1377,6 +1377,14 @@ techno_priest = {
 		}
 		upkeep = {
 			consumer_goods = 1
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_valid_civic = civic_machine_influencer
+					}
+				}
+			consumer_goods = 0
 		}
 	}
 
@@ -1666,11 +1674,10 @@ agitator = {					#By Hypno and Broad
 	}
 
 	pop_modifier = {
-		pop_defense_armies_add = 5
+		pop_defense_armies_add = 1
 	}
 
 	planet_modifier = {
-		planet_crime_add = -40
 		planet_jobs_worker_produces_mult = 0.10
 		planet_jobs_specialist_produces_mult = 0.10
 		planet_stability_add = -5
