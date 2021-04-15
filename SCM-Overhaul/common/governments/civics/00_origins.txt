@@ -110,7 +110,7 @@ origin_mechanists = {
 		}
 	}
 
-	modifier = { planet_pops_robotics_upkeep_mult = -0.05 }
+	modifier = { planet_pops_robotics_upkeep_mult = -0.1 }
 
 	description = "origin_tooltip_mechanists_effects"
 
@@ -264,10 +264,6 @@ origin_shattered_ring = {
 	}
 
 	advanced_start = yes
-
-	random_weight = {
-		base = 2
-	}
 }
 
 origin_void_dwellers = {

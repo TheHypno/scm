@@ -4849,6 +4849,8 @@ country_event = {
 }
 
 # Primitive Civilization Conquered - HIDDEN
+# Made it so only 4 pops will survive, making it less lucrative to invade primitives and to incentivise slowly uplifting them instead
+# Overwriting this will be better for performance than making a new event that fires at the same time in the same circumstances
 country_event = {
 	id = action.14
 	hide_window = yes
@@ -4869,6 +4871,13 @@ country_event = {
 				add_modifier = {
 					modifier = planet_culture_shock
 					years = 10
+				}
+				if = {
+					limit = { count_pops = { count > 4 } }
+					while = {
+						limit = { count_pops = { count > 4 } }
+						random_pop = { kill_pop = yes }
+					}
 				}
 				set_owner = ROOT
 			}

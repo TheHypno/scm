@@ -80,6 +80,11 @@ tech_interstellar_economics = {
 		is_gestalt = no
 	}
 
+	prereqfor_desc = {
+		custom = {
+        	title = "flag_spbm_clerk_buff"
+		}
+	}
 	weight_modifier = {
 		factor = 2
 		modifier = {
@@ -131,6 +136,11 @@ tech_galactic_markets = {
 		is_gestalt = no
 	}
 
+	prereqfor_desc = {
+		custom = {
+        	title = "flag_spbm_clerk_buff"
+		}
+	}
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
