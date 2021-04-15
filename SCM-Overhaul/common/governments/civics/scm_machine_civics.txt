@@ -1,0 +1,557 @@
+civic_machine_servitor = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_assimilator
+				value = civic_machine_emotions
+				value = civic_machine_overlord
+				value = civic_machine_influencer
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_machine_servitor_effects
+	has_secondary_species = {	# see game_start.11
+		title = civic_machine_servitor_secondary_species
+	}
+}
+
+civic_machine_terminator = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	homeworld = pc_nuked # Changes homeworld class regardless of what is picked for empire
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_servitor
+				value = civic_machine_assimilator
+				value = civic_machine_corporatized
+				value = civic_machine_emotions
+				value = civic_machine_influencer
+				value = civic_machine_aperature_science
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+	}
+	description = civic_tooltip_machine_terminator_effects
+	modifier = {
+		country_starbase_influence_cost_mult = -0.3
+		ship_weapon_damage = 0.25
+		starbase_shipyard_build_cost_mult = -0.15
+		country_naval_cap_mult = 0.33
+	}
+}
+
+civic_machine_assimilator = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_servitor
+				value = civic_machine_terminator
+				value = civic_machine_influencer
+				value = civic_machine_aperature_science
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	description = civic_tooltip_machine_assimilator_effects
+	has_secondary_species = {	# see game_start.11
+		title = civic_machine_assimilator_secondary_species
+		traits = {
+			trait = trait_cybernetic
+		}
+	}
+}
+
+civic_machine_builder = {
+	#description = "civic_tooltip_functional_architecture_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		planet_structures_cost_mult = -0.10
+		planet_structures_upkeep_mult = -0.15
+		planet_building_build_speed_mult = 0.25
+	}
+}
+
+civic_machine_factory_overclock = {
+	icon = "gfx/interface/icons/governments/civics/civic_machine_factory_overclock.dds"
+    potential = { authority = { value = auth_machine_intelligence } }
+    random_weight = { base = 5 }
+    modifier = {
+        leader_skill_levels = 2
+		species_leader_exp_gain = 0.33
+    }
+}
+
+civic_machine_unitary_cohesion = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		country_unity_produces_mult = 0.2
+		empire_size_penalty_mult = -0.1
+	}
+}
+
+civic_machine_rockbreakers = {
+	potential = { authority = { value = auth_machine_intelligence } }
+				possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_ecology
+				value = civic_machine_industry
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+			station_gatherers_produces_mult = 0.10
+			category_materials_research_speed_mult = 0.15
+	}
+}
+
+civic_machine_zero_waste_protocols = {
+	potential = { authority = { value = auth_machine_intelligence } }
+			possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_beauty
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		planet_pops_robotics_upkeep_mult = -0.25
+	}
+}
+
+civic_machine_built_to_last = {
+	potential = { always = no }
+	random_weight = { base = 5 }
+	modifier = {
+		pop_amenities_usage_no_happiness_mult = -0.25
+	}
+}
+
+civic_machine_ota_updates = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		edicts_cost_mult = -0.33
+	}
+}
+
+civic_machine_warbots = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_selfdefense
+			}
+		}
+	}
+	random_weight = { base = 5 }
+	modifier = {
+		army_damage_mult = 0.3
+		armies_upkeep_mult = -0.3
+	}
+}
+
+civic_machine_introspective = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		country_engineering_tech_research_speed = 0.2
+	}
+}
+
+civic_machine_delegated_functions = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		leaders_upkeep_mult = -0.33
+		country_leader_pool_size = 3
+	}
+}
+
+civic_machine_predictive_analysis = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		num_tech_alternatives_add = 1
+	}
+}
+
+civic_machine_replication = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	modifier = {
+		planet_pop_assembly_mult = 0.1
+	}
+}
+
+civic_machine_maintenance_protocols = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	random_weight = { base = 5 }
+	description = civic_tooltip_machine_maintenance_protocols_effects
+}
+
+#Machine Civics added by Wooly below
+civic_machine_aperature_science = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_assimilator
+				value = civic_machine_terminator
+				value = civic_machine_influencer
+				}
+			}
+		}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	
+	modifier = {
+		ships_upkeep_mult = 0.1
+		# country_society_tech_research_speed = 0.15
+		country_physics_tech_research_speed = 0.2
+		# country_engineering_tech_research_speed = 0.1		
+	}
+}
+
+civic_machine_ecology = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_rockbreakers
+				value = civic_machine_industry
+				}
+			}
+		}
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	# description = civic_tooltip_machine_ecology_effects
+	modifier = {
+		terraforming_cost_mult = -0.20
+		deposit_blockers_cost_mult = -0.20
+		pop_amenities_usage_mult = -0.1
+	}
+}
+
+civic_machine_emotions = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_war
+				value = civic_machine_servitor
+				}
+			}
+		}
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	# description = civic_tooltip_machine_emotions_effects
+	modifier = {
+		diplo_weight_mult = 0.2
+		diplomacy_upkeep_mult = -0.2
+		envoys_add = 3
+		country_society_tech_research_speed	= 0.15
+	}
+}
+
+civic_machine_war = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_emotions
+				}
+			}
+		}
+	
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	# description = civic_tooltip_machine_war_effects
+	modifier = {
+		ship_fire_rate_mult = 0.1
+		# planet_army_build_speed_mult = 0.2
+		# army_damage_mult = 0.1
+		country_claim_influence_cost_mult = -0.2
+		ships_upkeep_mult = 0.1
+	}
+}
+
+civic_machine_corporatized = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				}
+			}
+		}
+	
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	# description = civic_tooltip_machine_corporatized_effects
+	modifier = {
+		country_energy_produces_mult = 0.15
+		# country_trade_fee = -0.1
+		country_trade_attractiveness = 0.25
+	}
+}
+
+civic_machine_selfdefense = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+			civics = {
+			NOR = {
+				value = civic_machine_war
+				value = civic_machine_warbots
+				}
+			}
+		}
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	
+	# description = civic_tooltip_machine_selfdefense_effects
+	modifier = {
+		planet_army_build_speed_mult = 0.2
+		army_damage_mult = 0.2
+		planet_stability_add = 10
+		
+	}
+}
+
+civic_machine_overlord = {
+	potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+			civics = {
+			NOR = {
+				value = civic_machine_servitor
+				}
+			}
+		}
+	
+	modification = yes
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	
+	# description = civic_tooltip_machine_overlord_effects
+	modifier = {
+		country_base_influence_produces_add = 0.25
+		ruler_skill_levels = 2
+		planet_crime_add = -25
+	}
+}
+
+civic_machine_industry = {
+		potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+			civics = {
+			NOR = {
+				value = civic_machine_ecology
+				value = civic_machine_rockbreakers
+				value = civic_machine_beauty
+				}
+			}
+		}
+		
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+
+	# description = civic_tooltip_machine_industry_effects
+	modifier = {
+		# planet_max_districts_add = 2
+		country_minerals_produces_mult = 0.15
+		pop_amenities_usage_mult = 0.1
+	}
+}
+
+civic_machine_beauty = {
+			potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+			civics = {
+			NOR = {
+				value = civic_machine_zero_waste_protocols
+				value = civic_machine_assimilator
+				}
+			}
+		}
+		
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+
+	# description = civic_tooltip_machine_beauty_effects
+	modifier = {
+		planet_amenities_mult = 0.2
+		planet_pops_robotics_upkeep_mult = 0.1
+	}
+}
+		
+civic_machine_influencer = {
+		potential = { authority = { value = auth_machine_intelligence } }
+		possible = {
+			civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_assimilator
+				value = civic_machine_servitor
+				value = civic_machine_aperature_science
+				}
+			}
+		}
+		
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+		modifier = {
+			# civic has no effect after galaxy generation, disable for random generation
+			factor = 0
+			has_global_flag = game_started
+		}
+	}
+	modifier = {
+		ship_fire_rate_mult = 0.1
+	}
+		# description = civic_tooltip_machine_influencer_effects
+		# has_secondary_species = {	# see game_start.11
+		# title = civic_machine_influencer_secondary_species
+	# }
+}
