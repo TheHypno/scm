@@ -558,7 +558,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "species_preview_civic"
-		size = { width = 240 height = 80 }
+		size = { width = 240 height = 32 }
 
 		background = {
 			name = "bg"
