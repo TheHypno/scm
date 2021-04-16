@@ -1,3 +1,0 @@
-#civic_peacekeepers
-
-# Set any empire as your rival, gains influence but hurts relations. Usable by regular, fallen & awakened empires.
