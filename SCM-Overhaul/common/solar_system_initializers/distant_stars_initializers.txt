@@ -22,7 +22,7 @@ star_lifting_system = {
 	    }
 	}
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 
 	flags = { star_lifting_system }
 	
@@ -157,7 +157,7 @@ big_rip_system = {
 	    }
 	}
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	flags = { big_rip_system }
 	
 	planet = {
@@ -225,7 +225,7 @@ time_loop_world_system = {
 	    }
 	}
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	flags = { time_loop_world_system }
 	
 	planet = {
@@ -318,7 +318,7 @@ toxic_planet_toxic_moon = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 
 	flags = { toxic_moon_system }
 
@@ -385,7 +385,7 @@ shattered_world_system = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 
 	flags = { shattered_world_system }
 
@@ -454,7 +454,7 @@ asteroid_system = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 
 	flags = { asteroid_system }
 
@@ -1038,7 +1038,7 @@ ice_system = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { ice_system }
 
@@ -1149,7 +1149,7 @@ high_energy_system = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { high_energy_system }
 
@@ -1220,7 +1220,7 @@ guardians_init_hatchling = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 
 	flags = { guardians_hatchling_system guardian hostile_system }
 
@@ -1292,7 +1292,7 @@ great_wound_system = {
 	}
 
 	max_instances = 1
-	spawn_chance = 9999	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	
 	planet = {
 		class = star
@@ -1687,7 +1687,7 @@ primitive_robot_system = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999	# scales by galaxy size (1000 stars = 10x base)
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	max_instances = 1
 
 	primitive_system = yes	# usage odds modified by primitives setup slider
@@ -1780,7 +1780,7 @@ superflare_system = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	max_instances = 1
 
 	flags = { superflare_system }
@@ -1870,7 +1870,7 @@ collapse_system = {
         }
 	}
 	primitive_system = yes
-	spawn_chance = 9999
+	scaled_spawn_chance = 8	# scales by galaxy size (1000 stars = 10x base)
 	max_instances = 1
 
 	flags = { collapse_system }
@@ -1937,7 +1937,7 @@ collapse_system = {
 						civic = civic_secret_of_fire
 						civic = civic_the_wheel
 					}
-					species = last_created
+					species = last_created_species
 					ethos = {
 						ethic = "ethic_fanatic_pacifist"
 						ethic = "ethic_materialist"
@@ -1975,7 +1975,7 @@ collapse_system = {
 				while = {
 					count = 4
 					create_pop = {
-						species = last_created
+						species = last_created_species
 					}					
 				}
 				add_building = building_crude_huts
@@ -2029,7 +2029,7 @@ old_foes_system = {
         }
 	}
 	primitive_system = yes
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { old_foes_system }
@@ -2081,7 +2081,7 @@ old_foes_system = {
 					civic = civic_secret_of_fire
 					civic = civic_the_wheel
 				}
-				species = last_created
+				species = last_created_species
 				ethos = random
 				origin = "origin_enlightened" # Should only be visible if they become spacefaring
 				flag = {
@@ -2112,7 +2112,7 @@ old_foes_system = {
 			while = {
 				count = 8
 				create_pop = {
-					species = last_created
+					species = last_created_species
 				}					
 			}
 			add_building = building_primitive_dwellings
@@ -2157,7 +2157,7 @@ old_foes_system = {
 					civic = civic_secret_of_fire
 					civic = civic_the_wheel
 				}
-				species = last_created
+				species = last_created_species
 				ethos = random
 				origin = "origin_enlightened" # Should only be visible if they become spacefaring
 				flag = {
@@ -2188,7 +2188,7 @@ old_foes_system = {
 			while = {
 				count = 8
 				create_pop = {
-					species = last_created
+					species = last_created_species
 				}					
 			}
 			add_building = building_primitive_dwellings
@@ -2243,7 +2243,7 @@ scavenger_system = {
 			is_bottleneck_system = yes
 		}
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { scavenger_bot_system guardian hostile_system }
@@ -2658,6 +2658,7 @@ scavenger_system = {
 			}
 		}
 		last_created_country = {
+			set_country_flag = guardian_scavenger_bot
 			if = {
 				limit = { NOT = { has_modifier = scavenger_bot_power } }
 				add_modifier = { modifier = scavenger_bot_power	days = -1 }
@@ -2781,7 +2782,7 @@ living_planet_system = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { living_planet_system }
@@ -2874,7 +2875,7 @@ elderly_tiyanki_system = {
 			is_bottleneck_system = yes
 		}
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { elderly_tiyanki_system guardian hostile_system }
@@ -3117,7 +3118,7 @@ ratling_1_1 = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { ruined_empire ratling_home_system ratling_system }
@@ -3973,7 +3974,7 @@ distar_pod_system = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { escape_pod_system }
@@ -4120,7 +4121,7 @@ distar_phaseshift_system = {
             has_star_flag = empire_cluster
         }
 	}
-	spawn_chance = 9999
+	scaled_spawn_chance = 8
 	max_instances = 1
 
 	flags = { phaseshift_system }
@@ -4248,7 +4249,6 @@ distantstars_init_00 = {
 			type = lgate_base
 			orbit_angle = 225
 			orbit_distance = 30
-			location = solar_system
 		}
 	}
 }
@@ -4319,7 +4319,6 @@ distantstars_init_06 = {
 			type = lgate_base
 			orbit_angle = 225
 			orbit_distance = 30
-			location = solar_system
 		}
 	}
 }
@@ -4538,7 +4537,6 @@ distantstars_init_01 = {
 			type = lgate_base
 			orbit_angle = 225
 			orbit_distance = 360
-			location = solar_system
 		}
 	}
 }

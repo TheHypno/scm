@@ -101,7 +101,7 @@ leader_trait_expertise_good_trading = {
 trait_ruler_immortal = {
 	cost = 1
 	modification = no
-	icon = "gfx/interface/icons/traits/leader_traits/trait_unknown.dds"
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_immortal.dds"
 
 	immortal_leaders = yes
 	leader_trait = { ruler }

@@ -20,7 +20,7 @@ progressive = {
 		years_passed > 10
 		has_encountered_other_species = yes
 		NOT = { has_authority = auth_hive_mind }
-		count_owned_pops = {
+		count_owned_pop = {
 			count >= 5
 			limit = {
 				has_ethic = ethic_egalitarian

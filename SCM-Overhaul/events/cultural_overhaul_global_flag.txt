@@ -5,6 +5,8 @@ event = {
 	hide_window = yes
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
 	trigger = { NOT = { has_global_flag = cultural_overhaul_active } }
 
 	immediate = { set_global_flag = cultural_overhaul_active }

@@ -6,11 +6,15 @@ country_event = {
 	title = "Immortal Ruler"
 	picture = GFX_evt_alien_propaganda
 	show_sound = event_celebration
-	desc = "Our God-like Ruler has achieved immortality."
+	desc = "immortal_ruler.1.desc"
 	is_triggered_only = yes
 
 	trigger = {
 		is_ai = no
+	}
+
+	option = {
+		name = YES
 	}
 
 	immediate = {
@@ -260,7 +264,7 @@ namespace = observation
 
 # Societal Shift towards Individualist
 country_event = {
-	id = observation.0001
+	id = observation.90001
 	hide_window = yes
 	
 	trigger = {
@@ -280,7 +284,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_capitalism } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_capitalism }
 					count > 1
 				}				
@@ -301,7 +305,7 @@ country_event = {
 }
 
 country_event = {
-	id = observation.0002
+	id = observation.90002
 	title = "observation.0002.name"
 	desc = "observation.0002.desc"
 	picture = GFX_evt_medieval_alien_civilization
@@ -319,7 +323,7 @@ country_event = {
 
 # Societal Shift towards Collectivism
 country_event = {
-	id = observation.1001
+	id = observation.91001
 	hide_window = yes
 	
 	trigger = {
@@ -339,7 +343,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_socialism } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_socialism }
 					count > 1
 				}				
@@ -354,13 +358,13 @@ country_event = {
 	immediate = {
 		shift_ethic = "ethic_socialism"
 		capital_scope = {
-			observation_outpost_owner = { country_event = { id = observation.1002 } }
+			observation_outpost_owner = { country_event = { id = observation.91002 } }
 		}
 	}
 }
 
 country_event = {
-	id = observation.1002
+	id = observation.91002
 	title = "observation.0002.name"
 	desc = "observation.1002.desc"
 	picture = GFX_evt_medieval_alien_civilization
@@ -378,7 +382,7 @@ country_event = {
 
 # Societal Shift towards Elitism
 country_event = {
-	id = observation.2001
+	id = observation.92001
 	hide_window = yes
 	
 	trigger = {
@@ -398,7 +402,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_elitist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_elitist }
 					count > 1
 				}				
@@ -413,13 +417,13 @@ country_event = {
 	immediate = {
 		shift_ethic = "ethic_elitist"
 		capital_scope = {
-			observation_outpost_owner = { country_event = { id = observation.2002 } }
+			observation_outpost_owner = { country_event = { id = observation.92002 } }
 		}
 	}
 }
 
 country_event = {
-	id = observation.2002
+	id = observation.92002
 	title = "observation.0002.name"
 	desc = "observation.2002.desc"
 	picture = GFX_evt_medieval_alien_civilization
@@ -436,7 +440,7 @@ country_event = {
 
 # Societal Shift towards Egalitarian
 country_event = {
-	id = observation.3001
+	id = observation.93001
 	hide_window = yes
 	
 	trigger = {
@@ -456,7 +460,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_pluralist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_pluralist }
 					count > 1
 				}				
@@ -477,7 +481,7 @@ country_event = {
 }
 
 country_event = {
-	id = observation.3002
+	id = observation.93002
 	title = "observation.0002.name"
 	desc = "observation.3002.desc"
 	picture = GFX_evt_medieval_alien_civilization
@@ -515,7 +519,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_green } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_green }
 					count > 1
 				}				
@@ -575,7 +579,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_industrial } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_industrial }
 					count > 1
 				}				

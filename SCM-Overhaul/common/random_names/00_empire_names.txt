@@ -2247,7 +2247,6 @@ empire_name_format = {
 				has_government = "gov_absolute_monarchy"
 				has_government = "gov_enlighted_socialism"
 				has_government = "gov_aristocratic_monarchy"
-				has_government = "gov_strasserism"
 				
 			}
 			is_pirate = no
@@ -2278,8 +2277,7 @@ empire_name_format = {
 			has_government = "gov_absolute_monarchy"
 			has_government = "gov_enlighted_socialism"
 			has_government = "gov_aristocratic_monarchy"
-			has_government = "gov_strasserism"
-
+			
 			}
 			is_pirate = no
 			is_primitive = no
@@ -2309,8 +2307,7 @@ empire_name_format = {
 			has_government = "gov_absolute_monarchy"
 			has_government = "gov_enlighted_socialism"
 			has_government = "gov_aristocratic_monarchy"
-			has_government = "gov_strasserism"
-
+			
 			}
 			is_pirate = no
 			is_primitive = no
@@ -2338,7 +2335,6 @@ empire_name_format = {
 				has_government = "gov_absolute_monarchy"
 				has_government = "gov_enlighted_socialism"
 				has_government = "gov_aristocratic_monarchy"
-				has_government = "gov_strasserism"
 			}
 			is_pirate = no
 			is_primitive = no
@@ -2362,7 +2358,6 @@ empire_name_format = {
 				has_government = "gov_despotic_empire"
 				has_government = "gov_feudal_empire"
 				has_government = "gov_peoples_commissariat"
-				has_government = "gov_strasserism"
 			}
 			is_pirate = no
 			is_primitive = no
@@ -2890,8 +2885,8 @@ empire_name_format = {
 			add = 1
 			OR = {
 				has_government = "gov_constitutional_dictatorship"
-				has_government = "gov_enlightened_dictatorship"
-				has_government = "gov_social_nationalism"
+				
+				
 				has_government = "gov_peoples_republic"
 				has_government = "gov_national_socialism"
 				has_government = "gov_republican_dictatorship"
@@ -2915,7 +2910,7 @@ empire_name_format = {
 			add = 1
 			OR = {
 				has_government = "gov_constitutional_dictatorship"
-				has_government = "gov_enlightened_dictatorship"
+				
 				has_government = "gov_peoples_republic"
 				has_government = "gov_national_socialism"
 				has_government = "gov_republican_dictatorship"
@@ -2940,7 +2935,7 @@ empire_name_format = {
 			add = 5
 			OR = {
 				has_government = "gov_constitutional_dictatorship"
-				has_government = "gov_enlightened_dictatorship"
+				
 				has_government = "gov_peoples_republic"
 				has_government = "gov_national_socialism"
 				has_government = "gov_republican_dictatorship"
@@ -2965,7 +2960,7 @@ empire_name_format = {
 			add = 2
 			OR = {
 				has_government = "gov_constitutional_dictatorship"
-				has_government = "gov_enlightened_dictatorship"
+				
 				has_government = "gov_peoples_republic"
 				has_government = "gov_republican_dictatorship"
 			}
@@ -3671,9 +3666,9 @@ empire_name_format = {
 			add = 1
 			OR = {
 			has_government = "gov_plutocratic_oligarchy"
-			has_government = "gov_capitalist_oligarchy"
-			has_government = "gov_corporate_nationalism"
-			has_government = "gov_social_nationalism"
+			
+			
+			
 			has_government = "gov_jingoism"
 			has_government = "gov_timocracy"
 			has_government = "gov_slaver_republic"
@@ -3705,8 +3700,8 @@ empire_name_format = {
 			add = 1
 			OR = {
 			has_government = "gov_plutocratic_oligarchy"
-			has_government = "gov_capitalist_oligarchy"
-			has_government = "gov_corporate_nationalism"
+			
+			
 			has_government = "gov_jingoism"
 			has_government = "gov_timocracy"
 			has_government = "gov_genuine_aristocracy"
@@ -3738,7 +3733,7 @@ empire_name_format = {
 			add = 5
 			OR = {
 			has_government = "gov_plutocratic_oligarchy"
-			has_government = "gov_capitalist_oligarchy"
+			
 			has_government = "gov_jingoism"
 			has_government ="gov_timocracy"
 			has_government = "gov_genuine_aristocracy"
@@ -3770,7 +3765,7 @@ empire_name_format = {
 			add = 2
 			OR = {
 			has_government = "gov_plutocratic_oligarchy"
-			has_government = "gov_capitalist_oligarchy"
+			
 			has_government = "gov_timocracy"
 			has_government = "gov_genuine_aristocracy"
 			has_government = "gov_slaver_republic"
@@ -4361,7 +4356,7 @@ empire_name_format = {
 			OR = {
 			has_government = "gov_moral_democracy"
 			has_government = "gov_social_democracy"
-			has_government = "gov_anarch_pacifism"
+			
 			has_government = "gov_anarch_capitalism"
 			}
 			is_pirate = no
@@ -4385,7 +4380,7 @@ empire_name_format = {
 			OR = {
 			has_government = "gov_moral_democracy"
 			has_government = "gov_social_democracy"
-			has_government = "gov_anarch_pacifism"
+			
 			has_government = "gov_anarch_capitalism"
 			}
 			is_pirate = no
@@ -4408,7 +4403,7 @@ empire_name_format = {
 			add = 5
 			OR = {
 			has_government = "gov_moral_democracy"
-			has_government = "gov_anarch_pacifism"
+			
 			has_government = "gov_anarch_capitalism"
 			}
 			is_pirate = no
@@ -4431,7 +4426,7 @@ empire_name_format = {
 			add = 2
 			OR = {
 			has_government = "gov_moral_democracy"
-			has_government = "gov_anarch_pacifism"
+			
 			}
 			is_pirate = no
 			is_primitive = no
@@ -4613,8 +4608,7 @@ empire_name_format = {
 				has_government = "gov_irenic_monarchy"
 				has_government = "gov_despotic_empire"
 				has_government = "gov_communist_dictatorship"
-				has_government = "gov_social_nationalism"
-				has_government = "gov_strasserism"
+				
 			}
 			is_pirate = no
 			is_primitive = no
@@ -4641,8 +4635,7 @@ empire_name_format = {
 				has_government = "gov_irenic_monarchy"
 				has_government = "gov_despotic_empire"
 				has_government = "gov_communist_dictatorship"
-				has_government = "gov_social_nationalism"
-				has_government = "gov_strasserism"
+				
 			}
 			is_pirate = no
 			is_primitive = no
@@ -4668,7 +4661,6 @@ empire_name_format = {
 				has_government = "gov_executive_committee"
 				has_government = "gov_irenic_bureaucracy"
 				has_government = "gov_plutocratic_oligarchy"
-				has_government = "gov_strasserism"
 			}
 			is_pirate = no
 			is_primitive = no
@@ -4694,7 +4686,6 @@ empire_name_format = {
 				has_government = "gov_executive_committee"
 				has_government = "gov_irenic_bureaucracy"
 				has_government = "gov_plutocratic_oligarchy"
-				has_government = "gov_strasserism"
 			}
 			is_pirate = no
 			is_primitive = no

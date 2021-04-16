@@ -1,0 +1,69 @@
+﻿l_english:
+ 
+ #Job keys
+ planet_bank_managers:0 "Bank Managers"
+ planet_socialist_traders:0 "Soclialist Traders"
+ 
+ 
+ #Tech keys
+ tech_naval_support_infrastructure:0 "Naval Support Infrastructure"
+ tech_naval_support_infrastructure_desc:0 ""
+  
+ #Modifier keys
+ blood_sacrifice:0 "Blood Sacrifice"
+ blood_sacrifice_desc:0 ""
+ 
+ planet_blood_sacrifice:0 "Blood Sacrifice"
+ planet_blood_sacrifice_desc:0 "Blood Sacrifice"
+ 
+ capitalism_unrest:0 "Capitalism Unrest"
+ capitalism_unrest_desc:0 ""
+ 
+ socialism_unrest:0 "Socialism Unrest"
+ socialism_unrest_desc:0 ""
+ 
+ green_unrest:0 "Green Unrest"
+ green_unrest_desc:0 ""
+ 
+ industrial_unrest:0 "Industrial Unrest"
+ industrial_unrest_desc:0 ""
+ 
+ pluralist_unrest:0 "Pluralist Unrest"
+ pluralist_unrest_desc:0 ""
+ 
+ elitist_unrest:0 "Elitist Unrest"
+ elitist_unrest_desc:0 ""
+ 
+ mod_shipclass_starbase_build_speed_mult:0 "Starbase Building Speed"
+ mod_shipclass_starbase_build_speed_mult_desc:0 ""
+ 
+ mod_starbase_buildings_alloys_cost_mult:0 "Starbase Buildings Alloy Cost"
+ mod_starbase_buildings_alloys_cost_mult_desc:0 ""
+ 
+ #Policies
+ mixed_healthcare_name:0 "Mixed Healthcare"
+ mixed_healthcare_name_desc:0 ""
+ 
+ private_healthcare_name:0 "Private Healthcare"
+ private_healthcare_name_desc:0 ""
+ 
+ public_healthcare_name:0 "Public Healthcare"
+ public_healthcare_name_desc:0 ""
+ 
+ mixed_education_name:0 "Mixed Education"
+ mixed_education_name_desc:0 ""
+ 
+ private_education_name:0 "Private Education"
+ private_education_name_desc:0 ""
+ 
+ public_education_name:0 "Public Education"
+ public_education_name_desc:0 ""
+ 
+ #Faction Types?
+ MARTIAL_BROTHERHOOD:0 "Martial Brotherhood"
+ 
+ #Tooltips
+ is_slaves_not_battle_thralls_or_livestock:0 "This is a slave pop, not a battle thrall or livestock."
+ 
+ #Events 
+ immortal_ruler.1.desc:0 "Our God-like Ruler has achieved immortality."

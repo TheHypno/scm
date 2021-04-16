@@ -143,7 +143,6 @@ ethic_green = {
 		desc = POP_ATTRACTION_TRADITION_POS
 		trigger = {
 			OR = {
-				has_tradition = tr_environmentalism_adopt
                 has_tradition = tr_harmony_adopt
 			}
 		}		
@@ -453,15 +452,6 @@ ethic_industrial = {
 		}
 	}
 
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_TRADITION_POS
-		trigger = {
-			OR = {
-				has_tradition = tr_development_adopt
-			}
-		}		
-	}	
-
 	
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_INDUSTRIOUS_POS
@@ -723,11 +713,7 @@ ethic_elitist = {
 		desc = POP_ATTRACTION_CIVIC_POS
 		trigger = {
 			OR = {
-				has_valid_civic = civic_hierarchy
 				has_valid_civic = civic_corporate_dominion
-				has_valid_civic = civic_militarist_order
-				has_valid_civic = civic_timocracy
-                has_valid_civic = civic_tribal_aristocracy
 			}
 		}
 	}
@@ -934,7 +920,7 @@ ethic_elitist = {
 		
 		modifier = {
 			factor = 1.25
-			from = {	
+			owner = {	
 				NOT = {
 					any_owned_pop = {
 						is_same_species = root

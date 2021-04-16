@@ -449,6 +449,7 @@ soundeffect = {
 	sounds = {
 		sound = advisor_notification_spaceborne_encounter_01
 		# sound = advisor_notification_spaceborne_encounter_02
+	}
 	volume = 1
 	max_audible = 1
 	max_audible_behaviour = fail

@@ -1415,6 +1415,70 @@ gov_bandit_commune = {
 	}
 }
 
+# Mortal Empire
+gov_mortal_empire = {
+	ruler_title = RT_DEATH_MONARCH
+	ruler_title_female = RT_DEATH_MONARCH_FEMALE
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_imperial
+		has_valid_civic = civic_death_cult
+	}
+
+	weight = {
+		base = 10000
+	}
+}
+
+# Grim Council
+gov_grim_council = {
+	ruler_title = RT_DREAD_CARDINAL
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = auth_oligarchic
+		has_valid_civic = civic_death_cult
+	}
+
+	weight = {
+		base = 10000
+	}
+}
+
+# Band of Blood
+gov_band_blood = {
+	ruler_title = RT_BLOODLORD
+	
+	should_force_rename = yes
+
+	possible = {
+		has_valid_civic = civic_barbaric_despoilers
+		has_valid_civic = civic_death_cult
+	}
+
+	weight = {
+		base = 20000
+	}
+}
+
+# Sacrificial Megachurch
+gov_sacrificial_megachurch = {
+	ruler_title = RT_GRAVE_ADMINISTRATOR
+	
+	should_force_rename = yes
+
+	possible = {
+		has_valid_civic = civic_death_cult_corporate
+		has_valid_civic = civic_gospel_of_the_masses
+	}
+
+	weight = {
+		base = 10000
+	}
+}
 # Hive Mind
 gov_hive_mind = {
 	ruler_title = RT_HIVE_MIND
@@ -1881,6 +1945,79 @@ gov_ancient_machine_intelligence = {
 	}
 }
 
+# Galactic Emperor (Normal Empires)
+gov_imperial_domain = {
+	ruler_title = RT_GAL_EMPEROR
+	ruler_title_female = RT_GAL_EMPRESS
+	heir_title = HT_CROWN_PRINCE
+	heir_title_female = HT_CROWN_PRINCESS
+
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	should_force_rename = yes
+
+	possible = {
+		has_civic = civic_galactic_sovereign
+		is_gestalt = no
+	}
+
+	weight = {
+		base = 100000
+	}
+}
+
+# Galactic Emperor (Machines)
+gov_imperial_domain_machines = {
+	ruler_title = RT_GALACTIC_INTELLIGENCE
+	
+	should_force_rename = yes
+
+	possible = {
+		has_civic = civic_galactic_sovereign
+		is_machine_empire = yes
+	}
+
+	weight = {
+		base = 100000
+	}
+}
+
+# Galactic Emperor (Hives)
+gov_imperial_domain_hives = {
+	ruler_title = RT_GALACTIC_OVERMIND
+	
+	should_force_rename = yes
+
+	possible = {
+		has_civic = civic_galactic_sovereign
+		is_hive_empire = yes
+	}
+
+	weight = {
+		base = 900000
+	}
+}
+
+# Galactic Emperor (MegaCorp)
+gov_imperial_domain_megacorp = {
+	ruler_title = RT_IMP_EXECUTIVE
+	heir_title = HT_IMP_VICE_EXECUTIVE
+
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	
+	should_force_rename = yes
+
+	possible = {
+		has_civic = civic_galactic_sovereign_megacorp
+		is_gestalt = no
+	}
+
+	weight = {
+		base = 100000
+	}
+}
 # fallback
 gov_fallback = {
 	ruler_title = RT_KING

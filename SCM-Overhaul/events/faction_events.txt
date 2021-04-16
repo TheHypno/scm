@@ -1,0 +1,791 @@
+###############################
+# Pop Faction Events
+# by Maximilian Olbers
+###############################
+
+namespace = factions
+
+# A faction is formed
+pop_faction_event = {
+	id = factions.1
+	title = factions.1.title
+	desc = {
+		trigger = {
+			text = factions.1.desc.start
+			text = newline
+
+			 success_text = {
+			 	text = factions.1.desc.conservatives
+			 	is_pop_faction_type = conservatives
+			 }
+
+			success_text = {
+				text = factions.1.desc.bankers
+				is_pop_faction_type = bankers
+			}
+
+			success_text = {
+				text = factions.1.desc.socialists
+				is_pop_faction_type = socialists
+			}
+
+			 success_text = {
+			 	text = factions.1.desc.labourites
+			 	is_pop_faction_type = labourites
+			 }
+
+			 success_text = {
+			 	text = factions.1.desc.environmentalists
+			 	is_pop_faction_type = environmentalists
+			 }
+
+			 success_text = {
+			 	text = factions.1.desc.manufacturers
+			 	is_pop_faction_type = manufacturers
+			 }
+
+			success_text = {
+				text = factions.1.desc.imperialist
+				is_pop_faction_type = imperialist
+			}
+			success_text = {
+				text = factions.1.desc.isolationist
+				is_pop_faction_type = isolationist
+			}
+			success_text = {
+				text = factions.1.desc.progressive
+				is_pop_faction_type = progressive
+			}
+			success_text = {
+				text = factions.1.desc.prosperity
+				is_pop_faction_type = prosperity
+			}
+			success_text = {
+				text = factions.1.desc.supremacist
+				is_pop_faction_type = supremacist
+			}
+			success_text = {
+				text = factions.1.desc.technologist
+				is_pop_faction_type = technologist
+			}
+			success_text = {
+				text = factions.1.desc.totalitarian
+				is_pop_faction_type = totalitarian
+			}
+			success_text = {
+				text = factions.1.desc.traditionalist
+				is_pop_faction_type = traditionalist
+			}
+			success_text = {
+				text = factions.1.desc.xenoist
+				is_pop_faction_type = xenoist
+			}
+			success_text = {
+				hidden:owner = { NOT = { has_country_flag = first_faction } }
+				text = factions.1.desc.firstfinisher
+			}
+		}
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	trigger = {
+		#NOT = {
+		#	owner = { has_country_flag = first_faction }
+		#}
+	}
+
+	after = {
+		hidden_effect = { owner = { set_country_flag = first_faction } }
+	}
+
+	option = {
+		name = OK
+		hidden_effect = {
+			owner = {
+				every_owned_planet = {
+					every_owned_pop = {
+						force_faction_evaluation = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+# Killed Guardian
+country_event = {
+	id = factions.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		from = {
+			is_guardian_country = yes
+		}
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = killed_guardian
+			days = 7200 # 20 year
+		}
+	}
+}
+
+# Established comms
+country_event = {
+	id = factions.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			is_country_type = default
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+		from = {
+			is_country_type = default
+		}
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = recent_comms_timed
+			days = 3600 # 10 years
+		}
+		from = {
+			set_timed_country_flag = {
+				flag = recent_comms_timed
+				days = 3600 # 10 years
+			}
+		}
+	}
+}
+
+# Invaded primitives
+country_event = {
+	id = factions.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = { is_country_type = primitive }
+		is_country_type = default
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = recent_primitive_invasion
+			days = 7200 # 20 years
+		}
+	}
+}
+
+# Beginning war as either attacker or defender
+country_event = {
+	id = factions.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		from = {
+			if = {
+				limit = { is_war_participant = { who = root side = attackers } }
+				root = {
+					set_timed_country_flag = {
+						flag = entered_war_as_attacker
+						days = 7200 # 20 years
+					}
+				}
+			}
+			else_if = {
+				limit = { is_war_participant = { who = root side = defenders } }
+				root = {
+					set_timed_country_flag = {
+						flag = entered_war_as_defender
+						days = 7200 # 20 years
+					}
+				}
+			}
+		}
+	}
+}
+
+# Imperialist frontier outpost demand
+#ship_event = {
+#	id = factions.220
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		owner = {
+#			set_timed_country_flag = {
+#				flag = imperialist_frontier_outpost_timed_flag
+#				days = 7200 # 20 years
+#			}
+#		}
+#	}
+#}
+
+# Industrialist Recent Monster Extermination
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+# country_event = {
+# 	id = factions.330
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	trigger = {
+# 		is_country_type = default
+# 		from = {
+# 			OR = {
+# 				is_country_type = crystal
+# 				is_country_type = drone
+# 				is_amoeba_country_type = yes
+# 				is_country_type = cloud
+# 				is_country_type = pirate
+# 				is_country_type = crystal_faction
+# 				is_country_type = drone_faction
+# 			}
+# 		}
+# 		fromfrom.solar_system = {
+# 			has_star_flag = hostile_system
+			
+# 			count_fleet_in_system = {
+# 				count < 1
+# 				limit = {
+# 					exists = owner
+# 					owner = {
+# 						OR = {
+# 							is_country_type = crystal
+# 							is_country_type = drone
+# 							is_amoeba_country_type = yes
+# 							is_country_type = cloud
+# 							is_country_type = pirate
+# 							is_country_type = crystal_faction
+# 							is_country_type = drone_faction
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		set_timed_country_flag = {
+# 			flag = recent_monster_extermination_timed
+# 			days = 3600 # 10 years
+# 		}
+# 	}
+# }
+
+# Xenoist 1000
+
+# Xenoist Uplift Demand
+planet_event = {
+	id = factions.1005
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = recent_uplift_timed
+				days = 7200 # 20 years
+			}
+		}
+	}
+}
+
+# Notification event - other empire shifts ethics
+country_event = {
+	id = factions.2000
+	title = factions.2000.title
+	desc = {
+		trigger = {
+			text = factions.2000.desc.start
+			text = newline
+
+			 success_text = {
+			 	text = factions.2000.desc.conservatives
+			 	event_target:TargetFaction = { is_pop_faction_type = conservatives }
+			 }
+
+			success_text = {
+				text = factions.2000.desc.bankers
+				event_target:TargetFaction = { is_pop_faction_type = bankers }
+			}
+
+			success_text = {
+				text = factions.2000.desc.socialists
+				event_target:TargetFaction = { is_pop_faction_type = socialists }
+			}
+
+			 success_text = {
+			 	text = factions.2000.desc.labourites
+			 	event_target:TargetFaction = { is_pop_faction_type = labourites }
+			 }
+
+			 success_text = {
+			 	text = factions.2000.desc.environmentalists
+			 	event_target:TargetFaction = { is_pop_faction_type = environmentalists }
+			 }
+
+			 success_text = {
+			 	text = factions.2000.desc.manufacturers
+			 	event_target:TargetFaction = { is_pop_faction_type = manufacturers }
+			 }
+
+
+			success_text = {
+				text = factions.2000.desc.imperialist
+				event_target:TargetFaction = { is_pop_faction_type = imperialist }
+			}
+			success_text = {
+				text = factions.2000.desc.isolationist
+				event_target:TargetFaction = { is_pop_faction_type = isolationist }
+			}
+			success_text = {
+				text = factions.2000.desc.progressive
+				event_target:TargetFaction = { is_pop_faction_type = progressive }
+			}
+			success_text = {
+				text = factions.2000.desc.prosperity
+				event_target:TargetFaction = { is_pop_faction_type = prosperity }
+			}
+			success_text = {
+				text = factions.2000.desc.supremacist
+				event_target:TargetFaction = { is_pop_faction_type = supremacist }
+			}
+			success_text = {
+				text = factions.2000.desc.technologist
+				event_target:TargetFaction = { is_pop_faction_type = technologist }
+			}
+			success_text = {
+				text = factions.2000.desc.totalitarian
+				event_target:TargetFaction = { is_pop_faction_type = totalitarian }
+			}
+			success_text = {
+				text = factions.2000.desc.traditionalist
+				event_target:TargetFaction = { is_pop_faction_type = traditionalist }
+			}
+			success_text = {
+				text = factions.2000.desc.xenoist
+				event_target:TargetFaction = { is_pop_faction_type = xenoist }
+			}
+		}
+	}
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+	}
+}
+
+#########################################
+# Manifesti Destiny
+# By Gemma Thomson
+#########################################
+
+namespace = manifesti
+
+#Triggered by chance from on_five_year_pulse = {}
+planet_event = {
+	id = manifesti.1
+	title = manifesti.1.name
+	desc = manifesti.1.desc
+	picture = GFX_evt_tradestation_interior
+    show_sound = event_celebration
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		years_passed > 10
+		has_owner = yes
+        any_country = {
+            NOT = { has_country_flag = manifesti_spawned }
+        }
+		owner = {
+            is_ai = no
+			is_regular_empire = yes
+		    has_encountered_other_species = yes
+			is_at_war = no
+			NOR = {
+                is_homicidal = yes
+				is_fanatic = yes
+                has_valid_civic = civic_warrior_culture #Keeps entertainers
+                has_country_flag = manifesti_spawned
+			}
+		}
+		is_occupied_flag = no
+		OR = {
+			has_building = building_holo_theatres
+			has_building = building_hyper_entertainment_forum
+            has_building = building_autochthon_monument
+            has_building = building_corporate_monument
+            has_building = building_noble_estates
+            has_building = building_commercial_zone
+            has_district = district_hab_cultural
+		}
+	}
+
+	immediate = {
+		save_event_target_as = manifesti_world
+        owner = { set_country_flag = manifesti_spawned }
+	}
+
+	option = {
+		name = manifesti.1.a
+		begin_event_chain = {
+			event_chain = manifesti_chain
+			target = owner
+		}
+        add_modifier = {
+            modifier = planet_manifesti_joy
+            days = 720
+        }
+        hidden_effect = {
+            planet_event = { id = manifesti.5 days = 59 }
+        }
+	}
+}
+
+#Protests cease; the group is named
+planet_event = {
+	id = manifesti.5
+	title = manifesti.5.name
+	desc = {
+        text = manifesti.5.desc
+        trigger = { NOT = { has_planet_flag = manifesti_investigate } }
+    }
+	desc = {
+        text = manifesti.5.investigated.desc
+        trigger = { has_planet_flag = manifesti_investigate }
+    }
+	picture = GFX_evt_city_planet
+    show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+        is_occupied_flag = no
+		owner = { has_event_chain = "manifesti_chain" }
+	}
+
+	immediate = {
+        owner = {
+            add_event_chain_counter = {
+                event_chain = "manifesti_chain"
+                counter = "manifesti_rise"
+                amount = 1
+            }
+            random_owned_planet = {
+                limit = { num_pops > 7 }
+                save_event_target_as = manifesti_world #Can be the same world as ROOT if needs be
+            }
+        }
+	}
+
+	option = { #Let them continue
+		name = manifesti.5.a
+        hidden_effect = {
+            event_target:manifesti_world = {
+                planet_event = { id = manifesti.15 days = 245 }
+            }
+        }
+	}
+	option = { #Make arrests
+		name = manifesti.5.b
+        if = {
+            limit = {
+                owner = { is_authoritarian = yes }
+            }
+            owner = {
+                add_resource = { influence = -10 }
+            }
+        }
+        else = {
+            owner = {
+                add_resource = { influence = -20 }
+            }
+        }
+        hidden_effect = {
+            event_target:manifesti_world = {
+                planet_event = { id = manifesti.10 days = 93 }
+            }
+        }
+	}
+}
+
+#Manifesti apprehended
+planet_event = {
+	id = manifesti.10
+	title = manifesti.10.name
+	desc = manifesti.10.desc
+	picture = GFX_evt_surreal_visions
+    show_sound = event_mystic_reveal
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+        is_occupied_flag = no
+		owner = { has_event_chain = "manifesti_chain" }
+	}
+
+	immediate = {
+        owner = {
+            add_event_chain_counter = {
+                event_chain = "manifesti_chain"
+                counter = "manifesti_rise"
+                amount = 1
+            }
+        }
+	}
+
+	option = {
+		name = manifesti.10.a
+        root = {
+            remove_modifier = planet_manifesti_joy
+        }
+	}
+}
+
+#Manifesti language takes root
+planet_event = {
+	id = manifesti.15
+	title = manifesti.15.name
+	desc = manifesti.15.desc
+	picture = GFX_evt_smugglers_in_bar
+    show_sound = event_cityscape
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_event_chain = "manifesti_chain" }
+	}
+
+	immediate = {
+        owner = {
+            add_event_chain_counter = {
+                event_chain = "manifesti_chain"
+                counter = "manifesti_rise"
+                amount = 1
+            }
+            random_owned_planet = { #Manifesti spreads
+                limit = {
+                    num_pops > 7
+                }
+                save_event_target_as = manifesti_world #Can be the same world as ROOT if needs be
+                add_modifier = { modifier = planet_manifesti_uslurp_mod days = 360 }
+            }
+        }
+	}
+
+	option = { #Let them continue
+		name = manifesti.15.a
+        owner = {
+            add_modifier = { modifier = manifesti_uslurp_mod days = 360 }
+        }
+        hidden_effect = {
+            event_target:manifesti_world = {
+                planet_event = { id = manifesti.20 days = 145 }
+            }
+        }
+	}
+	option = { #Make arrests
+		name = manifesti.15.b
+        trigger = {
+            owner = { is_egalitarian = no }
+        }
+        if = {
+            limit = {
+                owner = { is_authoritarian = yes }
+            }
+            owner = {
+                add_resource = { influence = -10 }
+            }
+        }
+        else = {
+            owner = {
+                add_resource = { influence = -20 }
+            }
+        }
+        hidden_effect = {
+            event_target:manifesti_world = {
+                planet_event = { id = manifesti.10 days = 93 }
+            }
+        }
+	}
+}
+
+#Manifesti exhibition
+planet_event = {
+	id = manifesti.20
+	title = manifesti.20.name
+	desc = manifesti.20.desc
+	picture = GFX_evt_surreal_visions
+    show_sound = event_mystic_reveal
+	location = root
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_event_chain = "manifesti_chain" }
+	}
+
+	immediate = {
+        owner = {
+            add_event_chain_counter = {
+                event_chain = "manifesti_chain"
+                counter = "manifesti_rise"
+                amount = 1
+            }
+        }
+	}
+
+	option = { #Let them continue
+		name = manifesti.20.a
+        owner = {
+            add_modifier = {
+                modifier = manifesti_reflections_mod
+                days = 720
+            }
+        }
+        hidden_effect = {
+            planet_event = { id = manifesti.25 days = 156 }
+        }
+	}
+	option = { #Make arrests
+		name = manifesti.20.b
+        hidden_effect = {
+            planet_event = { id = manifesti.10 days = 93 }
+        }
+	}
+}
+
+# Rumours of a new faction
+planet_event = {
+    id = manifesti.25
+	title = manifesti.25.name
+	desc = manifesti.25.desc
+	picture = GFX_evt_announcement
+    show_sound = event_factions
+	location = capital_scope
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_event_chain = "manifesti_chain" }
+	}
+
+    immediate = { }
+
+    option = {
+        name = INTERESTING
+        hidden_effect = {
+            owner = {
+                country_event = { id = manifesti.26 days = 20 } #Forces evaluation of the Manifesti faction
+            }
+        }
+    }
+    option = {
+        name = manifesti.25.b
+    }
+
+    after = {
+        owner = {
+            set_country_flag = manifesti_faction
+        }
+    }
+}
+
+country_event = {
+    id = manifesti.26
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        enable_faction_of_type = manifesti
+    }
+}
+
+# Manifesti faction in decline (if suppressed | from = pop_faction )
+country_event = {
+    id = manifesti.30
+	title = manifesti.30.name
+	desc = manifesti.30.desc
+	picture = GFX_evt_galactic_senate
+    show_sound = event_factions
+	location = capital_scope
+    is_triggered_only = yes
+
+    trigger = {
+        exists = pop_faction
+        any_pop_faction = {
+            is_pop_faction_type = manifesti
+            faction_approval < 0.35
+        }
+        NOT = {
+            has_country_flag = manifesti_decline
+        }
+    }
+
+    immediate = {
+        set_country_flag = manifesti_decline
+        every_owned_pop = {
+            limit = {
+                OR = { #Those eligible to join the faction (in lieu of a has_faction trigger for pops)
+                    has_ethic = ethic_egalitarian
+                    has_ethic = ethic_fanatic_egalitarian
+                    has_ethic = ethic_xenophile
+                    has_ethic = ethic_fanatic_xenophile
+                    has_ethic = ethic_pacifist
+                    has_ethic = ethic_fanatic_pacifist
+                }
+            }
+            set_pop_flag = manifesti_bored
+            # force_faction_evaluation = yes
+        }
+    }
+
+    option = {
+        name = manifesti.30.a
+        add_modifier = {
+            modifier = manifesti_sweet_dreams_mod
+            days = 2880 #8 years
+        }
+        add_resource = { society_research = 1800 }
+        end_event_chain = manifesti_chain
+    }
+    option = {
+        name = manifesti.30.b
+        exclusive_trigger = {
+            OR = {
+                is_authoritarian = yes
+                is_militarist = yes
+                is_xenophobe = yes
+            }
+        }
+        add_modifier = {
+            modifier = manifesti_sweet_dreams_mod
+            days = 1440 #4 years
+        }
+        add_resource = { society_research = 1800 }
+        end_event_chain = manifesti_chain
+    }
+}

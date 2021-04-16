@@ -20,7 +20,7 @@ totalitarian = {
 		years_passed > 10
 		has_encountered_other_species = yes
 		NOT = { has_ethic = ethic_gestalt_consciousness }
-		count_owned_pops = {
+		count_owned_pop = {
 			count >= 5
 			limit = {
 				has_ethic = ethic_authoritarian
@@ -154,11 +154,11 @@ totalitarian = {
 
 	    potential = {
 			exists = owner
-			owner = { or = { has_valid_civic = civic_slaver_guilds  has_valid_civic = civic_reeducated_labor  } }
+			owner = { or = { has_valid_civic = civic_slaver_guilds  } }
 		}
 
 		trigger = {
-				owner = { or = { has_valid_civic = civic_slaver_guilds  has_valid_civic = civic_reeducated_labor  }  }
+				owner = { or = { has_valid_civic = civic_slaver_guilds  }  }
 		}
 	}		
 	

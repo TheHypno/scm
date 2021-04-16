@@ -3050,8 +3050,8 @@ mod_job_supervisor_add:0 "$job_supervisor$ Jobs"
 mod_job_supervisor_per_pop:0 "§G+1§! $job_supervisor$ Job per $VALUE$ Pops"
 mod_job_supervisor_per_pop_short:0 "\n§G+1§! £mod_job_supervisor_add£ per $VALUE$ £pop£"
 
-civic_stratocracy:0 "Ordered Stratocracy"
-civic_stratocracy_desc:0 "In Stratocracy the State and the Army are basically and constitutionally the same. Administrative positions are usually occupied by active or honorably discharged military chiefs. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_commandante£ §Y$job_commandante_plural$§!, which increase Empire's §YNaval Capacity§!, spawn §YDefense Armies§!, increase planetary §YStability§! and reduce damage from §YBombardment§!."
+:0 "Ordered Stratocracy"
+_desc:0 "In Stratocracy the State and the Army are basically and constitutionally the same. Administrative positions are usually occupied by active or honorably discharged military chiefs. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_commandante£ §Y$job_commandante_plural$§!, which increase Empire's §YNaval Capacity§!, spawn §YDefense Armies§!, increase planetary §YStability§! and reduce damage from §YBombardment§!."
 
 civic_bureaucracy:0 "Enlightened Bureaucracy"
 civic_bureaucracy_desc:0 "In this society government is traditionally guided by Philosophers and Thinkers - those, who considered to be ideal rulers, and generally possess intelligence, reliability, and a willingness to live peaceful and prosperous life. \n\n£building£ §YCapital Buildings§! replace some £job_administrator£ §Y$job_administrator$§! Jobs with £job_supervisor£ §Y$job_supervisor_plural$§!, which produce £society£ §YSociety Research§!, increase £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, and multiply $mod_planet_jobs_unity_produces_mult$ and §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!."
@@ -3410,8 +3410,8 @@ opinion_vs_ecologist_industrialist:0 "Nature-haters"
 civic_shared_burden:1 "Socialistic Ideals"
 civic_shared_burden_desc:1 "This society traditionally preserves the ideals of socialism, which are expressed in public ownership of the means of production and equitable distribution of resources, in order to secure social, political and economical equality for everyone. \n\n§YCity Districts§! provide §G+1§! £housing£ §YHousing§!, §YAdministrators§! provide §G+2§! £amenities£ §YAmenities§! \n§YLabour Unions§!: §YMining§!, §YFarming§! and §YGenerator§! Districts provide §G+1§! Job and §G+1§! Housing each, and have §R+15%§! increased upkeep  \nObligated to have §YPublic Healthcare§! and §YPublic Education§! policies \nAllows special Worker job: £job_primitive_laborer£ §YLabour Hero§!, which produce small amount of £minerals£ §YMinerals§!, £food£ §YFood§!, £energy£ §YEnergy§! and £unity£ §YUnity§! \nObligated to have §YSocial Equality§! living standards \n§YSocialits§! faction will provide additional approval"
 
-civic_reeducated_labor:0 "Slaving Despots"
-civic_reeducated_labor_desc:0 "This society's economy is dominated by a number of powerful and ruthless owners of Slave Trading Houses. \n\nObligated to live under §YStratified Economy§! living standards \n\n§YSlave Overseer§! jobs produce additional £unity£ §YUnity§! \n\nNon §YFanatic Pacifists§! are allowed to construct special building - §YNeo Colosseum§!, which adds £job_gladiator£ §YGladiator§! jobs, produce some £trade_value£ §YTrade Value§! and increase local §YArmy Damage§! \n\nAn advanced version of §YSlaver Guilds§! civic"
+:0 "Slaving Despots"
+_desc:0 "This society's economy is dominated by a number of powerful and ruthless owners of Slave Trading Houses. \n\nObligated to live under §YStratified Economy§! living standards \n\n§YSlave Overseer§! jobs produce additional £unity£ §YUnity§! \n\nNon §YFanatic Pacifists§! are allowed to construct special building - §YNeo Colosseum§!, which adds £job_gladiator£ §YGladiator§! jobs, produce some £trade_value£ §YTrade Value§! and increase local §YArmy Damage§! \n\nAn advanced version of §YSlaver Guilds§! civic"
 
 job_gladiator:0 "Gladiator"
 job_gladiator_plural:0 "Gladiators"

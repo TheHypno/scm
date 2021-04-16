@@ -48,7 +48,7 @@ xanid = {
 	ethic = "ethic_xenophobe"
 	ethic = "ethic_socialism"
 	ethic = "ethic_militarist"
-	civics = { "civic_corvee_system" "civic_in_perfect" "civic_warrior_culture" }
+	civics = { "civic_corvee_system" "civic_feudal_realm" "civic_warrior_culture" }
 	
 	origin = "origin_syncretic_evolution"
 	

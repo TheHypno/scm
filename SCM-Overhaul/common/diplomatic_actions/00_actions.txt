@@ -342,6 +342,9 @@ action_make_rival = {
 			NOT = { has_valid_civic = civic_inwards_perfection }
 		}
 		custom_tooltip = {
+			NOT = { has_valid_civic = civic_peacekeepers }
+		}			
+		custom_tooltip = {
 			fail_text = "requires_terrible_opinion_or_supremacist"
 			OR = {
 				opinion_level = { who = from level <= terrible }

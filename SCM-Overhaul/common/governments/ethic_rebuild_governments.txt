@@ -114,44 +114,6 @@ gov_xenophile_democracy = {
 }
 
 
-# National Socialism
-gov_strasserism = {
-	ruler_title = RT_GENSEK
-	ruler_title_female = RT_GENSEK
-
-	possible = {
-		
-		OR = {	
-		has_ethic = ethic_xenophobe
-		has_ethic = ethic_fanatic_xenophobe
-		}	
-		
-		OR = {	
-		has_ethic = ethic_authoritarian 
-		has_ethic = ethic_fanatic_authoritarian
-		}		
-		
-		OR = {	
-		has_ethic = ethic_socialism
-		has_ethic = ethic_fanatic_socialism
-		}	
-
-		OR = {	
-		has_authority = auth_dictatorial
-        has_authority = auth_oligarchic		
-		}	
- 
-        has_valid_civic = civic_in_perfect 
-
-	}
-	
-	should_force_rename = yes
-		
-
-	weight = {
-		base = 15000		
-	}
-}
 
 
 

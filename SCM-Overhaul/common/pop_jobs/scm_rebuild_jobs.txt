@@ -427,7 +427,6 @@ labour_hero = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -799,7 +798,6 @@ druid = {
 
 	possible = {
 		hidden_trigger = { exists = owner }
-		complex_worker_job_check_trigger = yes
 	}
 
 	resources = {
@@ -1478,7 +1476,6 @@ socialist_trader = {					#By Hypno and Broad
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
