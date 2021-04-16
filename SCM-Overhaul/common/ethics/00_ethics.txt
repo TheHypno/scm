@@ -2417,6 +2417,7 @@ ethic_gestalt_consciousness = {
 	country_modifier = {
 		country_war_exhaustion_mult = -0.2
 		country_base_influence_produces_add = 1
+		intel_encryption_add = 2
 	}
 
 	tags = {
