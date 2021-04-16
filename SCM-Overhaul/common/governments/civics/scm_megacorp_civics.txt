@@ -15,16 +15,27 @@
 #	}
 #}
 
+#Criminal Connections		#By Hypno
+civic_criminal_connections = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { value = auth_corporate }
+	}
+	possible = {
+		civics = {
+				value = civic_criminal_heritage
+		}
+	}
 
+modifier = {
+			planet_branch_offices_cost_mult = -0.25
+			empire_size_branch_office_mult = -0.20
+	}
 
-
-
-
-
-
-
-
-
+	random_weight = {
+		base = 5
+	}
+}
 
 #Welfare State
 civic_welfare_state = {

@@ -89,6 +89,7 @@ civic_hive_pooled_knowledge = {
 		leader_skill_levels = 1
 		species_leader_exp_gain = 0.2
 		country_leader_pool_size = 2
+		intel_encryption_add = 1
 	}
 }
 
@@ -355,6 +356,7 @@ civic_machine_introspective = {
 	random_weight = { base = 5 }
 	modifier = {
 		country_engineering_tech_research_speed = 0.2
+		intel_encryption_add = 1
 	}
 }
 
@@ -372,6 +374,7 @@ civic_machine_predictive_analysis = {
 	random_weight = { base = 5 }
 	modifier = {
 		num_tech_alternatives_add = 1
+		intel_decryption_add = 1
 	}
 }
 

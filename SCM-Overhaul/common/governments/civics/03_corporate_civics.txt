@@ -137,6 +137,7 @@ civic_ruthless_competition = {
 	modifier = {
         leader_skill_levels = 1
 		species_leader_exp_gain = 0.25
+		spy_network_levels_add = 10
     }
 }
 
@@ -158,6 +159,7 @@ civic_criminal_heritage = {
 			planet_branch_offices_cost_mult = -0.25
 			empire_size_branch_office_mult = -0.20
 			pop_factions_influence_produces_mult = 0.50
+			spy_network_daily_value_mult = 0.20
 				}
 
 	description = "civic_tooltip_criminal_heritage_effects"
