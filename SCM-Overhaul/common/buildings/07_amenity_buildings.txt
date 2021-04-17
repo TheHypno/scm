@@ -85,7 +85,21 @@ building_paradise_dome = {
 	category = amenity
 
 	potential = {
-    has_building = building_luxury_residence
+		has_building = building_luxury_residence
+		OR = {
+			NOT = { is_planet_class = pc_habitat }
+			AND = {
+				has_planet_flag = advanced_habitat
+				exists = owner
+				owner = {
+					has_ascension_perk = ap_voidborn
+				}
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
 	}
 
 	destroy_trigger = {
@@ -96,10 +110,6 @@ building_paradise_dome = {
 			buildings_no_crystals = yes
 			has_modifier = slave_colony
 		}
-	}
-
-	allow = {
-		has_upgraded_capital = yes
 	}
 
 	convert_to = {
@@ -787,7 +797,6 @@ building_clinic = {
 	potential = {
 		owner = { is_regular_empire = yes }
 		NOT = { has_modifier = slave_colony }
-		building_basic_income_check = yes
 	}
 
 	destroy_trigger = {
@@ -801,7 +810,6 @@ building_clinic = {
 			}
 		}
 	}
-
 
 	planet_modifier = {
 		job_healthcare_add = 2
@@ -845,21 +853,6 @@ building_clinic = {
 	triggered_desc = {
 		text = job_healthcare_effect_desc
 	}
-
-	ai_weight = {
-		weight = 50
-		modifier = {
-			factor = 0
-			OR = {
-				is_planet_class = pc_habitat
-				buildings_stop_pop = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			count_owned_pop = { limit = { is_sapient = yes } count > 75 }
-		}
-	}
 }
 
 building_hospital = {
@@ -869,7 +862,7 @@ building_hospital = {
 	category = amenity
 
 	potential = {
-          has_building = building_clinic
+		has_building = building_clinic
 	}
 
 	allow = {
@@ -932,16 +925,6 @@ building_hospital = {
 	triggered_desc = {
 		text = job_healthcare_effect_desc
 	}
-
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 5
-			buildings_has_exotic_gases = yes
-		}
-	}
-
-
 }
 
 building_maintenance_depot = {

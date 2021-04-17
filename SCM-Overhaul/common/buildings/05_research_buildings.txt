@@ -398,19 +398,33 @@ building_institute = {
 		is_regular_empire = yes
 	}
 
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 100
-			OR = {
-				has_building = building_research_lab_1
-				has_building = building_research_lab_2
-				has_building = building_research_lab_3
-				has_district = district_hab_science
-				has_district = district_rw_science
-				jobs_any_research = yes
+	ai_resource_production = {
+		trigger = { always = yes }
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
+	}
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 20
 			}
 		}
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
+	}
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 40
+			}
+		}
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
 	}
 }
 

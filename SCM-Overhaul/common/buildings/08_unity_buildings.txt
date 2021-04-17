@@ -279,7 +279,13 @@ building_temple = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { is_spiritualist = no }
+			owner = {
+				OR = {
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					is_spiritualist = no
+				}
+			}
 			has_modifier = slave_colony
 		}
 	}
@@ -289,6 +295,7 @@ building_temple = {
 		building_simulation_1
 		building_autochthon_monument
 		building_corporate_monument
+		building_sacrificial_temple_1
 	}
 
 	planet_modifier = {
@@ -326,6 +333,12 @@ building_temple = {
 
 	show_tech_unlock_if = {
 		is_spiritualist = yes
+		NOT = {
+			OR = {
+				has_valid_civic = civic_death_cult
+				has_valid_civic = civic_death_cult_corporate
+			}
+		}
 	}
 
 	triggered_desc = {
@@ -393,7 +406,13 @@ building_holotemple = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { is_spiritualist = no }
+			owner = {
+				OR = {
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					is_spiritualist = no
+				}
+			}
 			has_modifier = slave_colony
 		}
 	}
@@ -403,6 +422,7 @@ building_holotemple = {
 		building_hive_cluster
 		building_heritage_site
 		building_corporate_site
+		building_sacrificial_temple_2
 	}
 
 
@@ -506,7 +526,13 @@ building_sacred_nexus = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			owner = { is_spiritualist = no }
+			owner = {
+				OR = {
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+					is_spiritualist = no
+				}
+			}
 			has_modifier = slave_colony
 		}
 	}
@@ -516,6 +542,7 @@ building_sacred_nexus = {
 		building_hive_confluence
 		building_simulation_3
 		building_corporate_forum
+		building_sacrificial_temple_3
 	}
 
 
@@ -2255,8 +2282,6 @@ building_autocurating_vault = {
 		is_megacorp = no
 	}
 }
-
-
 
 building_corporate_vault = {
 	base_buildtime = @b3_time

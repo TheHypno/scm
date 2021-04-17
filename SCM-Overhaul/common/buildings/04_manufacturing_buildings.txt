@@ -631,16 +631,13 @@ building_foundry_3 = {
 
 building_factory_1 = {
 	base_buildtime = @b1_time
-
+	base_cap_amount = 1
 	category = manufacturing
 
 	potential = {
 		exists = owner
 		owner = {
-			OR = {
-				is_gestalt = no
-				has_valid_civic = civic_machine_servitor
-			}
+			country_uses_consumer_goods = yes
 		}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -676,8 +673,7 @@ building_factory_1 = {
 				exists = owner
 				owner = {
 					is_ai = yes
-					is_gestalt = yes
-					NOT = { has_valid_civic = civic_machine_servitor }
+					country_uses_consumer_goods = no
 				}
 			}
 		}
@@ -747,58 +743,40 @@ building_factory_1 = {
 		text = job_artisan_drone_effect_desc
 	}
 
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 25
-			NOR = {
-				has_building = building_factory_1
-				has_building = building_factory_2
-				has_building = building_factory_3
-			}
-			owner = {
-				OR = {
-					is_gestalt = no
-					has_valid_civic = civic_machine_servitor
-				}
-			}
-		}
-		modifier = {
-			weight = 100
-			jobs_work_minerals_goods = no
-			owner = {
-				OR = {
-					is_gestalt = no
-					has_valid_civic = civic_machine_servitor
-				}
-			}
-			owner = {
-				has_monthly_income = {
-					resource = consumer_goods
-					value < 30
-				}
-				OR = {
-					has_monthly_income = {
-						resource = food
-						value >= 0
-					}
-					has_resource = {
-						type = food
-						amount > 0
-					}
-				}#Check to see if consumer goods shortage is being caused by a food shortage.
-			}
-		}
-		modifier = {
-			factor = 0
-			free_jobs > 3
-		}
-	}
-
 	ai_resource_production = {
-		consumer_goods = 1
+		consumer_goods = 8  # This is an important building for future upgrades
 		trigger = {
 			always = yes
+		}
+	}
+	ai_resource_production = { # Overvalue this building if this planet is a major source of consumer goods
+		consumer_goods = 8
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 16
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 8
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 32
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 4
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 48
+				type = produces
+			}
 		}
 	}
 }
@@ -806,21 +784,16 @@ building_factory_1 = {
 building_factory_2 = {
 	base_buildtime = @b2_time
 	can_build = no
-
 	category = manufacturing
 
 	allow = {
 		has_upgraded_capital = yes
-		buildings_upgrade_allow = yes
 	}
 
 	potential = {
 		exists = owner
 		owner = {
-			OR = {
-				is_gestalt = no
-				has_valid_civic = civic_machine_servitor
-			}
+			country_uses_consumer_goods = yes
 		}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -835,8 +808,7 @@ building_factory_2 = {
 				exists = owner
 				owner = {
 					is_ai = yes
-					is_gestalt = yes
-					NOT = { has_valid_civic = civic_machine_servitor }
+					country_uses_consumer_goods = no
 				}
 			}
 			buildings_no_crystals = yes
@@ -849,17 +821,17 @@ building_factory_2 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_artisan_add = 3
+			job_artisan_add = @b1_jobs
 		}
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = 3
+			job_artisan_drone_add = @b1_jobs
 		}
 	}
 	
@@ -877,11 +849,11 @@ building_factory_2 = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			rare_crystals = @b2_rare_cost
+			rare_crystals = @b3_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			rare_crystals = @b2_rare_upkeep
+			rare_crystals = @b3_rare_upkeep
 		}
 	}
 
@@ -895,6 +867,78 @@ building_factory_2 = {
 
 	triggered_desc = {
 		trigger = {
+			uses_district_industrial = yes
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_2_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_industrial = yes
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_2_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = city_world
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_2_arcology_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = city_world
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_2_arcology_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = habitat
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_2_habitat_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = habitat
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_2_habitat_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = ring_world
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_2_ring_world_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = ring_world
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_2_ring_world_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
@@ -904,26 +948,47 @@ building_factory_2 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		text = job_artisan_drone_effect_desc
 	}
 
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 3
-			buildings_has_crystals = yes
-		}
-	}
-
 	ai_resource_production = {
-		consumer_goods = 1
+		consumer_goods = 8
 		trigger = {
 			always = yes
 		}
 	}
-
+	ai_resource_production = {
+		consumer_goods = 16
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 16
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 16
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 32
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 16
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 48
+				type = produces
+			}
+		}
+	}
 }
 
 building_factory_3 = {
@@ -940,10 +1005,7 @@ building_factory_3 = {
 	potential = {
 		exists = owner
 		owner = {
-			OR = {
-				is_gestalt = no
-				has_valid_civic = civic_machine_servitor
-			}
+			country_uses_consumer_goods = yes
 		}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
@@ -958,8 +1020,7 @@ building_factory_3 = {
 				exists = owner
 				owner = {
 					is_ai = yes
-					is_gestalt = yes
-					NOT = { has_valid_civic = civic_machine_servitor }
+					country_uses_consumer_goods = no
 				}
 			}
 			buildings_no_crystals = yes
@@ -972,17 +1033,17 @@ building_factory_3 = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_artisan_add = @b3_jobs
+			job_artisan_add = @b1_jobs
 		}
 	}
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = @b3_jobs
+			job_artisan_drone_add = @b1_jobs
 		}
 	}
 	
@@ -1000,16 +1061,88 @@ building_factory_3 = {
 		category = planet_buildings
 		cost = {
 			minerals = @b3_minerals
-			rare_crystals = @b3_rare_cost
+			rare_crystals = @b4_rare_cost
 		}
 		upkeep = {
 			energy = @b3_upkeep
-			rare_crystals = @b3_rare_upkeep
+			rare_crystals = @b4_rare_upkeep
 		}
 	}
 
 	prerequisites = {
 		tech_luxuries_2
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_industrial = yes
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_3_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_industrial = yes
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_3_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = city_world
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_3_arcology_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = city_world
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_3_arcology_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = habitat
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_3_habitat_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = habitat
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_3_habitat_machine_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = ring_world
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = building_factory_3_ring_world_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			uses_district_set = ring_world
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = building_factory_3_ring_world_machine_effect_desc
 	}
 
 	triggered_desc = {
@@ -1023,21 +1156,13 @@ building_factory_3 = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = { is_gestalt = yes }
+			owner = { is_machine_empire = yes }
 		}
 		text = job_artisan_drone_effect_desc
 	}
 
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 3
-			buildings_has_crystals = yes
-		}
-	}
-
 	ai_resource_production = {
-		consumer_goods = 1
+		consumer_goods = 12
 		trigger = {
 			always = yes
 		}

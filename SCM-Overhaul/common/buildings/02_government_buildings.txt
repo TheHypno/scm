@@ -456,6 +456,25 @@ building_precinct_house = {
 		NOT = { has_modifier = slave_colony }
 	}
 
+	allow = {
+		hidden_trigger = {
+			OR = {
+				owner = { is_ai = no }
+				AND = {
+					planet_crime > 15
+					NOR = {
+						AND = {
+							has_building = building_precinct_house
+							owner = { has_technology = tech_colonial_centralization }
+						}
+						has_building = building_hall_judgment
+						num_buildings = { type = building_precinct_house value = 3 }
+					}
+				}
+			}
+		}
+	}
+
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -502,22 +521,6 @@ building_precinct_house = {
 	upgrades = {
 		building_hall_judgment
 	}
-
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 100
-			planet_crime > 15
-			NOR = {
-				AND = {
-					has_building = building_precinct_house
-					owner = { has_technology = tech_colonial_centralization }
-				}
-				has_building = building_hall_judgment
-				num_buildings = { type = building_precinct_house value = 3 }
-			}
-		}
-	}
 }
 
 building_hall_judgment = {
@@ -534,11 +537,10 @@ building_hall_judgment = {
 	destroy_trigger = {
 		exists = owner
 		OR = {
-			buildings_no_exotic_gases = yes
+			buildings_no_motes = yes
 			NOT = { owner = { is_regular_empire = yes } }
 		}
 	}
-
 
 	planet_modifier = {
 		job_enforcer_add = 5
@@ -548,11 +550,11 @@ building_hall_judgment = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			exotic_gases = @b2_rare_cost
+			volatile_motes = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			exotic_gases = @b2_rare_upkeep
+			volatile_motes = @b2_rare_upkeep
 		}
 		upkeep = {
 			trigger = {
@@ -561,7 +563,6 @@ building_hall_judgment = {
 			energy = 2
 		}
 	}
-
 
 	prerequisites = {
 		"tech_colonial_centralization"
@@ -573,10 +574,6 @@ building_hall_judgment = {
 
 	show_tech_unlock_if = {
 		is_regular_empire = yes
-	}
-
-	ai_weight = {
-		weight = 1
 	}
 }
 
@@ -699,6 +696,10 @@ building_clone_vats = {
 		exists = owner
 		owner = { has_ascension_perk = ap_engineered_evolution }
 		NOT = { has_modifier = resort_colony }
+		OR = {
+			owner = { is_ai = no }
+			NOT = { has_building = building_robot_assembly_plant }
+		}
 	}
 
 	#allow = {
@@ -715,14 +716,12 @@ building_clone_vats = {
 					free_building_slots = 0
 				}
 			}
-		NOT = {
-			owner = { has_ascension_perk = ap_engineered_evolution }
-			}
+			NOT = { owner = { has_ascension_perk = ap_engineered_evolution } }
 		}
 	}
 
 	planet_modifier = {
-		pop_growth_speed = 0.33
+		planet_pop_assembly_organic_add = 3
 	}
 
 	triggered_planet_modifier = {
@@ -741,23 +740,20 @@ building_clone_vats = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 200
+			minerals = 500
+			food = 500
 		}
 		upkeep = {
 			energy = 2
+			food = 30
 		}
 	}
 
-	ai_weight = {
-		weight = 100
-		modifier = {
-			factor = 0
-			OR = {
-				free_district_slots = 0
-				num_buildings = { type = any value >= 14 }
-				is_planet_class = pc_habitat
-			}
+	triggered_desc = {
+		trigger = {
+			has_building = building_robot_assembly_plant
 		}
+		text = tooltip_organic_and_artificial_assembly_warning
 	}
 }
 

@@ -144,15 +144,11 @@ building_dread_encampment = {
 
 building_stronghold = {
 	base_buildtime = 240
-	#add_to_first_building_slot = yes
+	position_priority = 100
 
 	category = army
-
-	#potential = {
-		#buildings_simple_allow = yes
-	#}
-
-	allow = {
+	
+	potential = {
 		buildings_simple_allow = yes
 	}
 
@@ -186,7 +182,7 @@ building_stronghold = {
 			   }
 		}
 		modifier = {
-			job_soldier_add = 1
+			job_soldier_add = @b1_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -195,7 +191,7 @@ building_stronghold = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_warrior_drone_add = 1
+			job_warrior_drone_add = @b1_jobs
 		}
 	}
 
@@ -253,36 +249,13 @@ building_stronghold = {
 		}
 		text = job_soldier_effect_desc
 	}
-
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 1
-			free_jobs < 1
-			free_building_slots > 1
-			owner = { used_naval_capacity_percent > 0.9	}
-		}
-		modifier = {
-			weight = 100
-			is_planet_class = pc_habitat
-			owner = { used_naval_capacity_percent > 0.8	}
-		}
-		modifier = {
-			weight = 50000
-			num_pops >= 40
-			NOR = {
-				has_building = building_stronghold
-				has_building = building_fortress
-			}
-		}
-	}
 }
 
 building_fortress = {
 	base_buildtime = @b1_time
 	can_build = no
 	planetary_ftl_inhibitor = yes
-	#add_to_first_building_slot = yes
+	position_priority = 100
 
 	category = army
 
@@ -393,7 +366,7 @@ building_fortress = {
 building_planetary_shield_generator = {
 	base_buildtime = @b3_time
 	base_cap_amount = 1
-	#add_to_first_building_slot = yes
+	position_priority = 100
 
 	category = army
 
@@ -423,9 +396,5 @@ building_planetary_shield_generator = {
 
 	prerequisites = {
 		"tech_planetary_shield_generator"
-	}
-
-	ai_weight = {
-		weight = 0
 	}
 }
