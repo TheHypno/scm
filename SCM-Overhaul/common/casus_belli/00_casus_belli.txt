@@ -142,6 +142,7 @@ cb_ideology = {
 	}
 }
 
+#Added by Wooly, used for the "Machine God Influencers" civic
 cb_conversion = {
 	show_in_diplomacy = no
 	show_notification = no
