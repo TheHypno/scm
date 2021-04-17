@@ -1375,14 +1375,6 @@ techno_priest = {
 		upkeep = {
 			consumer_goods = 1
 		}
-		upkeep = {
-			trigger = {
-				owner = {
-					has_valid_civic = civic_machine_influencer
-					}
-				}
-			consumer_goods = 0
-		}
 	}
 
 	planet_modifier = {
