@@ -34,3 +34,9 @@
  # casus_belli_cb_abduction:0 "Abduction"
  # war_goal_wg_take_pops:0 "Take Pops"
  # war_goal_wg_take_pops_desc:0 "War is waged to steal pops (and only pops) from the enemy."
+
+#War Goal localisation text for the Conversion CB used by Machine God Influencers
+ wg_force_conversion_accept:1 "§Y[From.GetName]§! is forced to adopt the §YSpiritualist§! and the §YIndustrialist§! ethics!"
+ wg_force_conversion_accept_2:0 "§Y[From.GetName]§! is forced to adopt the §YMachine Cult§! civic!"
+ wg_force_conversion_accept_3:0 "§Y[From.GetRulerTitle] [From.GetRulerName]§! is forced to abdicate"
+ wg_force_conversion_accept_4:0 "§Y[From.GetName]§! is forced to leave their Federation"
