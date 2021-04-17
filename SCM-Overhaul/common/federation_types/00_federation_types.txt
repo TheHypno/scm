@@ -294,6 +294,7 @@ default_federation = {
 }
 
 trade_federation = {
+	base_intel = 50
 	icon = "GFX_trade_federation"
 	potential = {
 		host_has_dlc = Federations

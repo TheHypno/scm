@@ -490,6 +490,16 @@ citizenship_slavery = {
 				is_xenophobe = no
 			}
 		}
+		modifier = {
+			factor = 0.1
+			from = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+				is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+			}
+		}
 	}
 }
 

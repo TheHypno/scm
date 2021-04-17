@@ -311,7 +311,7 @@ starbase_constructions = {
 }
 
 starbase_buildings = {
-	parent = starbases
+	parent = starbase_constructions
 
 	generate_mult_modifiers = {
 		cost
@@ -319,7 +319,7 @@ starbase_buildings = {
 }
 
 starbase_modules = {
-	parent = starbases
+	parent = starbase_constructions
 
 	generate_mult_modifiers = {
 		cost
@@ -481,7 +481,10 @@ planet_jobs = {
 		trigger = {
 			OR = {
 				is_pop_category = worker
-				is_pop_category = slave # Yes, slave should count towards both worker and slave
+				AND = {
+					is_pop_category = slave # Yes, slave should count towards both worker and slave
+					has_job_category = worker
+				}
 				is_pop_category = simple_drone
 			}
 		}
@@ -493,7 +496,14 @@ planet_jobs = {
 			mult
 		}
 		trigger = {
-			is_pop_category = specialist
+			OR = {
+				is_pop_category = specialist
+				is_pop_category = complex_drone #should use planet_jobs_complex_drone wherever possible, this is just for cases like species traits
+				AND = {
+					is_pop_category = slave
+					has_job_category = specialist
+				}
+			}
 		}
 	}
 

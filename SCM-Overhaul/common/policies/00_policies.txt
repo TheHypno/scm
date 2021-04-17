@@ -161,6 +161,11 @@ diplomatic_stance = {
 			weight = 10
 
 			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+
+			modifier = {
 				factor = 0
 				NOT = { has_country_flag = has_encountered_other_empire }
 			}
@@ -263,6 +268,11 @@ diplomatic_stance = {
 			weight = 10
 
 			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
+
+			modifier = {
 				factor = 0.25 # Let the isolationists start in this if they want
 				NOT = { has_country_flag = has_encountered_other_empire }
 			}
@@ -358,6 +368,10 @@ diplomatic_stance = {
 		ai_weight = {
 			weight = 10
 
+			modifier = {
+				factor = 0.01
+				has_ascension_perk = ap_become_the_crisis
+			}
 			modifier = {
 				factor = 3.0
 				is_megacorp = yes # Megacorps should generally prefer this diplo stance unless their ethics get them to specialize differently
@@ -1300,6 +1314,15 @@ leader_enhancement = {
 			leaders_cost_mult = 0.5
 		}
 
+		in_breach_of = {
+			{
+				key = resolution_galacticstudies_ethical_guideline_refactoring
+				trigger = {
+					has_technology = tech_capacity_boosters
+				}
+			}
+		}
+
 		valid = {
 			NOT = { has_ethic = "ethic_fanatic_pluralist" }
 		}
@@ -1507,6 +1530,10 @@ border_policy = {
 					has_ethic = ethic_fanatic_xenophobe
 				}
 			}
+			modifier = {
+				factor = 10
+				has_crisis_level = crisis_level_5
+			}
 		}
 	}
 }
@@ -1684,6 +1711,7 @@ economic_policy = {
 			modifier = {
 				factor = 0
 				is_authoritarian = no
+				NOT = { has_ascension_perk = ap_become_the_crisis }
 			}
 		}
 	}
@@ -2023,6 +2051,12 @@ artificial_intelligence_policy = {
 			ai_outlawed
 		}
 
+		in_breach_of = {
+			{
+				key = resolution_galacticstudies_advanced_xenostudies
+			}
+		}
+
 		AI_weight = {
 			modifier = {
 				factor = 0
@@ -2174,6 +2208,18 @@ robot_pop_policy = {
 
 		policy_flags = {
 			robots_outlawed
+		}
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { is_robotic_species = yes }
+					set_citizenship_type = {
+						type = citizenship_purge
+						country = root
+					}
+				}
+			}
 		}
 
 		AI_weight = {

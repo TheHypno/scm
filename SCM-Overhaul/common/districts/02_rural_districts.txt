@@ -337,10 +337,10 @@ district_mining = {
 				has_valid_civic = civic_mining_guilds
 			}
 		}
-		# modifier = {
-			# # planet_housing_add = 1
-			# # job_miner_add = 1
-		# }
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
+		}
 	}
 	
 		triggered_planet_modifier = {
@@ -872,20 +872,8 @@ district_mining_uncapped = {
 		planet_housing_add = 2
 	}
 
-	# triggered_planet_modifier = {
-		# potential = {
-			# exists = owner
-			# owner = {
-				# has_valid_civic = civic_mining_guilds
-			# }
-		# }
-		# modifier = {
-			# planet_housing_add = 1
-			# job_miner_add = 1
-		# }
-	# }
 	
-			triggered_planet_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {

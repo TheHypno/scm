@@ -319,6 +319,13 @@ d_dangerous_wildlife_blocker = {
 			factor = 0.5
 			planet_size < 15
 		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
 	}
 
 	prerequisites = { "tech_dangerous_wildlife" }
