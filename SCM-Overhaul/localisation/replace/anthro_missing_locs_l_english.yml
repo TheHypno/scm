@@ -67,3 +67,18 @@
  
  #Events 
  immortal_ruler.1.desc:0 "Our God-like Ruler has achieved immortality."
+ 
+ #CB's 
+ casus_belli_cb_conversion:0 "Conversion"
+ casus_belli_cb_conversion_desc:0 ""
+ conversion_wars_name:0 "Conversion Wars"
+ 
+ conversion_wars:0 "Conversion Wars"
+ conversion_wars_desc:0 "Conversion Wars"
+ 
+ wg_plunder_accept_us_21:0 "Plunder"
+ 
+ #Jobs
+ job_naval_support_staff_desc:0 "Naval Support Staff"
+ 
+ 

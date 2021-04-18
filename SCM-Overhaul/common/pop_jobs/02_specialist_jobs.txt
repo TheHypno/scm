@@ -100,7 +100,7 @@ colonist = {
 			exists = planet
 			planet = {
 				owner = { is_ai = yes }
-				count_pops = { limit = { is_sapient = yes }count < 4 }
+				count_owned_pop = { limit = { is_sapient = yes }count < 4 }
 				any_owned_pop = {
 					has_job = colonist
 				}

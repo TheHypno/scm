@@ -7,4 +7,29 @@ spriteTypes = {
 		name = "GFX_arrow_right"
 		textureFile = "gfx/interface/traditions/arrow_right.dds"
 	}
+	spriteType = {
+		name = "GFX_wg_enthrall"
+		texturefile = "gfx/interface/icons/diplomacy/wg_enthrall.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_wg_convert"
+		texturefile = "gfx/interface/icons/diplomacy/wg_convert.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_wg_satellite"
+		texturefile = "gfx/interface/icons/diplomacy/wg_satellite.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_wg_sign"
+		texturefile = "gfx/interface/icons/diplomacy/wg_sign.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_wg_influence"
+		texturefile = "gfx/interface/icons/diplomacy/wg_influence.dds"
+		noOfFrames = 2
+	}
 }

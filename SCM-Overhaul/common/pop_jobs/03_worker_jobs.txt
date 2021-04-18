@@ -15,7 +15,7 @@ clerk = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 	}
 
 	planet_modifier = {
@@ -132,7 +132,7 @@ technician = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
 		owner = {
 			is_gestalt = no
 			is_fallen_empire_spiritualist = no
@@ -1136,7 +1136,8 @@ preacher = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes
+		worker_job_check_trigger = yes
+		NOT = { has_trait = trait_mechanical }
 	}
 
 	resources = {
@@ -1285,7 +1286,8 @@ mortal_initiate = {
 	}
 
 	possible = {
-		complex_worker_job_check_trigger = yes #No machines
+		worker_job_check_trigger = yes
+		NOT = { has_trait = trait_mechanical }
 	}
 
 	resources = {

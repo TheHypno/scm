@@ -470,7 +470,10 @@ noble = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_civic = civic_inheritance
+			exists = owner
+			owner = {
+				has_valid_civic = civic_inheritance
+			}
 		}
 		modifier = {
 			trade_value_add = 5

@@ -1488,7 +1488,7 @@ warrior_drone = {
 		}
 		modifier = {
 			factor = 0
-			planet = { count_pops = { limit = { } count < 12 } }
+			planet = { count_owned_pop = { limit = { } count < 12 } }
 			owner = { is_ai = yes }
 		}
 		modifier = {

@@ -285,7 +285,7 @@ bio_trophy = {
 		potential = {
 			exists = owner
 			owner = {
-				has_edict = servitor_edict
+				has_edict = expanded_breeding_program_servitor
 			}
 		}
 		modifier = {
