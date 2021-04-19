@@ -4,6 +4,8 @@
  ####################################
  SEPARATOR:0 "---"
 
+###Would be nice if this localization file WORKED
+
 ###Leader titles
 RT_CONDUCTOR:0 "Conductor"
  RT_ESO:0 "Executive Science Officer"
