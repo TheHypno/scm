@@ -10,13 +10,15 @@ DIPLO_ACTION_ADD_TRUST:0 "This will increase their Trust of us by $TRUST$ each m
  DIPLO_ACTION_RECIPIENT_RESOURCES:0 "They will get §Y$RESOURCES$§! each month as long as the deal is active."
  DIPLO_ACTION_ACTOR_AND_RECIPIENT_RESOURCES:1 "They will get §Y$ACTOR_RESOURCES$§! and we will get §Y$RECIPIENT_RESOURCES$§! each month as long as the deal is active."
 
- ACTION_FORM_COMMERCIAL_PACT_OFFER_DESC:0 "Form a Commercial Pact with §H[Actor.GetName]§!. This will increase the value of both empires' trade networks. §RYOU SHOULD ASK THE SENDER TO CLARIFY HOW MUCH EACH PARTY RECEIVES IN THIS DEAL.§!"
+#The below text might not be needed anymore, since Paradox touched up on Commercial Pact text IIRC
+#####
+ #ACTION_FORM_COMMERCIAL_PACT_OFFER_DESC:0 "Form a Commercial Pact with §H[Actor.GetName]§!. This will increase the value of both empires' trade networks. §RYOU SHOULD ASK THE SENDER TO CLARIFY HOW MUCH EACH PARTY RECEIVES IN THIS DEAL.§!"
 
  BRANCH_OFFICE_NOT_COMMERCIAL_PACT:1 "£trigger_no£ §RWe must have a Commercial Pact or be in Federation with the owner of this planet in order to establish a $BRANCH_OFFICE$ here§! \n\n§RMachine Empires with the §GAperature Science§! civic need a Research Agreement instead§!"
- BRANCH_OFFICE_NOT_MEGACORP:1 "£trigger_no£ §ROnly empires with the §Y$auth_corporate$§! authority, Hive Minds with the §BMutualistic Hive Mind§! civic, or Machine Empires with the §GAperature Science§! civic can establish $BRANCH_OFFICES$§!"
+ BRANCH_OFFICE_NOT_MEGACORP:1 "£trigger_no£ §ROnly empires with the §Y$auth_corporate$§! authority, or Machine Empires with the §GAperature Science§! civic can establish $BRANCH_OFFICES$§!"
  
 civic_troupe:0 "Influential Troupe"
- civic_troupe_desc:0 "A group of entertainers that managed to be so popular that they somehow influenced the entirely of their world government! With the development of space travel, these people seek to spread their entertainment across the galaxy, no matter the cost! \n\nCan build the §GGalactic Circus§! Branch Office building! This is an upgrade to the §BAmusement Megaplex§! Branch Office building. They are built faster, are cheaper, and provide  £job_entertainer£ §Y$job_entertainer$§! Job and 1 £job_clerk£ §Y$job_clerk$ Job§! \n\nThe MegaCorp gets §E5§! £unity£ §EUnity§! from this building"
+ civic_troupe_desc:0 "A group of entertainers that managed to be so popular that they somehow influenced the entirely of their world government! With the development of space travel, these people seek to spread their entertainment across the galaxy, no matter the cost! \n\nCan build the §GGalactic Circus§! Branch Office building! This is an upgrade to the §BAmusement Megaplex§! Branch Office building. They are built faster, are cheaper, and provide 1 £job_entertainer£ §Y$job_entertainer$§! Job and 1 £job_clerk£ §Y$job_clerk$ Job§! \n\nThe MegaCorp gets §E5§! £unity£ §EUnity§! from this building"
  civic_research_inc:0 "Knowledge Through Trade"
  civic_research_inc_desc:0 "A company that focuses on innovation and progress, but not in the way that you think! Rather than increase their research through their scientists, this company develops through the establishment of trade. Traders from this company have a knack for knowledge, and will gladly share their knowledge to traders alike! \n\n§YResearchers§! develop §R-2§! less Science, but generate §H3§! £trade_value£ §HTrade Value§!. For example, if the base §YResearcher§! value was §G4§! §EResearch§! in each category, this civic would make them produce §R2§! §EResearch§! in each category instead\n\nStarts with the §BInnovation & Progress§! Trade Policy unlocked"
  civic_profitized_mining:0 "Profitized Mining"

@@ -1,0 +1,194 @@
+building_loan_shark_office = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	branch_office_building = yes
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = { 
+			has_valid_civic = civic_bank_corp
+			is_criminal_syndicate = yes
+			}		
+		}
+
+	# possible = {
+		# OR = { 
+		# branch_office_owner = { 
+			# is_criminal_syndicate = no 
+			# has_valid_civic = civic_bank_corp
+		# }
+		# # owner = {has_valid_civic = civic_bank_corp}
+		# }
+	# }
+
+	planet_modifier = {
+		planet_crime_add = 40
+		trade_value_add = 5
+		job_bank_manager_add = 1
+		job_clerk_add = 1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			energy = 10
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 5
+			branch_office_owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value < 0
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			branch_office_owner = {
+				has_monthly_income = {
+					resource = consumer_goods
+					value >= 10
+				}
+			}
+		}
+	}
+}
+
+building_magnificant_greenhouse = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	branch_office_building = yes
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = { 
+			has_valid_civic = civic_ecological_corp
+			is_criminal_syndicate = no
+		 }
+	}
+
+	planet_modifier = {
+		job_healthcare_add = 1
+		job_clerk_add = 1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			unity = 3
+			consumer_goods = 3
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+
+		modifier = {
+			weight = 0.5
+			branch_office_owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+building_galactic_circus = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	branch_office_building = yes
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = { 
+			has_valid_civic = civic_troupe
+			is_criminal_syndicate = no
+		 }
+	}
+
+	planet_modifier = {
+		# planet_amenities_add = 10
+		job_entertainer_add = 1
+		job_clerk_add = 1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		produces = {
+			unity = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+
+		modifier = {
+			weight = 0.5
+			branch_office_owner = {
+				has_monthly_income = {
+					resource = energy
+					value > 50
+				}
+			}
+		}
+	}
+}
+
+
+building_aperature_science = {
+	base_buildtime = @b2_time
+
+	branch_office_building = yes
+
+	potential = {	
+		has_branch_office = yes
+		branch_office_owner = { 
+			has_valid_civic = civic_machine_aperature_science
+			NOT = { has_valid_civic = civic_mutualistic_behavior }
+			is_criminal_syndicate = no }
+	}
+
+	planet_modifier = {
+		job_researcher_add = 1
+		job_clerk_add = 1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		produces = {
+			physics_research = 4
+			engineering_research = 4
+			society_research = 4
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
