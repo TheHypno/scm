@@ -134,6 +134,13 @@ gun_battery = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+			trigger = {
+				has_valid_civic = civic_defense_budget
+			}
+			energy = -1
+		}
 	}
 
 	station_modifier = {
@@ -141,6 +148,15 @@ gun_battery = {
 		ship_armor_mult = 0.10
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 5
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_defense_budget }
+		}
+		
+		trade_value_add = 2
 	}
 
 	ai_build_at_chokepoint = yes
@@ -176,6 +192,13 @@ missile_battery = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+			trigger = {
+				has_valid_civic = civic_defense_budget
+			}
+			energy = -1
+		}
 	}
 
 	station_modifier = {
@@ -183,6 +206,15 @@ missile_battery = {
 		ship_armor_mult = 0.10
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 5
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_defense_budget }
+		}
+		
+		trade_value_add = 2
 	}
 
 	ai_build_at_chokepoint = yes
@@ -218,6 +250,13 @@ hangar_bay = {
 		upkeep = {
 			energy = 1
 		}
+
+		upkeep = {
+			trigger = {
+				has_valid_civic = civic_defense_budget
+			}
+			energy = -1
+		}
 	}
 
 	station_modifier = {
@@ -225,6 +264,15 @@ hangar_bay = {
 		ship_armor_mult = 0.10
 		starbase_trade_protection_range_add = 1
 		starbase_trade_protection_add = 10
+	}
+
+	triggered_station_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_defense_budget }
+		}
+		
+		trade_value_add = 2
 	}
 
 	ai_build_outside_chokepoint = yes
