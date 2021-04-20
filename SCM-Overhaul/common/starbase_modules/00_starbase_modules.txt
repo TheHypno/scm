@@ -137,7 +137,10 @@ gun_battery = {
 
 		upkeep = {
 			trigger = {
-				has_valid_civic = civic_defense_budget
+				exists = owner
+				owner = {
+					has_valid_civic = civic_defense_budget
+				}
 			}
 			energy = -1
 		}
@@ -195,7 +198,10 @@ missile_battery = {
 
 		upkeep = {
 			trigger = {
-				has_valid_civic = civic_defense_budget
+				exists = owner
+				owner = {
+					has_valid_civic = civic_defense_budget
+				}
 			}
 			energy = -1
 		}
@@ -253,7 +259,10 @@ hangar_bay = {
 
 		upkeep = {
 			trigger = {
-				has_valid_civic = civic_defense_budget
+				exists = owner
+				owner = {
+					has_valid_civic = civic_defense_budget
+				}
 			}
 			energy = -1
 		}

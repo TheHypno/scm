@@ -1463,6 +1463,8 @@ generate_start_pops = {
 					has_origin = origin_necrophage
 					has_valid_civic = civic_machine_servitor
 					has_valid_civic = civic_machine_assimilator
+					has_valid_civic = civic_symbiotic_race
+					has_valid_civic = civic_slave_race
 				}
 			}
 		}
@@ -1477,28 +1479,48 @@ generate_start_pops = {
 		}
 
 		if = {
-			limit = {
-				owner = {
-					OR = {
-						has_origin = origin_syncretic_evolution
-						has_origin = origin_necrophage
-					}
-				}
-			}
+			limit = { owner = { OR = { has_origin = origin_syncretic_evolution   has_valid_civic = civic_slave_race  }  } }
 
 			last_created_species = {
 				set_species_flag = syncretic_species@root.owner
-				if = {
-					limit = {
-						prev.owner = {
-							has_origin = origin_syncretic_evolution
-						}
-					}
-					set_citizenship_type = {
-						country = root.owner
-						type = citizenship_slavery
-					}
+				set_citizenship_type = {
+					country = root.owner
+					type = citizenship_slavery
 				}
+			}
+			while = {
+				count = 12
+				create_pop = {
+					species = last_created_species
+					ethos = random
+				}
+			}
+		}
+		
+		if = {
+			limit = { owner = { OR = {has_valid_civic = civic_symbiotic_race}  } }
+
+			last_created_species = {
+				set_species_flag = syncretic_species@root.owner
+				set_citizenship_type = {
+					country = root.owner
+					type = citizenship_slavery
+				}
+			}
+			while = {
+				count = 8
+				create_pop = {
+					species = last_created_species
+					ethos = random
+				}
+			}
+		}
+
+		if = {
+			limit = { owner = { OR = { has_origin = origin_necrophage }  } }
+
+			last_created_species = {
+				set_species_flag = syncretic_species@root.owner
 			}
 			if = {
 				limit = {
@@ -1576,6 +1598,26 @@ generate_start_pops = {
 	}
 
 	if = {
+		limit = { owner = { has_valid_civic = civic_machine_cult }	}
+		owner = { create_built_robot_species = yes }
+		while = {
+			count = 4
+			create_pop = {
+				species = last_created_species
+			}
+		}
+		add_building = building_mecha_monastery
+		add_building = building_robot_assembly_plant
+		while = {
+			limit = { num_pops < 30 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+
+	if = {
 		limit = { owner = { has_origin = origin_mechanists } }
 		owner = { create_built_robot_species = yes }
 		while = {
@@ -1626,6 +1668,17 @@ generate_start_pops = {
 			}
 		}
 	}
+	# if = {
+		# limit = { owner = { has_valid_civic = civic_machine_influencer } }
+		# add_building = building_mecha_monastery
+		# while = {
+			# limit = { num_pops < 33 }
+			# create_pop = {
+				# species = owner_main_species
+				# ethos = spiritualist
+			# }
+		# }
+	# }
 	if = {
 		limit = { owner = { is_machine_empire = yes } }
 		while = {
@@ -1666,18 +1719,18 @@ generate_start_pops = {
 			}
 		}
 	}
-	if = {
-		limit = {
-			owner = { has_origin = origin_default }
-		}
-		while = {
-			count = 4
-			create_pop = {
-				species = owner_main_species
-				ethos = random
-			}
-		}
-	}
+	# if = {
+		# limit = {
+			# owner = { has_origin = origin_default }
+		# }
+		# while = {
+			# count = 4
+			# create_pop = {
+				# species = owner_main_species
+				# ethos = random
+			# }
+		# }
+	# }
 }
 
 
