@@ -1,23 +1,4 @@
-#civic_example = {
-#	playable = {}								# AND trigger, no scope; use this to prevent the civic from being selectable by the player (UI)
-#	potential = {}								# requirements list, see ../readme_requirements.txt
-#	possible = {}								# requirements list, see ../readme_requirements.txt
-#	pickable_at_start = yes / no				# default: yes
-#	modification = yes / no						# default: yes, set to no to prevent adding or removing this after creation of the empire
-#
-#	random_weight = { base = 5 }				# scriptable weight for randomizing a civic; required, else the civic will not get assigned randomly
-#
-#	modifier = {}								# modifier added to the country if the civic is selected and valid
-#	can_build_ruler_ship = yes / no				# default: no
-#	traits = { trait = ... }					# default: empty; trait set to enforce on the primary species. They cannot be removed, but more can be added if points/picks permit
-#	has_secondary_species = {					# default: none; if present, will enable secondary species customization in empire designer and will create secondary species & pops at galaxy generation time (see empire_init_create_capital_secondary_pops)
-#		traits = { trait = ... }					# default: empty; trait set to enforce on the secondary species. They cannot be removed, but more can be added if points/picks permit
-#	}
-#}
-
-#############
-# Hive Mind
-#############
+##########Hiveminds#########
 
 civic_hive_subspace_ephapse = {
 	potential = { authority = { value = auth_hive_mind } }
@@ -120,44 +101,7 @@ civic_hive_devouring_swarm = {
 	}
 }
 
-
-civic_hive_empath = {
-	playable = { host_has_dlc = "Federations" }
-	potential = {
-		authority = { value = auth_hive_mind }
-	}
-	possible = {
-		civics = {
-			NOT = {
-				value = civic_hive_devouring_swarm
-			}
-		}
-	}
-
-	description = "civic_tooltip_empath_effects"
-	modifier = {
-		envoys_add = 2
-		diplo_weight_mult = 0.1
-	}
-}
-
-civic_hive_memorialist = {
-	playable = { host_has_dlc = "Necroids Species Pack" }
-	description = "civic_tooltip_memorialist_gestalt_effects"
-	potential = {
-		authority = { value = auth_hive_mind  }
-	}
-	random_weight = { base = 5 }
-	possible = {
-		civics = {
-			NOT = { value = civic_hive_devouring_swarm } #Includes Terravore
-		}
-	}
-}
-
-##################
-# Machine Empire
-##################
+########Machines###########
 
 civic_machine_servitor = {
 	potential = { authority = { value = auth_machine_intelligence } }
@@ -383,28 +327,5 @@ civic_machine_replication = {
 	random_weight = { base = 5 }
 	modifier = {
 		planet_pop_assembly_mult = 0.1
-	}
-}
-
-civic_machine_maintenance_protocols = {
-	potential = { authority = { value = auth_machine_intelligence } }
-	random_weight = { base = 5 }
-	description = civic_tooltip_machine_maintenance_protocols_effects
-}
-
-civic_machine_memorialist = {
-	playable = { host_has_dlc = "Necroids Species Pack" }
-	description = "civic_tooltip_memorialist_gestalt_effects"
-	potential = {
-		authority = { value = auth_machine_intelligence }
-	}
-	random_weight = { base = 5 }
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_machine_terminator
-				value = civic_machine_assimilator
-			}
-		}
 	}
 }
