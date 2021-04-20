@@ -1,3 +1,125 @@
+# possible section models:
+# SHIPYARD_STARBASE_SECTION
+# REFINERY_STARBASE_SECTION
+# SCIENCE_STARBASE_SECTION
+# HANGAR_STARBASE_SECTION
+# ASSEMBLYYARD_STARBASE_SECTION
+#
+
+shipyard = {
+	icon = "GFX_starbase_shipyard"
+	section = "ASSEMBLYYARD_STARBASE_SECTION"
+	construction_days = 180
+	initial = yes
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_capacity_add = 1
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 100
+			owner = {
+				OR = {
+					count_owned_starbase = {
+						count = 0
+						limit = { has_starbase_module = shipyard }
+					}
+					AND = {
+						num_starbases >= 4
+						count_owned_starbase = {
+							count < 2
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+					AND = {
+						num_starbases >= 9
+						count_owned_starbase = {
+							count < 3
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+					AND = {
+						num_starbases >= 15
+						count_owned_starbase = {
+							count < 4
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_starbase_module = shipyard
+			count_starbase_modules = {
+				count < 2
+				type = shipyard
+			}
+		}
+		modifier = {
+			factor = 3
+			has_starbase_module = shipyard
+			count_starbase_modules = {
+				count < 4
+				type = shipyard
+			}
+		}
+	}
+}
+
+anchorage = {
+	icon = "GFX_starbase_anchorage"
+	section = "ANCHORAGE_STARBASE_SECTION"
+	construction_days = 180
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 4
+	}
+	triggered_country_modifier = {
+		potential = { has_starbase_building = naval_logistics_office }
+		country_naval_cap_add = 2
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2
+			count_starbase_modules = {
+				type = anchorage
+				count < 2
+			}
+		}
+	}
+}
+
 gun_battery = {
 	section = "BATTERY_STARBASE_SECTION"
 	icon = GFX_spaceport_modules
@@ -15,10 +137,7 @@ gun_battery = {
 
 		upkeep = {
 			trigger = {
-				exists = owner
-					owner = {
-						has_valid_civic = civic_defense_budget
-					}
+				has_valid_civic = civic_defense_budget
 			}
 			energy = -1
 		}
@@ -76,10 +195,7 @@ missile_battery = {
 
 		upkeep = {
 			trigger = {
-				exists = owner
-					owner = {
-						has_valid_civic = civic_defense_budget
-					}
+				has_valid_civic = civic_defense_budget
 			}
 			energy = -1
 		}
@@ -137,10 +253,7 @@ hangar_bay = {
 
 		upkeep = {
 			trigger = {
-				exists = owner
-					owner = {
-						has_valid_civic = civic_defense_budget
-					}
+				has_valid_civic = civic_defense_budget
 			}
 			energy = -1
 		}
@@ -174,6 +287,70 @@ hangar_bay = {
 
 	show_in_tech = "tech_strike_craft_1"
 }
+
+solar_panel_network = {
+	icon = "GFX_solar_panel_network"
+	section = "REFINERY_STARBASE_SECTION"
+	construction_days = 180
+	initial = yes
+
+	potential = {
+		exists = owner
+		owner = {
+			is_gestalt = yes
+			has_technology = "tech_solar_panel_network"
+		}
+	}
+
+	possible = {
+		solar_system = {
+			custom_tooltip = {
+				fail_text = "requires_no_black_hole_or_dyson_sphere"
+				NOR = {
+					is_star_class = sc_black_hole
+					has_megastructure = dyson_sphere_3
+					has_megastructure = dyson_sphere_4
+					has_megastructure = dyson_sphere_5
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_solar_panel_network"
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+
+		produces = {
+			energy = 6
+		}
+
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_galactic_community_member = yes
+				}
+				OR = {
+					is_active_resolution = "resolution_galacticstudies_astral_studies_network"
+					is_active_resolution = "resolution_galacticstudies_advanced_xenostudies"
+					is_active_resolution = "resolution_galacticstudies_ethical_guideline_refactoring"
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				}
+			}
+			energy = 6
+		}
+	}
+
+	ai_build_at_chokepoint = no
+	ai_weight = {
+		weight = 15
+	}
+}
+
 
 trading_hub = {
 	icon = "GFX_starbase_trading_hub"
