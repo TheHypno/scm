@@ -258,6 +258,9 @@ building_bank_branch = {
 			branch_office_owner = { is_criminal_syndicate = no }
 			owner = {has_valid_civic = civic_bank_corp}
 		}
+		NOT = {
+			owner = {has_valid_civic = civic_machine_aperature_science}
+		}
 	}
 
 	planet_modifier = {
