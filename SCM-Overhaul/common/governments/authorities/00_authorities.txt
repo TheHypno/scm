@@ -21,6 +21,7 @@
 #	tags = { <key> <key2> }							# add these translation tags to the description
 #}
 
+#The order of these authorities in this file also determine the order that they show up in game, fun fact!
 
 #Direct Democracy
 auth_direct_democratic = {
