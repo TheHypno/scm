@@ -1943,7 +1943,7 @@ void_dweller_home_planet_setup = {
 					}
 			}
 		}
-
+		add_building = building_commercial_zone
 		add_building = building_hydroponics_farm
 	}
 	if = {
@@ -1980,6 +1980,7 @@ void_dweller_home_planet_setup = {
 					}
 				}
 			}
+		add_building = building_commercial_zone
 		add_building = building_factory_1
 	}
 
