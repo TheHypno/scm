@@ -73,7 +73,14 @@ event = {
 					has_civic = civic_research_inc
 				}
 				give_technology = { tech = tech_innovations }
-			}			
+			}	
+
+			if = {
+				limit = {
+					has_civic = civic_sports
+				}
+				give_technology = { tech = tech_holo_entertainment }
+			}		
 			
 			if = {
 				limit = {
