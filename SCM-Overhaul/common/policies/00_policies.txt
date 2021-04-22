@@ -1950,7 +1950,8 @@ trade_policy = {
 		valid = {
 			is_country_type = default
 			or = {
-			has_technology = tech_innovations
+				has_technology = tech_innovations
+				has_valid_civic = civic_research_inc
 			}
 			NOR = {
 				has_valid_civic = civic_ultimate_collective
