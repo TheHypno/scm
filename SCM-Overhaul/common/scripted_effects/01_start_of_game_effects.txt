@@ -1887,10 +1887,10 @@ generate_home_planet_final_pass = {
 void_dweller_home_planet_setup = {
 	owner = {
 		save_event_target_as = void_dweller_owner
-		#give_technology = {
-			#tech = tech_habitat_voidborne
-			#message = no
-		#}
+		give_technology = {
+			tech = tech_habitat_1
+			message = no
+		}
 		add_research_option = tech_habitat_2
 
 		if = {
