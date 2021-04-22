@@ -160,6 +160,12 @@ civic_philosopher_king = {
 				value = auth_imperial
 			}
 		}
+		civics = {
+			NOR = {
+				value = civic_executive_committee
+				value = civic_peaceful_republic
+			}
+		}
 	}
 	random_weight = { base = 5 }
 	modifier = {
