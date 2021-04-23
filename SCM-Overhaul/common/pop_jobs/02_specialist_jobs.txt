@@ -2529,48 +2529,48 @@ necro_apprentice = {
 		}
 	}
 }
-naval_support_staff = {
-	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_fleet_command_post
-	clothes_texture_index = 4
-	icon = naval_support_staff
+# naval_support_staff = {
+	# category = specialist
+	# condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = building_fleet_command_post
+	# clothes_texture_index = 4
+	# icon = naval_support_staff
 	
-	country_modifier = {
-		country_naval_cap_add = 8
-	}
-	resources = {
-		upkeep = {
-			consumer_goods = 2
-		}
-	}
+	# country_modifier = {
+		# country_naval_cap_add = 8
+	# }
+	# resources = {
+		# upkeep = {
+			# consumer_goods = 2
+		# }
+	# }
 
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
+	# possible_pre_triggers = {
+		# has_owner = yes
+		# is_being_purged = no
+		# is_being_assimilated = no
+	# }
 
-	possible = {
-		worker_job_check_trigger = yes
-		owner = { is_gestalt = no }
-	}
+	# possible = {
+		# worker_job_check_trigger = yes
+		# owner = { is_gestalt = no }
+	# }
 
-	weight = {
-		weight = @specialist_job_weight
-		modifier = {
-			factor = 0.1
-			is_enslaved = yes
-			NOT = { has_slavery_type = { type = slavery_military } }
-		}
-		modifier = {
-			factor = 10
-			is_enslaved = yes
-			has_slavery_type = { type = slavery_military }
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		}
-}
+	# weight = {
+		# weight = @specialist_job_weight
+		# modifier = {
+			# factor = 0.1
+			# is_enslaved = yes
+			# NOT = { has_slavery_type = { type = slavery_military } }
+		# }
+		# modifier = {
+			# factor = 10
+			# is_enslaved = yes
+			# has_slavery_type = { type = slavery_military }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# can_take_servant_job = yes
+		# }
+		# }
+# }
