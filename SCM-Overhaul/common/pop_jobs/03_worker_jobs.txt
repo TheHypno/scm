@@ -142,7 +142,7 @@ technician = {
 	resources = {
 		category = planet_technician
 		produces = {
-			energy = 4
+			energy = 6
 		}
 		produces = {
 			trigger = {
