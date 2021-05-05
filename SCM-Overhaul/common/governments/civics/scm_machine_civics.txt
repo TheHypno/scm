@@ -162,38 +162,39 @@ civic_machine_corporatized = {
 	}
 }
 
-civic_machine_selfdefense = {
-	potential = { authority = { value = auth_machine_intelligence } }
-		possible = {
-			civics = {
-			NOR = {
-				value = civic_machine_war
-				value = civic_machine_warbots
-				}
-			}
-		}
-	modification = yes
-	random_weight = {
-		base = 5
-		modifier = {
-			factor = 0
-			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
-		}
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
+# Removed for now because it's broke lmfao
+# civic_machine_selfdefense = {
+	# potential = { authority = { value = auth_machine_intelligence } }
+		# possible = {
+			# civics = {
+			# NOR = {
+				# value = civic_machine_war
+				# value = civic_machine_warbots
+				# }
+			# }
+		# }
+	# modification = yes
+	# random_weight = {
+		# base = 5
+		# modifier = {
+			# factor = 0
+			# NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		# }
+		# modifier = {
+			# # civic has no effect after galaxy generation, disable for random generation
+			# factor = 0
+			# has_global_flag = game_started
+		# }
+	# }
 	
-	# description = civic_tooltip_machine_selfdefense_effects
-	modifier = {
-		planet_army_build_speed_mult = 0.2
-		army_damage_mult = 0.2
-		planet_stability_add = 10
+	# # description = civic_tooltip_machine_selfdefense_effects
+	# modifier = {
+		# planet_army_build_speed_mult = 0.2
+		# army_damage_mult = 0.2
+		# planet_stability_add = 10
 		
-	}
-}
+	# }
+# }
 
 civic_machine_overlord = {
 	potential = { authority = { value = auth_machine_intelligence } }

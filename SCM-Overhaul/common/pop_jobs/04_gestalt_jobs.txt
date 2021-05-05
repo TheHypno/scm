@@ -844,14 +844,14 @@ patrol_drone = {
 		pop_defense_armies_add = 2
 	}
 	
-	triggered_planet_modifier = {
-	potential = {
-		owner = { has_valid_civic = civic_machine_selfdefense }
-	}
-		modifier = {
-			pop_defense_armies_add = 3
-		}
-	}
+	#triggered_planet_modifier = {
+	#potential = {
+		#owner = { has_valid_civic = civic_machine_selfdefense }
+	#}
+		#modifier = {
+			#pop_defense_armies_add = 3
+		#}
+	#}
 
 	weight = {
 		weight = @complex_drone_job_weight
