@@ -337,13 +337,13 @@ civic_machine_ota_updates = {
 
 civic_machine_warbots = {
 	potential = { authority = { value = auth_machine_intelligence } }
-		possible = {
+		#possible = {
 		#civics = {
 			#NOR = {
 				#value = civic_machine_selfdefense
 			#}
 		#}
-	}
+	#}
 	random_weight = { base = 5 }
 	modifier = {
 		army_damage_mult = 0.3
