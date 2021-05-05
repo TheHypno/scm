@@ -3659,7 +3659,7 @@ BLOCKERS_BENEFITS:0 "§ENatural planetary §HBlockers§! produce £unity£ §HUn
 
 requires_civic_shared_burden:0 "$TRIGGER_FAIL$Required to have a combination of §YFanatic Cooperative§! and §Ynon-Elitism§! ethics."
 
-ALLOWS_STRATIFIED:0 "§ECombination with §Hnon-Cooperative§! ethic allows §HStratified Economy§! Living Standards§!"
+ALLOWS_STRATIFIED:0 "§ECombination with §HCooperative§! or the §HFanatic Pluralist§! ethic allows §HStratified Economy§! Living Standards§!"
 
 civic_chosen_people:0 "Chosen People"
 civic_chosen_people_desc:0 "These species fanatically preserve their biological and cultural uniqueness, considering themselves exceptional and chosen by a Higher Power to dominate the galaxy."
@@ -3778,3 +3778,12 @@ building_fleet_command_post_desc:0 "The naval support staff working here do all 
 
 building_office_of_the_admiralty:0 "Offices of the Admiralty"
 building_office_of_the_admiralty_desc:0 "Offices controlled directly by the staff of the admiralty allow for swift and efficent work to be carried out to support our brave navy"
+
+#####Down below are English Localization replacements for Vanilla files and other additions
+origin_default:0 "Prosperous Unification"
+ origin_default_desc:0 "A stable planetary unification has allowed this civilization to prosper and grow."
+ origin_tooltip_default_effects:0 "Start the game with an additional §Y2§! Districts. \n\nThe Capital planet gets the following buffs for the entire game:\n§G+15%§! to £happiness£ Happiness\n§G+25%§! to £amenities£ §YAmenities§!\n§G+10%§! to Resources"
+ 
+ requires_artifact_sell_collector_cooldown_no_cooldown:0 "$TRIGGER_FAIL$§RYou can't sell so many minor artifacts in a short amount of time!§!"
+ artifact_sell_collector_cooldown:0 "$artifact_sell_collector$ Cooldown"
+ artifact_sell_collectorTT:0 "\n\nCooldown: £time£ §Y120§!"
