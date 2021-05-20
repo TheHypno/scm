@@ -67,9 +67,14 @@ civic_imperial_cult = {
 				value = ethic_fanatic_authoritarian
 			}
 			OR = {
-				text = civic_tooltip_spiritualist
-				value = ethic_spiritualist
+				# text = civic_tooltip_spiritualist
+				# value = ethic_spiritualist
 				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_philosopher_king
 			}
 		}
 	}
@@ -77,6 +82,7 @@ civic_imperial_cult = {
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
+		planet_jobs_produces_mult = 0.05
 	}
 }
 
@@ -164,6 +170,9 @@ civic_philosopher_king = {
 			NOR = {
 				value = civic_executive_committee
 				value = civic_peaceful_republic
+				value = civic_imperial_cult
+				value = civic_military_dictatorship 
+				value = civic_citizen_service
 			}
 		}
 	}
@@ -225,7 +234,7 @@ civic_citizen_service = {
 			# }
 		# }
 
-		civics = { NOR = { value = civic_reanimated_armies	value = civic_spiritual_democracy   value = civic_cyber_demos_cratos   value = civic_merchant_guilds   value = civic_state_monopoly    value = civic_exalted_priesthood    value = civic_technocracy value = civic_patriotic_service  } }
+		civics = { NOR = { value = civic_reanimated_armies	value = civic_spiritual_democracy  value = civic_science_directorate  value = civic_cyber_demos_cratos   value = civic_merchant_guilds   value = civic_state_monopoly    value = civic_exalted_priesthood    value = civic_technocracy  value = civic_patriotic_service  value = civic_philosopher_king } }
 
 	}
 	random_weight = { base = 5 }
@@ -595,7 +604,7 @@ civic_shadow_council = {
 	modifier = {
 		country_election_influence_cost_mult = -0.75
 		planet_jobs_ruler_produces_mult = 0.10
-		spy_network_levels_add = 10
+		intel_decryption_add = 1
 	}
 }
 
@@ -1143,6 +1152,7 @@ civic_diplomatic_corps = {
 	modifier = {
 		envoys_add = 2
 		diplo_weight_mult = 0.1
+		envoy_improve_relations_mult = 0.25
 	}
 }
 

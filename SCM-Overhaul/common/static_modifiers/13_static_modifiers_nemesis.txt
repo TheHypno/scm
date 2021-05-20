@@ -1,0 +1,400 @@
+
+resolution_custodian_united_front = {
+    damage_vs_country_type_swarm_mult = 0.2
+    damage_vs_country_type_extradimensional_mult = 0.2
+    damage_vs_country_type_extradimensional_2_mult = 0.2
+    damage_vs_country_type_extradimensional_3_mult = 0.2
+    damage_vs_country_type_ai_empire_mult = 0.2
+    damage_vs_country_type_gray_goo_mult = 0.2
+    damage_vs_player_crisis_mult = 0.2
+    country_energy_produces_mult = -0.02
+}
+
+resolution_custodian_galactic_mobilization = {
+    country_naval_cap_add = 150
+    trade_value_mult = -0.05
+}
+
+resolution_custodian_galactic_mobilization_gestalt = {
+    country_naval_cap_add = 150
+    empire_size_pops_mult = 0.02
+}
+
+resolution_custodian_galactic_standard = {
+    country_base_influence_produces_add = 1
+    country_energy_produces_mult = -0.02
+}
+
+resolution_custodian_anti_piracy = {
+    local_trade_protection_add = 5
+    damage_vs_country_type_pirate_mult = 0.2
+    damage_vs_country_type_dormant_marauders_mult = 0.2
+    damage_vs_country_type_awakened_marauders_mult = 0.2
+}
+
+resolution_custodian_gto = {
+    trade_value_mult = 0.10
+    planet_pops_consumer_goods_upkeep_mult = 0.03
+}
+
+resolution_custodian_ina = {
+    country_energy_produces_mult = -0.02
+    ship_community_territory_speed_mult = 0.15
+}
+
+resolution_custodian_gdf = {
+    country_alloys_produces_mult = -0.05
+    gdf_ship_alloys_cost_mult = -0.25
+}
+
+resolution_custodian_gdf_2 = {
+    country_alloys_produces_mult = -0.05
+    gdf_ship_alloys_cost_mult = -0.1
+}
+
+resolution_custodian_galpol = {
+    planet_crime_add = -15
+    country_energy_produces_mult = -0.02
+}
+
+resolution_emperor_isd = {
+    planet_crime_add = -20
+    country_energy_produces_mult = -0.03
+}
+
+imperial_charter = {
+    empire_size_branch_office_mult = -0.25
+    branch_office_value_mult = 0.10
+}
+
+former_loyalist = {
+    diplo_weight_mult = -0.6
+}
+
+former_rebel = {
+    diplo_weight_mult = -0.6
+}
+
+former_emperor = {
+    diplo_weight_mult = -0.8
+}
+
+crisis_dark_matter_cap = {
+    hide_from_country_list = yes
+    country_resource_max_sr_dark_matter_add = 185000
+}
+
+imp_concession_ports_1 = {
+    country_base_energy_produces_add = 10
+}
+imp_concession_ports_2 = {
+    country_base_energy_produces_add = 20
+}
+imp_concession_ports_3 = {
+    country_base_energy_produces_add = 30
+}
+imp_concession_ports_4 = {
+    country_base_energy_produces_add = 40
+}
+imp_concession_ports_5 = {
+    country_base_energy_produces_add = 50
+}
+imp_concession_ports_6 = {
+    country_base_energy_produces_add = 60
+}
+imp_concession_ports_7 = {
+    country_base_energy_produces_add = 70
+}
+imp_concession_ports_8 = {
+    country_base_energy_produces_add = 80
+}
+imp_concession_ports_9 = {
+    country_base_energy_produces_add = 90
+}
+imp_concession_ports_10 = {
+    country_base_energy_produces_add = 100
+}
+
+#Spynetwork scope
+spynetwork_vividsight = {
+    espionage_operation_difficulty_add = -2
+    spy_network_daily_value_mult = -0.15
+}
+spynetwork_drones_hunted = {
+    espionage_operation_difficulty_add = 4
+}
+spynetwork_toxic_field = {
+    espionage_operation_difficulty_add = 3
+}
+spynetwork_excess_noise = {
+    espionage_operation_difficulty_add = 3
+}
+spynetwork_drain_resources_cutties = {
+    spy_network_daily_value_mult = -0.1
+}
+spynetwork_rigorous_screening = {
+    spy_network_daily_value_mult = -0.2
+}
+spynetwork_grisly_countermeasures = {
+    spy_network_daily_value_mult = -0.2
+}
+spynetwork_auxiliaries_lost = {
+    espionage_operation_difficulty_add = 2
+}
+spynetwork_auxiliaries_insight = {
+    espionage_operation_difficulty_add = -1
+}
+spynetwork_auxiliaries_leak = {
+    espionage_operation_difficulty_add = 2
+    spy_network_daily_value_mult = -0.25
+}
+
+#Operation scope
+operation_contact_lost = {
+    espionage_operation_difficulty_add = 2
+}
+operation_multiphasic_interference = {
+    espionage_operation_difficulty_add = 2
+}
+operation_grisly_countermeasures = {
+    espionage_operation_difficulty_add = 2
+}
+
+#Country scope
+espionage_research_backdoor = {
+    all_technology_research_speed = 0.10
+}
+research_stolen_sabotaged = {
+    all_technology_research_speed = -0.10
+}
+espionage_finderskeepers = {
+    icon = "gfx/interface/icons/modifiers/mod_found_encryption_key.dds"
+    intel_decryption_add = 1
+}
+espionage_straycomm = {
+    icon = "gfx/interface/icons/modifiers/mod_lost_encryption_key.dds"
+    intel_encryption_add = -2
+}
+espionage_drain_resources_exploit = {
+    trade_value_mult = 0.01
+}
+
+# First contact modifiers
+preventive_war_economy = {
+    country_alloys_produces_mult = 0.1
+    pop_ethic_xenophobe_attraction_mult = 0.25
+}
+
+alien_friendship_society = {
+    envoy_improve_relations_mult = 0.25
+    pop_ethic_xenophile_attraction_mult = 0.25
+}
+
+robot_appreciation = {
+    pop_ethic_materialist_attraction_mult = 0.25
+}
+
+alien_appreciation = {
+    pop_ethic_xenophile_attraction_mult = 0.25
+}
+
+robot_revulsion = {
+    pop_ethic_spiritualist_attraction_mult = 0.25
+}
+
+alien_revulsion = {
+    pop_ethic_xenophobe_attraction_mult = 0.25
+}
+
+repulsive_robot_contact = {
+    faction_approval = -0.1
+}
+
+repulsive_alien_contact = {
+    faction_approval = -0.1
+}
+
+repulsive_aliens_uncondemned = {
+    pop_happiness = -0.05
+}
+
+first_contact_skill_1 = {
+    hide_from_country_list = yes #hides it from the country government modifiers interface
+    first_contact_clues_add = 2
+}
+
+first_contact_skill_2 = {
+    hide_from_country_list = yes
+    first_contact_clues_add = 3
+}
+
+first_contact_skill_3 = {
+    hide_from_country_list = yes
+    first_contact_clues_add = 4
+}
+
+first_contact_skill_4 = {
+    hide_from_country_list = yes
+    first_contact_clues_add = 5
+}
+
+first_contact_challenge_not_returned = {
+    pop_citizen_happiness = -0.05
+    first_contact_clues_add = 2
+}
+
+first_contact_war_preparations = {
+    pop_ethic_militarist_attraction_mult = 0.3
+    starbase_shipyard_build_speed_mult = 0.15
+}
+
+first_contact_warlike_warriors_recognised = {
+    diplo_weight_naval_mult = 0.25
+    country_base_influence_produces_add = 0.65
+}
+
+first_contact_warlike_warriors_recognised_2 = {
+    diplo_weight_naval_mult = 0.25
+    country_base_influence_produces_add = 0.65
+}
+
+first_contact_warlike_warriors_presumed = {
+    diplo_weight_naval_mult = 0.15
+    country_base_influence_produces_add = 0.5
+}
+
+first_contact_warlike_warriors_presumed_2 = {
+    diplo_weight_naval_mult = 0.15
+    country_base_influence_produces_add = 0.5
+}
+
+first_contact_level_headedness = {
+    diplo_weight_mult = 0.15
+    country_base_influence_produces_add = 0.5
+}
+
+first_comms_hostility_preparations = {
+    spy_network_daily_value_mult = 0.33
+}
+
+first_comms_defensive = {
+    spy_network_daily_value_mult = -0.33
+}
+
+first_contact_speak_like_us_country = {
+    first_contact_clues_add = 1
+}
+
+first_contact_speak_like_us_spynetwork = {
+    spy_network_daily_value_mult = 0.25
+}
+
+universal_translator = {
+    country_society_research_produces_mult = 0.1
+    envoy_improve_relations_mult = 0.15
+}
+
+space_lights_insights = {
+    ship_hyperlane_range_add = 2
+}
+
+first_contact_hive_drones_study = {
+    planet_jobs_worker_produces_mult = 0.1
+}
+
+
+# Custodian/Emperor
+galactic_emperor = {
+    veto_cost_mult = -0.5
+    veto_cooldown_mult = -0.5
+    emergency_measures_cooldown_mult = -0.5
+}
+
+galactic_custodian = {
+    veto_cost_mult = -0.5
+    veto_cooldown_mult = -0.5
+    emergency_measures_cooldown_mult = -0.5
+}
+
+gal_custodian = {
+    icon = "gfx/interface/icons/modifiers/mod_country_custodian.dds"
+    country_base_influence_produces_add = 5
+    diplo_weight_mult = 0.3
+}
+
+gdf_naval_cap = {
+    country_naval_cap_add = 260
+}
+
+gdf_naval_cap_2 = {
+    country_naval_cap_add = 660
+}
+
+imperial_security_directorate = {
+    intel_decryption_add = 2
+    intel_encryption_add = 4
+}
+
+#Manifesti Destiny
+planet_manifesti_joy = { #Planet/capital scope
+	icon = "gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds"
+	icon_frame = 1
+	pop_happiness = 0.2
+	planet_jobs_specialist_produces_mult = -0.3
+}
+planet_manifesti_uslurp_mod = { #Planet/capital scope
+	icon = "gfx/interface/icons/planet_modifiers/pm_smugglers_in_bar.dds"
+	icon_frame = 1
+    planet_stability_add = -10
+    # army_morale = -0.2
+    planet_jobs_society_research_produces_mult = 0.2
+}
+manifesti_uslurp_mod = { #Country scope
+	icon = "gfx/interface/icons/planet_modifiers/pm_smugglers_in_bar.dds"
+	icon_frame = 1
+	pop_happiness = 0.1
+}
+manifesti_reflections_mod = { #Country scope
+	icon = "gfx/interface/icons/planet_modifiers/pm_museum.dds"
+	icon_frame = 1
+	country_society_research_produces_mult = 0.15
+}
+manifesti_sweet_dreams_mod = { #Country scope
+	icon = "gfx/interface/icons/planet_modifiers/pm_museum.dds"
+	icon_frame = 1
+	country_society_research_produces_mult = 0.1
+	pop_ethics_shift_speed_mult = 1
+}
+
+beholden_to_special_interests = {
+    diplo_weight_mult = -0.15
+}
+
+faction_upset = {
+    faction_approval = -0.15
+}
+
+sleeper_cell_operation_success = {
+    espionage_operation_skill_add = 1
+    spy_network_decay_mult = -1
+}
+
+undermining_efforts_stalled = {
+    icon = "gfx/interface/icons/modifiers/mod_country_envoys_add.dds"
+}
+
+gather_information_infiltration_5 = {
+    spy_network_levels_add = 5
+}
+
+gather_information_infiltration_10 = {
+    spy_network_levels_add = 10
+}
+
+gather_information_infiltration_15 = {
+    spy_network_levels_add = 15
+}
+
+gather_information_infiltration_20 = {
+    spy_network_levels_add = 20
+}

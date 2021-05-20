@@ -14,27 +14,6 @@ building_foundry_1 = {
 		}
 	}
 
-	allow = {
-		custom_tooltip = {
-			text = industrial_focus_limit
-			fail_text = ONLY_ONE_INDUSTRIAL_BUILDING
-			OR = {
-				uses_district_set = city_world
-				NOR = {
-					has_building = building_factory_1
-					has_building = building_factory_2
-					has_building = building_factory_3
-					has_building_construction = building_factory_1
-					has_building_construction = building_factory_2
-					has_building_construction = building_factory_3
-
-					has_building_construction = building_foundry_1
-				}
-			}
-
-		}
-	}
-
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
@@ -223,111 +202,7 @@ building_foundry_2 = {
 	}
 
 	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
 		text = building_foundry_2_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_2_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_2_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_2_arcology_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_2_arcology_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_2_arcology_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_2_habitat_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_2_habitat_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_2_habitat_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_2_ring_world_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_2_ring_world_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_2_ring_world_machine_effect_desc
 	}
 
 	triggered_desc = {
@@ -460,111 +335,7 @@ building_foundry_3 = {
 	}
 
 	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
 		text = building_foundry_3_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_3_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_3_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_3_arcology_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_3_arcology_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_3_arcology_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_3_habitat_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_3_habitat_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_3_habitat_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_foundry_3_ring_world_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = building_foundry_3_ring_world_hive_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_foundry_3_ring_world_machine_effect_desc
 	}
 
 	triggered_desc = {
@@ -644,26 +415,6 @@ building_factory_1 = {
 		building_relaxed_basic_income_check = yes
 	}
 
-	allow = {
-		custom_tooltip = {
-			text = industrial_focus_limit
-			fail_text = ONLY_ONE_INDUSTRIAL_BUILDING
-			OR = {
-				uses_district_set = city_world
-				NOR = {
-					has_building = building_foundry_1
-					has_building = building_foundry_2
-					has_building = building_foundry_3
-					has_building_construction = building_foundry_1
-					has_building_construction = building_foundry_2
-					has_building_construction = building_foundry_3
-
-					has_building_construction = building_factory_1
-				}
-			}
-		}
-	}
-
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
@@ -698,7 +449,7 @@ building_factory_1 = {
 			job_artisan_drone_add = @b1_jobs
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -707,7 +458,7 @@ building_factory_1 = {
 		modifier = {
 			job_artisan_add = 1
 		}
-	}	
+	}
 
 	resources = {
 		category = planet_buildings
@@ -770,7 +521,7 @@ building_factory_1 = {
 		}
 	}
 	ai_resource_production = {
-		consumer_goods = 4
+		consumer_goods = 8
 		trigger = {
 			planet_resource_compare = {
 				resource = consumer_goods
@@ -834,7 +585,7 @@ building_factory_2 = {
 			job_artisan_drone_add = @b1_jobs
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -843,7 +594,7 @@ building_factory_2 = {
 		modifier = {
 			job_artisan_add = 1
 		}
-	}	
+	}
 
 	resources = {
 		category = planet_buildings
@@ -866,75 +617,7 @@ building_factory_2 = {
 	}
 
 	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
 		text = building_factory_2_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_2_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_2_arcology_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_2_arcology_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_2_habitat_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_2_habitat_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_2_ring_world_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_2_ring_world_machine_effect_desc
 	}
 
 	triggered_desc = {
@@ -954,7 +637,7 @@ building_factory_2 = {
 	}
 
 	ai_resource_production = {
-		consumer_goods = 8
+		consumer_goods = 16
 		trigger = {
 			always = yes
 		}
@@ -1046,16 +729,16 @@ building_factory_3 = {
 			job_artisan_drone_add = @b1_jobs
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_consumerism }
 		}
 		modifier = {
-			job_artisan_add = 2
+			job_artisan_add = 1
 		}
-	}	
+	}
 
 	resources = {
 		category = planet_buildings
@@ -1074,101 +757,47 @@ building_factory_3 = {
 	}
 
 	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
 		text = building_factory_3_effect_desc
 	}
 
-	triggered_desc = {
-		trigger = {
-			uses_district_industrial = yes
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_3_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_3_arcology_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = city_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_3_arcology_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_3_habitat_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = habitat
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_3_habitat_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = building_factory_3_ring_world_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			uses_district_set = ring_world
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = building_factory_3_ring_world_machine_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_artisan_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_artisan_drone_effect_desc
-	}
-
 	ai_resource_production = {
-		consumer_goods = 12
+		consumer_goods = 24
 		trigger = {
 			always = yes
 		}
 	}
-
-	on_queued = {
+	ai_resource_production = {
+		consumer_goods = 24
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 24
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 20
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 44
+				type = produces
+			}
+		}
+	}
+	ai_resource_production = {
+		consumer_goods = 20
+		trigger = {
+			planet_resource_compare = {
+				resource = consumer_goods
+				value >= 64
+				type = produces
+			}
+		}
+	}
+	
+	on_queued = { #factory 3
 		IF = {
 			limit = {
 				owner = { has_technology = tech_construction_templates }
@@ -1186,7 +815,7 @@ building_factory_3 = {
 				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
 			}
 		}
-	}
+	}	
 }
 
 building_refinery = {

@@ -265,6 +265,7 @@ civic_machine_builder = {
 		planet_structures_cost_mult = -0.10
 		planet_structures_upkeep_mult = -0.15
 		planet_building_build_speed_mult = 0.25
+		planet_max_buildings_add = 1
 	}
 }
 
@@ -337,13 +338,13 @@ civic_machine_ota_updates = {
 
 civic_machine_warbots = {
 	potential = { authority = { value = auth_machine_intelligence } }
-		#possible = {
-		#civics = {
-			#NOR = {
-				#value = civic_machine_selfdefense
-			#}
-		#}
-	#}
+		# possible = {
+		# civics = {
+			# NOR = {
+				# value = civic_machine_selfdefense
+			# }
+		# }
+	# }
 	random_weight = { base = 5 }
 	modifier = {
 		army_damage_mult = 0.3
