@@ -1176,11 +1176,11 @@ action_form_migration_pact = {
 			}
 		}
 		custom_tooltip = {
-			fail_text = "requires_good_opinion"
+			fail_text = "requires_good_or_better_opinion"
 
 			OR = {
 				opinion_level = { who = from level >= good }
-				# is_improving_relations_with = from
+				is_improving_relations_with = from
 			}
 		}
 	}
@@ -1195,17 +1195,6 @@ action_break_migration_pact = {
 	requires_actor_independence = no
 	requires_recipient_independence = no
 	action_type = negative
-	
-	possible = {
-		custom_tooltip = {
-				fail_text = "requires_bad_opinion"
-
-				OR = {
-					opinion_level = { who = from level <= poor }
-					# is_improving_relations_with = from
-				}
-			}
-		}
 }
 
 # Creates a non-aggression pact between a empire and an entire federation. Requires unanimous vote from the federation.
