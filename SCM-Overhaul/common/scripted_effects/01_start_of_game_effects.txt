@@ -340,7 +340,7 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 
-		set_planet_size = 25
+		set_planet_size = 33
 
 		# 5 + 3 energy
 		add_deposit = d_searing_desert
@@ -836,7 +836,7 @@ generate_earth_deposits_and_blockers = {
 			}
 		}
 
-		set_planet_size = 25
+		set_planet_size = 33
 
 		add_deposit = d_dust_caverns
 		add_deposit = d_bubbling_swamp
@@ -1933,6 +1933,7 @@ void_dweller_home_planet_setup = {
 				tech = tech_hydroponics
 				message = no
 			}
+			add_resource = { food = 500 }
 		}
 		else = {
 			give_technology = {
@@ -1946,7 +1947,7 @@ void_dweller_home_planet_setup = {
 		}
 	}
 	while = {
-		count = 10
+		count = 12
 		create_pop = {
 			species = owner_main_species
 		}
@@ -1957,10 +1958,20 @@ void_dweller_home_planet_setup = {
 	}
 	set_planet_size = 6
 	set_planet_flag = advanced_habitat
-	add_district = district_hab_housing
-	add_district = district_hab_science
-	add_building = building_hab_major_capital
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_hab_housing
+	}
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_hab_science
+	}
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_hab_industrial
+	}
+	add_district_and_planet_size_if_needed_effect = {
+		district = district_hab_industrial
+	}
 
+	add_building = building_hab_major_capital
 
 	if = {
 		limit = {
@@ -1981,6 +1992,9 @@ void_dweller_home_planet_setup = {
 				has_civic = civic_machine_cult
 			}
 		}
+		# add_district_and_planet_size_if_needed_effect = {
+		# 	district = district_hab_industrial
+		# }
 
 		add_building = building_robot_assembly_plant
 		add_building = building_mecha_monastery
@@ -1993,6 +2007,9 @@ void_dweller_home_planet_setup = {
 				has_civic = civic_machine_cult
 			}
 		}
+		# add_district_and_planet_size_if_needed_effect = {
+		# 	district = district_hab_industrial
+		# }
 
 		add_building = building_robot_assembly_plant
 		add_building = building_mecha_monastery
@@ -2018,7 +2035,7 @@ void_dweller_home_planet_setup = {
 			limit = { has_planet_flag = void_dweller_habitat_2 }
 			set_owner = event_target:void_dweller_owner
 			while = {
-				count = 10
+				count = 9
 				create_pop = {
 					species = owner_main_species
 				}
@@ -2029,29 +2046,37 @@ void_dweller_home_planet_setup = {
 			}
 			set_planet_size = 4
 			set_planet_flag = mining_habitat
-			add_district = district_hab_housing
-			add_district = district_hab_mining
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_hab_housing
+			}
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_hab_mining
+			}
 			if = {
 				limit = {
 					owner = {
-						is_lithoid_empire = no
+						has_civic = civic_machine_cult
 					}
 				}
-				add_building = building_factory_1
-				add_district = district_hab_commercial
+				add_building = building_bureaucratic_1
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_hab_commercial
+				}
 			}
 			else = {
 				add_building = building_holo_theatres
-				add_district = district_hab_mining
+				add_district_and_planet_size_if_needed_effect = {
+					district = district_hab_mining
+				}
 			}
 
-			add_building = building_foundry_1
+			#add_building = building_foundry_1
 		}
 		random_system_planet = {
 			limit = { has_planet_flag = void_dweller_habitat_3 }
 			set_owner = event_target:void_dweller_owner
 			while = {
-				count = 10
+				count = 9
 				create_pop = {
 					species = owner_main_species
 				}
@@ -2062,9 +2087,15 @@ void_dweller_home_planet_setup = {
 			}
 			set_planet_size = 4
 			set_planet_flag = energy_habitat
-			add_district = district_hab_housing
-			add_district = district_hab_energy
-			add_district = district_hab_commercial
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_hab_housing
+			}
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_hab_energy
+			}
+			add_district_and_planet_size_if_needed_effect = {
+				district = district_hab_commercial
+			}
 
 			if = {
 				limit = {
@@ -2073,7 +2104,6 @@ void_dweller_home_planet_setup = {
 						has_civic = civic_machine_cult
 					}
 				}
-				#add_building = building_bureaucratic_1
 				add_building = building_hydroponics_farm
 			}
 			if = {
@@ -2083,10 +2113,15 @@ void_dweller_home_planet_setup = {
 						has_civic = civic_machine_cult
 					}
 				}
-				add_building = building_bureaucratic_1
-				add_building = building_factory_1
+				#add_building = building_bureaucratic_1
+				add_building = building_commercial_zone
 			}
-			else = {
+			if = {
+				limit = {
+					owner = {
+						NOT = { has_civic = civic_machine_cult }
+					}					
+				}
 				add_building = building_bureaucratic_1
 			}
 		}
