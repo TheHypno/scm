@@ -1037,7 +1037,7 @@ utility_component_template = {
 	power = @colossus_power
 
 	component_set = "power_core"
-	size_restriction = { colossus }
+	size_restriction = { colossus star_eater }
 	upgrades_to = "COLOSSUS_DARK_MATTER_REACTOR"
 
 	ai_weight = {
@@ -1300,7 +1300,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { colossus }
+	size_restriction = { colossus star_eater }
 
 	ai_weight = {
 		weight = 6
