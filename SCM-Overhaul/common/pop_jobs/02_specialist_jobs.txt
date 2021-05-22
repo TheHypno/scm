@@ -2038,7 +2038,6 @@ manager = {
 		potential = {
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				}
 		}
 		modifier = {
@@ -2104,7 +2103,6 @@ manager = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				}
 		}
 		modifier = {

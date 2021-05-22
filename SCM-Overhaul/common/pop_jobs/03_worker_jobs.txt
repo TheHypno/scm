@@ -52,7 +52,6 @@ clerk = {
 		potential = {
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -80,7 +79,6 @@ clerk = {
 			NOR = {
 				has_trait = trait_nuumismatic_administration
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 			}
 		}
 		modifier = {
@@ -95,7 +93,6 @@ clerk = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -1214,7 +1211,6 @@ preacher = {
 		potential = {
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -1238,7 +1234,6 @@ preacher = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -1355,7 +1350,6 @@ mortal_initiate = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
-				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
