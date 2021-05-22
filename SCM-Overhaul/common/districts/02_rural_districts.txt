@@ -53,6 +53,19 @@ district_generator = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_technician_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
@@ -323,6 +336,19 @@ district_mining = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
@@ -530,6 +556,19 @@ district_farming = {
 		potential = {
 			exists = owner
 			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_farmer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_technology = tech_housing_agrarian_idyll
 				has_valid_civic = civic_agrarian_idyll
 			}
@@ -713,6 +752,19 @@ district_generator_uncapped = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_technician_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
@@ -888,6 +940,19 @@ district_mining_uncapped = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
@@ -1057,6 +1122,19 @@ district_farming_uncapped = {
 		}
 		modifier = {
 			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_shared_burden
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_farmer_add = 1
 		}
 	}
 

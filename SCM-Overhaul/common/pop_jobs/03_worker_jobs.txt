@@ -20,7 +20,7 @@ clerk = {
 
 	planet_modifier = {
 		planet_amenities_add = 2
-		trade_value_add = 2
+		trade_value_add = 4
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -52,6 +52,7 @@ clerk = {
 		potential = {
 			OR = {
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -79,6 +80,7 @@ clerk = {
 			NOR = {
 				has_trait = trait_nuumismatic_administration
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 			}
 		}
 		modifier = {
@@ -93,6 +95,7 @@ clerk = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -149,6 +152,18 @@ technician = {
 				owner = {
 					is_robot_empire = yes
 				}
+			}
+			energy = 2
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_energy_grid }
+			}
+			energy = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_energy_nexus }
 			}
 			energy = 2
 		}
@@ -314,6 +329,18 @@ miner = {
 				}
 			}
 			energy = 0.5
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_plant }
+			}
+			minerals = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_hub }
+			}
+			minerals = 2
 		}
 		upkeep = {
 			trigger = {
@@ -791,6 +818,18 @@ farmer = {
 			}
 			food = -1
 		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_facility }
+			}
+			food = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_center }
+			}
+			food = 2
+		}
 		upkeep = {
 			trigger = {
 				exists = owner
@@ -1175,6 +1214,7 @@ preacher = {
 		potential = {
 			OR = {
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -1198,6 +1238,7 @@ preacher = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}
@@ -1314,6 +1355,7 @@ mortal_initiate = {
 			factor = 1.5
 			OR = {
 				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
 				has_trait = trait_nuumismatic_administration
 			}
 		}

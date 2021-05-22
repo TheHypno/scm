@@ -162,9 +162,9 @@ researcher = {
 				exists = owner
 				owner = { has_valid_civic = civic_research_inc }
 				}
-			physics_research = -2
-			engineering_research = -2
-			society_research = -2
+			physics_research = -1
+			engineering_research = -1
+			society_research = -1
 		}
 		
 		upkeep = {
@@ -632,8 +632,32 @@ foundry = {
 		produces = {
 			alloys = 3
 		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_2 }
+			}
+			alloys = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_3 }
+			}
+			alloys = 2
+		}
 		upkeep = {
 			minerals = 6
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_foundry_2 }
+			}
+			minerals = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_foundry_3 }
+			}
+			minerals = 4
 		}
 		upkeep = {
 			trigger = {
@@ -745,7 +769,7 @@ enforcer = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = -25
+		planet_crime_add = -15
 	}
 
 	triggered_planet_modifier = {
@@ -1025,8 +1049,32 @@ artisan = {
 		produces = {
 			consumer_goods = 6
 		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_factory_2 }
+			}
+			consumer_goods = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_factory_3 }
+			}
+			consumer_goods = 2
+		}
 		upkeep = {
 			minerals = 6
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_factory_2 }
+			}
+			minerals = 1
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_active_building = building_factory_3 }
+			}
+			minerals = 2
 		}
 		upkeep = {
 			trigger = {
@@ -1857,6 +1905,8 @@ healthcare = {
 	planet_modifier = {
 		planet_amenities_add = 5
 		pop_growth_speed = 0.05
+		planet_pop_assembly_organic_mult = 0.05
+		pop_environment_tolerance = 0.025
 	}
 
 	resources = {
@@ -1986,7 +2036,10 @@ manager = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_trait = trait_thrifty
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
+				}
 		}
 		modifier = {
 			trade_value_add = 0.5
@@ -2049,7 +2102,10 @@ manager = {
 		}
 		modifier = {
 			factor = 1.5
-			has_trait = trait_thrifty
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_robot_thrifty
+				}
 		}
 		modifier = {
 			factor = 1.5
@@ -2276,6 +2332,18 @@ bluelotus_technician = {
 		category = planet_metallurgists
 		produces = {
 			alloys = 4
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_2 }
+			}
+			alloys = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_foundry_3 }
+			}
+			alloys = 2
 		}
 
 		upkeep = {
