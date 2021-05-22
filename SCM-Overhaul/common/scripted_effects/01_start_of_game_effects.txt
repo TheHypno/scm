@@ -1273,6 +1273,9 @@ generate_start_buildings_and_districts = {
 					limit = { owner = { has_civic = civic_machine_assimilator } }
 					add_deposit = d_organic_slurry
 				}
+
+				# Blocker that removes the extra machine world replicator jobs until removed
+				add_deposit = d_resource_consolidation_1
 			}
 		}
 	}
