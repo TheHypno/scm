@@ -81,4 +81,6 @@
  #Jobs
  job_naval_support_staff_desc:0 "Naval Support Staff"
  
- 
+#Stealing this localization file because the others didn't work. No I don't know why, don't ask me.
+ civic_feudal_realm:0 "Feudal Society"
+ civic_feudal_realm_desc:0 "This society is organized in a feudal manner, with a monarch whose rule relies on powerful vassals that govern their territories with considerable autonomy. \n\nAllows your §YSubjects§! to expand their borders."

@@ -3787,3 +3787,6 @@ origin_default:0 "Prosperous Unification"
  requires_artifact_sell_collector_cooldown_no_cooldown:0 "$TRIGGER_FAIL$§RYou can't sell so many minor artifacts in a short amount of time!§!"
  artifact_sell_collector_cooldown:0 "$artifact_sell_collector$ Cooldown"
  artifact_sell_collectorTT:0 "\n\nCooldown: £time£ §Y120§!"
+
+ civic_feudal_realm:0 "Feudal Society"
+ civic_feudal_realm_desc:0 "This society is organized in a feudal manner, with a monarch whose rule relies on powerful vassals that govern their territories with considerable autonomy. \n\nAllows your §YSubjects§! to expand their borders."
