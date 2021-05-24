@@ -1433,7 +1433,7 @@ building_machine_system_capital = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			num_pops >= 40
+			num_pops >= 25
 		}
 		modifier = {
 			job_replicator_add = 1
@@ -3012,7 +3012,7 @@ building_imperial_machine_capital = {
 	}
 
 	allow = {
-		num_pops >= 80
+		num_pops >= 50
 	}
 
 	prerequisites = {
@@ -3037,7 +3037,7 @@ building_imperial_machine_capital = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			num_pops >= 40
+			num_pops >= 25
 		}
 		modifier = {
 			job_replicator_add = 1
