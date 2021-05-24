@@ -470,6 +470,7 @@ planet_jobs = {
 		}
 		trigger = {
 			is_pop_category = slave
+			has_job_category = worker
 		}
 	}
 
