@@ -1750,18 +1750,18 @@ generate_start_pops = {
 			}
 		}
 	}
-	# if = {
-		# limit = {
+	if = {
+		limit = {
 			# owner = { has_origin = origin_default }
-		# }
-		# while = {
-			# count = 4
-			# create_pop = {
-				# species = owner_main_species
-				# ethos = random
-			# }
-		# }
-	# }
+		}
+		while = {
+			count = 4
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
 }
 
 
