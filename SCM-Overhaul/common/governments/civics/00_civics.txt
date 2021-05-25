@@ -67,8 +67,8 @@ civic_imperial_cult = {
 				value = ethic_fanatic_authoritarian
 			}
 			OR = {
-				# text = civic_tooltip_spiritualist
-				# value = ethic_spiritualist
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
 				value = ethic_fanatic_spiritualist
 			}
 		}
@@ -82,7 +82,6 @@ civic_imperial_cult = {
 	modifier = {
 		country_edict_cap_add = 1
 		edicts_cost_mult = -0.25
-		planet_jobs_produces_mult = 0.05
 	}
 }
 
@@ -1152,7 +1151,6 @@ civic_diplomatic_corps = {
 	modifier = {
 		envoys_add = 2
 		diplo_weight_mult = 0.1
-		envoy_improve_relations_mult = 0.25
 	}
 }
 

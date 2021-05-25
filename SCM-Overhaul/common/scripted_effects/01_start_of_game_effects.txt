@@ -1850,7 +1850,7 @@ generate_home_planet_final_pass = {
 		}
 		owner = {
 			capital_scope = {
-				add_modifier = { modifier = prosp_uni_mod }
+				add_modifier = { modifier = prosp_uni_mod days = 7200 }
 			}
 		}
 	}
