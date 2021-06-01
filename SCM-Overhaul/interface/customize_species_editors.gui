@@ -3,6 +3,11 @@
 @sub_window_height = 500
 
 guiTypes = {
+	positionType = {
+		name = "ship_browser_3d_view_size"
+		position = { x = 1254 y = 620 } 
+	}	
+
 	containerWindowType = {
 		name = "dummy_editor"
 		moveable = @movable_editors
@@ -2293,7 +2298,14 @@ guiTypes = {
 			format = centre
 			alwaysTransparent = no
 		}
-	}	
+		
+		buttonType = {
+			name = "missing_dlc_overlay"
+			quadTextureSprite = "GFX_origin_locked_overlay"
+			position = { x = 0 y = 1 }
+			size = { x = 355 y = 127 }
+		}
+	}
 
 	#######################
 	# ethics and government
@@ -2821,6 +2833,13 @@ guiTypes = {
 			position = { x = -22 y = -22 } # icon is size 44x44
 			spriteType = "GFX_government_authority"
 			clicksound = select_click
+		}
+		
+		buttonType = {
+			name = "missing_dlc_overlay"
+			quadTextureSprite = "GFX_government_locked_overlay"
+			position = { x = -9 y = -10 }
+			size = { x = 68 y = 68 }
 		}
 	}
 
