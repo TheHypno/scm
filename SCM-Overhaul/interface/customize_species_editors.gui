@@ -3668,5 +3668,311 @@ guiTypes = {
 			format = centre
 			alwaysTransparent = yes
 		}
+		
+		buttonType = {
+			name = "missing_dlc_overlay"
+			quadTextureSprite = "GFX_ship_culture_locked_overlay"
+			position = { x = 6 y = 1 }
+			size = { x = 355 y = 127 }
+		}
+	}
+	
+	#######################
+	# Ship gfx-culture
+	#######################
+	containerWindowType = {
+		name = "ship_gfx_culture_browser_editor"
+		moveable = @movable_editors
+		position = { x = -405 y = -395 }
+		size = { width = 1041 height = 750 }
+		orientation = center
+		
+		background = {
+			name = "background"
+			spriteType = "GFX_subwindow_tile_plain_solid"
+		}
+		
+		containerWindowType = {
+			name = "3d_view_window"
+			size = { width = 1039 height = 750 }
+			position = { x = 0 y = 0 }
+			clipping = yes
+			
+			buttonType = {
+				name ="3d_view"
+				quadTextureSprite = "GFX_dummy_3d_ship_view"
+				position = { x = 2 y = 48 }
+				size = { x = 200 y = 200 }
+				scale = 1.0
+				oversound = no_sound
+			}
+		}
+
+		instantTextBoxType = {
+			name = "label"
+			font = "malgun_goth_24"
+			position = { x = 16 y = 10 }
+			maxWidth = 230
+			text =	 "SHIP_GRAPHICS"
+			format = left
+			alwaysTransparent = yes
+		}
+		
+		buttonType = {
+			name = "cancel"
+			quadTextureSprite = "GFX_close"
+			position = { x = -45 y = 6 }
+			Orientation = "UPPER_RIGHT"
+			shortCut = "ESCAPE"
+			pdx_tooltip = "CLOSE_TITLE"
+			clicksound = "back_click"
+		}
+		
+		buttonType = {
+			name = "back"
+			font = "cg_16b"
+			spriteType = "GFX_galactic_object_button"
+			buttonText = "BACK"
+			position = { x = 0 y = -40 }
+			orientation = LOWER_LEFT
+			shortcut = "BACKSPACE"
+			clicksound = back_click
+		}
+		
+		buttonType = {
+			name = "apply_and_close"
+			font = "cg_16b"
+			spriteType = "GFX_galactic_object_button"
+			buttonText = "NEXT"
+			position = { x = -290 y = -40 }
+			orientation = LOWER_RIGHT
+			#shortcut = "RETURN"
+			clicksound = confirm_click
+		}
+		
+		iconType = {
+			name = "dlc_overlay"
+			position = { x = 2 y = 48 }
+			spriteType = "GFX_ship_browser_dlc_overlay"
+			scale = 1.032
+			alwaysTransparent = yes
+		}
+		
+				
+		containerWindowType = {
+			name = "shipbrowser_menu"
+			size = { width = 224 height = 581 }
+			position = { x = 8 y = 53 }
+			
+			background = {
+				name = "shipbrowser_menu_bg"
+				spriteType = "GFX_subwindow_tile_plain_solid"
+			}
+
+			instantTextBoxType = {
+				name = "ship_appearance_label"
+				font = "cg_16b"
+				position = { x = 4 y = 7 }
+				maxWidth = 216
+				maxHeight = 110
+				text =	 "SHIP_GRAPHICS_BROWSER"
+				format = left
+				alwaysTransparent = yes
+			}
+
+			smoothListboxType = {
+				name = "ship_categories"
+				position = { x = 4 y = 30 }
+				size = { x = 216 y = 261 }
+				offset = {x = -11 y = 0}
+				scrollbarType = "standardlistbox_slider"
+				borderSize = { x = -4 y = 0 }
+				spacing = 0
+				background = "GFX_tiles_dark_area_cut_8"
+			}
+
+			instantTextBoxType = {
+				name = "ship_preview_label"
+				font = "cg_16b"
+				position = { x = 4 y = 302 }
+				maxWidth = 216
+				maxHeight = 110
+				text =	 "SHIP_GRAPHICS_PREVIEW"
+				format = left
+				alwaysTransparent = yes
+			}
+			
+			buttonType = {
+				name = "ship_preview_bg"
+				position = { x = 4 y = 325 }
+				size = { x = 216 y = 30 }
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "ship_preview_value"
+				font = "cg_16b"
+				position = { x = 30 y = 332 }
+				maxWidth = 160
+				maxHeight = 20
+				fixedSize = yes
+				text =	 "MISSING_TEXT"
+				format = center
+			}
+			
+			spinnerType = {
+				id = "spinner"
+				name = "ship_spinner"	
+				leftbutton = "spinner_left_button"
+				rightbutton = "spinner_right_button"
+				size = { x = 214 y = 30 }
+				position = { x = 5 y = 327 }
+				priority = 100			
+				borderSize = { x = 16 y = 16 }	
+				horizontal = 1
+				maxValue = 0
+				startValue = 0
+					
+				guiButtonType = {
+					name = "spinner_left_button"
+					quadTextureSprite = "scrollbar_leftbutton"
+					clicksound = decrement_click
+				}
+				guiButtonType = {
+					name = "spinner_right_button"
+					quadTextureSprite = "scrollbar_rightbutton"
+					clicksound = increment_click
+				}		
+			}
+			
+			buttonType = {
+				name = "ship_desc_bg"
+				position = { x = 4 y = 360 }
+				size = { x = 216 y = 141 }
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "ship_desc_text"
+				font = "cg_16b"
+				position = { x = 14 y = 362 }
+				maxWidth = 196
+				maxHeight = 111
+				text = "MISSING_TEXT"
+				scrollbartype = "standardtext_slider"
+				text_color_code = "E"
+			}
+			
+			instantTextBoxType = {
+				name = "ship_required_dlc"
+				font = "cg_16b"
+				position = { x = 4 y = 511 }
+				maxWidth = 216
+				maxHeight = 111
+				text = "SHIP_GRAPHICS_REQUIRED_DLC"
+			}
+			
+			buttonType = {
+				name = "ship_required_dlc_bg"
+				position = { x = 4 y = 534 }
+				size = { x = 216 y = 44 }
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaystransparent = yes
+			}
+			
+			gridBoxType = {
+				name = "ship_required_dlc_list"
+				position = { x = 20 y = 538 }
+				size = { width = 206 height = 30 }
+				format = UPPER_LEFT
+				slotSize = {
+					width = 40
+					height = 40
+				}
+			}
+		}
+		
+		iconType = {
+			name = "ship_zoom_in"
+			position = { x = 1002 y = 550 }
+			spriteType = "GFX_camera_zoom_in"
+			pdx_tooltip = "SHIP_GRAPHICS_ZOOM_IN_TOOLTIP"
+		}
+		
+		iconType = {
+			name = "ship_zoom_out"
+			position = { x = 1002 y = 580 }
+			spriteType = "GFX_camera_zoom_out"
+			pdx_tooltip = "SHIP_GRAPHICS_ZOOM_OUT_TOOLTIP"
+		}
+		
+		iconType = {
+			name = "ship_rotate"
+			position = { x = 1002 y = 630 }
+			spriteType = "GFX_camera_rotate"
+			pdx_tooltip = "SHIP_GRAPHICS_ROTATE_TOOLTIP"
+		}
+	}
+	
+	###
+	containerWindowType = {
+		name = "ship_category_entry"
+		size = { width = 220 height = 26 }
+		
+		buttonType = {
+			name = "ship_category_entry_button"
+			spriteType = "GFX_standard_button_200_24"
+			size = { x = 200 y = 24 }
+			clicksound = "click_outliner"
+		}
+		
+		buttonType = {
+			name = "missing_dlc_overlay"
+			spriteType = "GFX_standard_button_200_24_dlc_overlay"
+			size = { x = 200 y = 24 }
+			clicksound = "click_outliner"
+		}
+		
+		instantTextBoxType = {
+			name = "ship_category_entry_name"
+			font = "cg_16b"
+			position = { x = 18 y = 8 }
+			maxWidth = 140
+			text =	 "MISSING_TEXT"
+			format = left
+			alwaysTransparent = yes
+		}	
+	}
+	
+	containerWindowType = {
+		name = "ship_browser_dlc_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 50 height = 45 }
+
+		buttonType = {
+			name = "dlc_underlay"
+			position = { x = -9 y = 0 }
+			quadTextureSprite = "GFX_invisible" # Set by code
+			alwaysTransparent = no
+		}
+		
+		buttonType = {
+			name = "dlc_button"
+			position = { x = -1 y = 1 }
+			quadTextureSprite = "GFX_invisible"
+			format = center
+			pdx_tooltip = "DLC_START"
+			alwaysTransparent = yes
+		}	
+		
+		iconType = {
+			name = "dlc_frame"
+			position = { x = -1 y = 1 }
+			quadTextureSprite = "GFX_invisible"
+			pdx_tooltip = "DLC_START"
+			alwaysTransparent = yes
+		}
 	}
 }
