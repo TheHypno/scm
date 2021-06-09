@@ -101,7 +101,7 @@ replicator = {
 	}
 
 	planet_modifier = {
-		planet_pop_assembly_add = 2
+		planet_pop_assembly_add = 1
 		planet_amenities_add = 2
 	}
 
@@ -592,7 +592,7 @@ fabricator = {
 	resources = {
 		category = planet_metallurgists
 		produces = {
-			alloys = 4
+			alloys = 3
 		}
 		produces = {
 			trigger = {
